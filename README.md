@@ -63,36 +63,39 @@ O usuário informa peso e altura e recebe o valor do IMC com classificação:
 
 ## 👩‍💻 Autores
 
-<table>
-  <tr>
-    <td align="center">
-      <img src="./assets/joao-rounded.jpeg" alt="João" width="100" height="100"><br>
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <img src="https://raw.githubusercontent.com/OtavioAugustodaRoza/NewPI-2k25/87f6f5b9bb6502f8bce6660da6ecc7b5de200fdd/alice.jpeg" width="100" height="100" ><br>
+        Alice Lanzaster
+      </td>
+      <td align="center">
+        <img src="https://raw.githubusercontent.com/OtavioAugustodaRoza/NewPI-2k25/87f6f5b9bb6502f8bce6660da6ecc7b5de200fdd/flavia.jpeg" width="100" height="100" ><br>
+        Flavia Busarello Correa
+      </td>
+      <td align="center">
+        <img src="https://raw.githubusercontent.com/OtavioAugustodaRoza/NewPI-2k25/87f6f5b9bb6502f8bce6660da6ecc7b5de200fdd/sofia.jpeg" width="100" height="100"><br>
+         Sofia Martins de Bona
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src="https://raw.githubusercontent.com/OtavioAugustodaRoza/NewPI-2k25/87f6f5b9bb6502f8bce6660da6ecc7b5de200fdd/miguel.jpeg" width="100" height="100""><br>
+        Miguel Silva da Roza
+      </td>
+      <td align="center">
+        <img src="https://raw.githubusercontent.com/OtavioAugustodaRoza/NewPI-2k25/87f6f5b9bb6502f8bce6660da6ecc7b5de200fdd/otavio.jpeg" width="100" height="100" ><br>
+        Otávio Augusto da Roza
+      </td>
+      <td align="center">
+        <img src="https://raw.githubusercontent.com/OtavioAugustodaRoza/NewPI-2k25/87f6f5b9bb6502f8bce6660da6ecc7b5de200fdd/joao.jpeg" width="100" height="100" ><br> 
       João Pedro Matos Santos
-    </td>
-    <td align="center">
-      <img src="./assets/miguel-rounded.jpeg" alt="Miguel" width="100" height="100"><br>
-      Miguel Silva da Roza
-    </td>
-    <td align="center">
-      <img src="./assets/otavio-rounded.jpeg" alt="Otávio" width="100" height="100"><br>
-      Otávio Augusto da Roza
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <img src="./assets/sofia-rounded.jpeg" alt="Sofia" width="100" height="100"><br>
-      Sofia Martins de Bona
-    </td>
-    <td align="center">
-      <img src="./assets/flavia-rounded.jpeg" alt="Flavia" width="100" height="100"><br>
-      Flavia Busarello Correa
-    </td>
-    <td align="center">
-      <img src="./assets/alice-rounded.jpeg" alt="Alice" width="100" height="100"><br>
-      Alice Lanzaster
-    </td>
-  </tr>
-</table>
+      </td>
+    </tr>
+  </table>
+</div>
+
 
 
 ---
