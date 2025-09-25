@@ -1,6 +1,5 @@
 # 🌱 Projeto Integrador – Alimentação Equilibrada
 
-![Banner Alimentação Equilibrada](https://media.giphy.com/media/3oEduNqg9m7v0m5t6g/giphy.gif)
 
 ---
 
@@ -64,36 +63,37 @@ O usuário informa peso e altura e recebe o valor do IMC com classificação:
 
 ## 👩‍💻 Autores
 
-<div style="display: flex; justify-content: center; gap: 30px; align-items: center; flex-wrap: wrap;">
+<table>
+  <tr>
+    <td align="center">
+      <img src="./assets/joao-rounded.jpeg" alt="João" width="100" height="100"><br>
+      João Pedro Matos Santos
+    </td>
+    <td align="center">
+      <img src="./assets/miguel-rounded.jpeg" alt="Miguel" width="100" height="100"><br>
+      Miguel Silva da Roza
+    </td>
+    <td align="center">
+      <img src="./assets/otavio-rounded.jpeg" alt="Otávio" width="100" height="100"><br>
+      Otávio Augusto da Roza
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="./assets/sofia-rounded.jpeg" alt="Sofia" width="100" height="100"><br>
+      Sofia Martins de Bona
+    </td>
+    <td align="center">
+      <img src="./assets/flavia-rounded.jpeg" alt="Flavia" width="100" height="100"><br>
+      Flavia Busarello Correa
+    </td>
+    <td align="center">
+      <img src="./assets/alice-rounded.jpeg" alt="Alice" width="100" height="100"><br>
+      Alice Lanzaster
+    </td>
+  </tr>
+</table>
 
-  <div style="text-align: center;">
-    <img src="./assets/" alt="João" width="100" height="100" style="border-radius: 50%;">
-    <p>João Pedro Matos Santos</p>
-  </div>
-
-  <div style="text-align: center;">
-    <img src="./assets/miguel.jpeg" alt="Miguel" width="100" height="100" style="border-radius: 50%;">
-    <p>Miguel Silva da Roza</p>
-  </div>
-
-  <div style="text-align: center;">
-    <img src="./assets/otavio.jpeg" alt="Otávio" width="100" height="100" style="border-radius: 50%;">
-    <p>Otávio Augusto da Roza</p>
-  </div>
-    <div style="text-align: center;">
-    <img src="./assets/sofia.jpeg" alt="Sofia Martins de Bona" width="100" height="100" style="border-radius: 50%;">
-    <p>Sofia Martins de Bona</p>
-  </div>
-    <div style="text-align: center;">
-    <img src="./assets/Flavia.jpeg" alt="Flavia Busarello Correa" width="100" height="100" style="border-radius: 50%;">
-    <p>Flavia Busarello Correa</p>
-  </div>
-    <div style="text-align: center;">
-    <img src="./assets/Alice.jpeg" alt="Alice Lanzaster" width="100" height="100" style="border-radius: 50%;">
-    <p>Alice Lanzaster</p>
-  </div>
-
-</div>
 
 ---
 
