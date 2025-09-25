@@ -67,7 +67,7 @@ O usuário informa peso e altura e recebe o valor do IMC com classificação:
 <div style="display: flex; justify-content: center; gap: 30px; align-items: center; flex-wrap: wrap;">
 
   <div style="text-align: center;">
-    <img src="./assets/joao.jpeg" alt="João" width="100" height="100" style="border-radius: 50%;">
+    <img src="./assets/" alt="João" width="100" height="100" style="border-radius: 50%;">
     <p>João Pedro Matos Santos</p>
   </div>
 
