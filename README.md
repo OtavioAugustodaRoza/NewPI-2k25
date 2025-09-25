@@ -95,8 +95,6 @@ O usuário informa peso e altura e recebe o valor do IMC com classificação:
 
 </div>
 
-> 💡 Dica: substitua as imagens pelos links corretos ou arquivos locais.
-
 ---
 
 ## 📌 Observações
