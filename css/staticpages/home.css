@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 header nav{
     display: flex;
     justify-content: space-between;
@@ -9,7 +14,7 @@ header nav{
     position: fixed; 
     top: 0;          
     left: 0;         
-    width: 90%;
+    width: 100%;
     z-index: 1000;
 }
 .navegacao{
@@ -17,40 +22,37 @@ header nav{
     justify-content: center;
     align-items: center;
     gap: 30px;
+    margin-right: 15px;
 }
 .logo a{
-    color: #111827;
-    font-size: 1.25rem;
+    color: #16A34A;
+    font-size: 1.55rem;
     font-family: Inter, sans-serif;
-    font-weight: bold;
     margin-left: 15px;
 }
 .navegacao span{
-    color: #16A34A;
+    color: #209e4e;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 1.20rem;
     font-family: Inter;
-    border-bottom: 2px solid #35c068;
+    border-bottom: 2px solid #2f9956;
+
 }
 .navegacao a{
-    color: #374151;
+    color: #16A34A;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 1.20rem;
     font-family: Inter;
+    margin-right: 20px;
 }
 .navegacao a:hover{
-    color: #16A34A;
-    border-bottom: 2px solid #35c068;
+    color: #1e8544;
+    transition: .2;
 }
-.button1{
-    background-color: #16A34A;
-    padding: 0.75rem 1.5rem;
-    font-size: 1rem;
-    color: #ffffff;
-    border-radius: 8px;
-    font-weight: bold;
-    font-family: Inter;
+.drop-hover {
+    position: absolute;
+} 
+.drop-hover a{
+    display: block; 
 }
-.button1:hover{
-    background-color: #3fc570;
-}
+

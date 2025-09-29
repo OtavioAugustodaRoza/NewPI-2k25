@@ -16,35 +16,44 @@
             <div class="logo">
                 <a href="home.html"><i class="fa-solid fa-leaf fa-lg" style="color: #36ce4f;"></i></a>
                 <a href="home.html">NutriVitta</i></a>
-            
+
             </div>
             <div>
                 <ul class="navegacao">
                     <li>
                         <a href="#"><span>Início</span></a>
                     </li>
-                    <li>
-                        <a href="#">Receitas</a>
+
+                    <style>
+                        ul.navegacao li:hover ul{
+                            display: block;
+                        }
+                        ul.navegacao li ul{
+                            display: none;
+                            position: absolute;
+                        }
+                    </style>
+                    <li drop-hover>
+                        <a href="#">Educação <i class="fa-solid fa-arrow-down" style="color: #16a34a;"></i></a>
+
+                        <ul>
+                            <li><a href="#">Beneficios</a></li>
+                            <li><a href="#">Beneficios</a></li>
+                            <li><a href="#">Beneficios</a></li>
+                        </ul>
+                       
                     </li>
                     <li>
-                        <a href="#">Nutrição</a>
-                    </li>
-                    <li>
-                        <a href="#">Calculadora IMC</a>
-                    </li>
-                    <li>
-                        <a href="#">Blog</a>
+                        <a href="#">Feramentas</a>
                     </li>
                     <li>
                         <a href="#">Sobre</a>
                     </li>
                 </ul>
             </div>
-            <div>
-                <a href="#" class="button1">Comece Agora</a>
-            </div>
         </nav>
     </header>
+
 </body>
 
 </html>
