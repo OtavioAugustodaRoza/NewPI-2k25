@@ -29,14 +29,10 @@ header nav{
     font-size: 1.55rem;
     font-family: Inter, sans-serif;
     margin-left: 15px;
-}
-.navegacao span{
-    color: #209e4e;
-    font-weight: 600;
-    font-size: 1.20rem;
-    font-family: Inter;
-    border-bottom: 2px solid #2f9956;
 
+}
+.logo:hover{
+    transform: scale(1.1);
 }
 .navegacao a{
     color: #16A34A;
@@ -49,10 +45,46 @@ header nav{
     color: #1e8544;
     transition: .2;
 }
-.drop-hover {
-    position: absolute;
-} 
-.drop-hover a{
-    display: block; 
+ul.navegacao li:hover ul{
+    display: block;
+}
+.navegacao li > a i {
+    transition: transform 0.3s ease;
+}
+.navegacao li:hover > a i {
+    transform: rotate(180deg);
+}
+.navegacao li {
+    position: relative;
 }
 
+.navegacao li ul {
+    opacity: 0;
+    transform: translateY(-10px);
+    position: absolute;
+    top: 110%;
+    left: 0;
+    min-width: 220px;
+    background-color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.navegacao li ul li a {
+    display: block;
+    padding: 12px 18px;
+    font-size: 1rem;
+    color: #16A34A;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+.navegacao li ul li a:hover {
+    background: #f9f9f9;
+    color: #1e8544;
+}
+.navegacao li:hover ul {
+    opacity: 1;
+    transform: translateY(0);
+}
