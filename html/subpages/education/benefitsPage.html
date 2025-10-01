@@ -8,7 +8,6 @@
   <script src="https://kit.fontawesome.com/4410d9698c.js" crossorigin="anonymous"></script>
   <script src="/js/nav-footer/nav.js"></script>
   <link rel="stylesheet" href="/css/reset.css">
-  <link rel="stylesheet" href="/css/reset.css">
   <link rel="stylesheet" href="/css/subpages/education/benefitsPage.css">
 
 </head>
@@ -121,20 +120,181 @@
             <h3>92%</h3>
             <p>Aumento na disposição diária</p>
           </li>
-          
+
         </ul>
       </div>
 
     </section>
 
     <section class="pilares">
-        
+      <div class="title">
+        <h2>Os 6 Pilares da Alimentação Equilibrada</h2>
+        <p>Estes fundamentos são essenciais para construir e manter uma alimentação saudável e sustentável ao longo da
+          vida.</p>
+      </div>
+    </section>
+
+    <div class="cards">
+      <ul>
+        <li class="card">
+          <div class="card-container">
+            <div>
+              <i class="fa-brands fa-apple"></i>
+            </div>
+            <div>
+              <h3>Variedade de Alimentos</h3>
+            </div>
+          </div>
+          <p>Consuma diferentes grupos alimentares: frutas, vegetais, grãos integrais, proteínas magras e laticínios.
+          </p>
+
+          <h4>Dicas práticas:</h4>
+
+          <ul class="segunda-lista">
+            <li>5 porções de frutas e vegetais por dia</li>
+            <li>Prefira grãos integrais</li>
+            <li>Varie as cores no prato</li>
+          </ul>
+        </li>
+        <li class="card">
+          <div class="card-container">
+            <div>
+              <i class="fa-solid fa-bowl-food"></i>
+            </div>
+            <div>
+              <h3>Proporções Adequadas</h3>
+            </div>
+          </div>
+          <p>Consuma diferentes grupos alimentares: frutas, vegetais, grãos integrais, proteínas magras e laticínios.
+          </p>
+
+          <h4>Dicas práticas:</h4>
+
+          <ul class="segunda-lista">
+            <li>5 porções de frutas e vegetais por dia</li>
+            <li>Prefira grãos integrais</li>
+            <li>Varie as cores no prato</li>
+          </ul>
+        </li>
+        <li class="card">
+          <div class="card-container">
+            <div>
+              <i class="fa-regular fa-clock"></i>
+            </div>
+            <div>
+              <h3>Regularidade nas Refeições</h3>
+            </div>
+          </div>
+          <p>Consuma diferentes grupos alimentares: frutas, vegetais, grãos integrais, proteínas magras e laticínios.
+          </p>
+
+          <h4>Dicas práticas:</h4>
+
+          <ul class="segunda-lista">
+            <li>5 porções de frutas e vegetais por dia</li>
+            <li>Prefira grãos integrais</li>
+            <li>Varie as cores no prato</li>
+          </ul>
+        </li>
+        <li class="card">
+          <div class="card-container">
+            <div>
+              <i class="fa-solid fa-utensils"></i>
+            </div>
+            <div>
+              <h3>Moderação</h3>
+            </div>
+          </div>
+          <p>Consuma diferentes grupos alimentares: frutas, vegetais, grãos integrais, proteínas magras e laticínios.
+          </p>
+
+          <h4>Dicas práticas:</h4>
+
+          <ul class="segunda-lista">
+            <li>5 porções de frutas e vegetais por dia</li>
+            <li>Prefira grãos integrais</li>
+            <li>Varie as cores no prato</li>
+          </ul>
+        </li>
+        <li class="card">
+          <div class="card-container">
+            <div>
+              <i class="fa-solid fa-glass-water-droplet"></i>
+            </div>
+            <div>
+              <h3>Hidratação Adequada</h3>
+            </div>
+          </div>
+          <p>Consuma diferentes grupos alimentares: frutas, vegetais, grãos integrais, proteínas magras e laticínios.
+          </p>
+
+          <h4>Dicas práticas:</h4>
+
+          <ul class="segunda-lista">
+            <li>5 porções de frutas e vegetais por dia</li>
+            <li>Prefira grãos integrais</li>
+            <li>Varie as cores no prato</li>
+          </ul>
+        </li>
+        <li class="card">
+          <div class="card-container">
+            <div>
+              <i class="fa-brands fa-pagelines"></i>
+            </div>
+            <div>
+              <h3>Alimentos Naturais</h3>
+            </div>
+          </div>
+          <p>Consuma diferentes grupos alimentares: frutas, vegetais, grãos integrais, proteínas magras e laticínios.
+          </p>
+
+          <h4>Dicas práticas:</h4>
+
+          <ul class="segunda-lista">
+            <li>5 porções de frutas e vegetais por dia</li>
+            <li>Prefira grãos integrais</li>
+            <li>Varie as cores no prato</li>
+          </ul>
+        </li>
+
+      </ul>
+    </div>
+
+    <section class="rules">
+      
+      <div>
+        <h2>A Regra do Prato Equilibrado</h2>
+        <ul>
+          <li class="verde">50% Vegetais e frutas</li>
+          <li class="amarelo">25% Grãos integrais</li>
+          <li class="vermelho">25% Proteínas magras</li>
+          <p>Esta divisão garante que você obtenha todos os nutrientes necessários em cada refeição principal.</p>
+        </ul>
+      </div>
+      <div>
+        <img src="/html/subpages/education/imagens/folhas.jpg" alt="foto de folhas saudavaeis">
+      </div>
     </section>
 
   </main>
-
+<footer>
+      <div id="footer"></div>
+</footer>
 
 </body>
 
 
 </html>
+
+<script>
+      document.addEventListener("DOMContentLoaded", () => {
+      const nav = document.getElementById("footer");
+
+  fetch("../../nav-footer/footer.html")
+        .then(response => response.text())
+        .then(data => {
+          nav.innerHTML = data;
+        })
+        .catch(err => console.error("Erro ao carregar navbar:", err));
+    });
+</script>

@@ -1,14 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+
+
 * {
     font-family: 'inter';
+
 }
-main section.banner{
+
+main section.banner {
     background-color: rgba(0, 255, 21, 0.062);
     padding: 30px 0 60px 0;
     margin: 50px 0 0 0;
 
 }
-main section.banner h1{
+
+main section.banner h1 {
     font-family: 'inter';
     font-size: 2.5vw;
     color: green;
@@ -29,13 +35,14 @@ main section.banner p {
 }
 
 
-main section.beneficios{
+main section.beneficios {
     background-color: rgba(0, 255, 21, 0.034);
     padding: 30px 0 60px 0;
     margin: 50px 0 0 0;
 
 }
-main section.beneficios div h2{
+
+main section.beneficios div h2 {
     font-family: 'inter';
     font-size: 1.8vw;
     color: green;
@@ -55,7 +62,7 @@ main section.beneficios div p.p-um {
     width: 40vw;
     margin: auto;
 }
- 
+
 
 main section.beneficios div.container {
     display: flex;
@@ -63,7 +70,7 @@ main section.beneficios div.container {
     align-items: center;
 }
 
-main section.beneficios div.container div.imagem img{
+main section.beneficios div.container div.imagem img {
     width: 800px;
     height: 900px;
     border-radius: 10px;
@@ -72,7 +79,7 @@ main section.beneficios div.container div.imagem img{
 
 }
 
-main section.beneficios div.container img:hover{
+main section.beneficios div.container img:hover {
     transform: scale(1.01);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
@@ -82,14 +89,14 @@ main section.beneficios div.container div.lista ul li {
     background-color: white;
     margin: 20px;
     border-radius: 20px;
-    transition:box-shadow 0.2s ease;
+    transition: box-shadow 0.2s ease;
     width: 600px;
     border: solid 1px rgba(0, 199, 27, 0.116);
 }
 
 
 main section.beneficios div.container div.lista ul li:hover {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 main section.beneficios div.container div.lista ul li div.card {
@@ -115,11 +122,11 @@ main section.beneficios div.container div.lista ul li i {
     margin: 0 20px 0 0;
     padding: 15px 15px 0.1px 15px;
     border-radius: 10px;
-    background-color: rgba(6, 230, 6, 0.397);
+    background-color: rgba(0, 255, 0, 0.116);
 
 }
 
-main section.beneficios div.container div.lista ul li p{
+main section.beneficios div.container div.lista ul li p {
     color: rgba(1, 150, 38, 0.781);
 }
 
@@ -130,12 +137,12 @@ main section.beneficios div.result {
     width: 76vw;
     margin: auto;
     border: solid 1px rgba(0, 199, 27, 0.116);
-    transition:box-shadow 0.2s ease;
+    transition: box-shadow 0.2s ease;
 }
 
 main section.beneficios div.result:hover {
 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -143,7 +150,7 @@ main section.beneficios div.result ul {
     display: flex;
     justify-content: center;
     text-align: center;
-     
+
 }
 
 main section.beneficios div.result h2 {
@@ -160,3 +167,164 @@ main section.beneficios div.result h3 {
     margin: 0 0 10px 0;
 }
 
+main section.pilares {
+    margin: 30px;
+}
+
+main section.pilares {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+main section.pilares div.title h2 {
+    color: green;
+    font-size: 3vh;
+    margin: 10px;
+}
+
+main section.pilares div.title p {
+    font-size: 2vh;
+    color: rgba(1, 136, 1, 0.658);
+    width: 800px;
+    margin: 20px;
+}
+
+.cards ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 200px;
+    gap: 40px;
+
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    width: 1000px;
+    margin: auto;
+
+
+}
+
+.cards ul li.card {
+    border: solid 1px rgba(0, 199, 27, 0.116);
+    padding: 20px 30px;
+
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cards ul li.card:hover {
+  transform: translateY(-8px); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+.cards ul li h4{
+    margin: 0 0 5px 0;
+    color: rgba(11, 129, 11, 0.74);
+}
+.cards ul li ul li {
+    list-style-type: disc;
+    color:  rgba(16, 170, 16, 0.74);
+
+
+}
+
+.cards ul li ul li::marker {
+    color: rgb(255, 136, 0);
+}
+
+.cards .segunda-lista {
+    display: block;
+    padding-left: 20px;
+}
+
+.cards ul li div.card-container {
+    text-align: center;
+    color: green;
+
+}
+
+.cards ul li div.card-container div h3 {
+    margin: 20px 0 20px 0;
+}
+
+.cards ul li div.card-container div i {
+    display: inline-flex !important;
+    justify-content: center;
+    align-items: center;
+    width: 65px;
+    height: 65px;
+    box-sizing: border-box;
+    background: rgba(2, 221, 2, 0.329);
+    font-size: 40px;
+    color: green;
+    border-radius: 40px;
+
+}
+
+.cards ul li p {
+    font-size: 14px;
+    margin: 20px 0 20px 0; 
+    color: rgba(16, 170, 16, 0.74);
+}
+
+
+section.rules{
+    display: flex;
+    position: relative;
+    left: 330px;
+    justify-content: center;
+    background-color: rgba(144, 238, 144, 0.233);
+    margin: 150px 0 0 0;
+    width: 1250px;
+    padding: 40px;
+    align-items: center;
+    text-align: left;
+    border-radius: 20px;
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section.rules:hover {
+  transform: translateY(-5px); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+section.rules div img {
+    width: 500px;
+    height: 300px;
+    border-radius: 20px;
+    margin: 0 0 0 50px;
+}
+
+section.rules div h2 {
+    font-size: 25px;
+    margin: 0 0 20px 0;
+}
+
+section.rules div ul li {
+    margin: 0 0 20px 0;
+    list-style-type: disc;
+
+}
+
+section.rules div p {
+    font-size: 13px;
+    width: 400px;
+}
+
+section.rules div ul li.verde::marker{
+    font-size: 30px;
+    color: rgb(43, 255, 0);
+
+}
+section.rules div ul li.amarelo::marker{
+    font-size: 30px;
+    color: rgb(255, 196, 0);
+}
+section.rules div ul li.vermelho::marker{
+    font-size: 30px;
+    color: rgb(255, 0, 0);
+}
