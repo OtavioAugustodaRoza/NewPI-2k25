@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+*{
+    font-family: Inter;
+    
+}
+body {
+    background-color: #f9fafb;
+    color: #1f2937;
+    line-height: 1.6;
+  }
+  
+  /* ----------- CONTAINER PRINCIPAL ----------- */
+  main {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 50px 20px;
+  }
+  
+  section h1 {
+    font-size: 2.4rem;
+    margin-bottom: 15px;
+    color: #14532d;
+    text-align: center;
+    font-weight: 700;
+  }
+  
+  section p {
+    font-size: 1.05rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #475569;
+  }
+  
+  section h2 {
+    font-size: 1.6rem;
+    margin-bottom: 8px;
+    color: #166534;
+  }
+  
+  section div > p {
+    text-align: left;
+    color: #64748b;
+    margin-bottom: 20px;
+  }
+  
+  /* ----------- FORM CONTAINER ----------- */
+  .form-container {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 35px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.07);
+    border: 1px solid #e2e8f0;
+  }
+  
+  /* FIELDSETS */
+  fieldset {
+    border: none;
+    margin-bottom: 30px;
+  }
+  
+  legend {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #14532d;
+  }
+  
+  /* Inputs agrupados */
+  .input-group {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .input-field {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .input-field-full {
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Labels e Inputs */
+  label {
+    font-weight: 500;
+    margin-bottom: 6px;
+    color: #334155;
+  }
+  
+  input, select, textarea {
+    padding: 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    font-size: 1rem;
+    background-color: #f9fafb;
+    transition: all 0.25s ease;
+  }
+  
+  input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #22c55e;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(34,197,94,0.25);
+  }
+  
+  /* ----------- CHECKBOX GRID ----------- */
+  .checkbox-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 12px;
+  }
+  
+  .checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #f1f5f9;
+    padding: 10px 14px;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+  }
+  
+  .checkbox-item:hover {
+    background: #e2fbe8;
+  }
+  
+  .checkbox-item input {
+    width: 18px;
+    height: 18px;
+    accent-color: #22c55e;
+  }
+  
+  /* ----------- BOTÃO ----------- */
+  .submit-btn {
+    width: 100%;
+    padding: 16px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 15px rgba(22, 163, 74, 0.25);
+  }
+  
+  .submit-btn:hover {
+    background: linear-gradient(135deg, #16a34a, #15803d);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(22, 163, 74, 0.3);
+  }
+  
+  .submit-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 10px rgba(22, 163, 74, 0.2);
+  }
+  
+  /* ----------- RESPONSIVIDADE ----------- */
+  @media (max-width: 600px) {
+    .input-group {
+      flex-direction: column;
+    }
+    
+    .form-container {
+      padding: 25px 20px;
+    }
+  }
+  
