@@ -1,32 +1,33 @@
 {
     "builds": [
-      { "src": "html/**/*.html", "use": "@vercel/static" },
-      { "src": "css/**/*.css", "use": "@vercel/static" },
-      { "src": "js/**/*.js", "use": "@vercel/static" },
-      { "src": "img/**/*", "use": "@vercel/static" }
+      { "src": "**/*.html", "use": "@vercel/static" },
+      { "src": "**/*.css", "use": "@vercel/static" },
+      { "src": "**/*.js", "use": "@vercel/static" },
+      { "src": "**/*.{png,jpg,jpeg,gif,svg}", "use": "@vercel/static" }
     ],
     "routes": [
       
       { "src": "/css/(.*)", "dest": "/css/$1" },
   
-     
-    
+      
       { "src": "/js/(.*)", "dest": "/js/$1" },
   
-   
-      { "src": "/html/(.*)", "dest": "/html/$1" },
-
-      { "src": "/staticpages/(.*)", "dest": "/html/staticpages/$1" },
+      
+      { "src": "/img/(.*)", "dest": "/img/$1" },
   
       
+      { "src": "/html/(.*)", "dest": "/html/$1" },
+  
+    
+      { "src": "/staticpages/(.*)", "dest": "/html/staticpages/$1" },
+  
+    
       { "src": "/subpages/(.*)", "dest": "/html/subpages/$1" },
   
      
       { "src": "/nav-footer/(.*)", "dest": "/html/nav-footer/$1" },
   
    
-      { "src": "/img/(.*)", "dest": "/img/$1" },
-  
       { "src": "/", "dest": "/html/staticpages/index.html" }
     ]
   }

@@ -9,7 +9,6 @@
   <script src="/js/nav-footer/nav.js"></script>
   <link rel="stylesheet" href="/css/reset.css">
   <link rel="stylesheet" href="/css/subpages/education/benefitsPage.css">
-
 </head>
 
 <body>
@@ -42,8 +41,7 @@
                 <i class="fa-solid fa-heart" style="color: green;"></i>
                 <div>
                   <h3>Saúde Cardiovascular</h3>
-                  <p>Reduz o risco de doenças cardíacas, controla a pressão arterial e melhora a circulação sanguínea.
-                  </p>
+                  <p>Reduz o risco de doenças cardíacas, controla a pressão arterial e melhora a circulação sanguínea.</p>
                 </div>
               </div>
             </li>
@@ -104,8 +102,9 @@
           <img src="/html/subpages/education/imagens/foto-kiwi.jpg" alt="foto-kiwi">
         </div>
       </div>
+
       <div class="result">
-        <h2>Resultados COmprovados</h2>
+        <h2>Resultados Comprovados</h2>
         <ul>
           <li>
             <h3>78%</h3>
@@ -115,12 +114,10 @@
             <h3>65%</h3>
             <p>Melhora na qualidade do sono</p>
           </li>
-
           <li>
             <h3>92%</h3>
             <p>Aumento na disposição diária</p>
           </li>
-
         </ul>
       </div>
 
@@ -145,11 +142,8 @@
               <h3>Variedade de Alimentos</h3>
             </div>
           </div>
-          <p>Consuma diferentes grupos alimentares: frutas, vegetais, grãos integrais, proteínas magras e laticínios.
-          </p>
-
+          <p>Consuma diferentes grupos alimentares: frutas, vegetais, grãos integrais, proteínas magras e laticínios.</p>
           <h4>Dicas práticas:</h4>
-
           <ul class="segunda-lista">
             <li>5 porções de frutas e vegetais por dia</li>
             <li>Prefira grãos integrais</li>
@@ -165,11 +159,8 @@
               <h3>Proporções Adequadas</h3>
             </div>
           </div>
-          <p>Consuma diferentes grupos alimentares: frutas, vegetais, grãos integrais, proteínas magras e laticínios.
-          </p>
-
+          <p>Consuma diferentes grupos alimentares: frutas, vegetais, grãos integrais, proteínas magras e laticínios.</p>
           <h4>Dicas práticas:</h4>
-
           <ul class="segunda-lista">
             <li>5 porções de frutas e vegetais por dia</li>
             <li>Prefira grãos integrais</li>
@@ -185,11 +176,8 @@
               <h3>Regularidade nas Refeições</h3>
             </div>
           </div>
-          <p>Consuma diferentes grupos alimentares: frutas, vegetais, grãos integrais, proteínas magras e laticínios.
-          </p>
-
+          <p>Consuma diferentes grupos alimentares: frutas, vegetais, grãos integrais, proteínas magras e laticínios.</p>
           <h4>Dicas práticas:</h4>
-
           <ul class="segunda-lista">
             <li>5 porções de frutas e vegetais por dia</li>
             <li>Prefira grãos integrais</li>
@@ -205,11 +193,8 @@
               <h3>Moderação</h3>
             </div>
           </div>
-          <p>Consuma diferentes grupos alimentares: frutas, vegetais, grãos integrais, proteínas magras e laticínios.
-          </p>
-
+          <p>Consuma diferentes grupos alimentares: frutas, vegetais, grãos integrais, proteínas magras e laticínios.</p>
           <h4>Dicas práticas:</h4>
-
           <ul class="segunda-lista">
             <li>5 porções de frutas e vegetais por dia</li>
             <li>Prefira grãos integrais</li>
@@ -225,11 +210,8 @@
               <h3>Hidratação Adequada</h3>
             </div>
           </div>
-          <p>Consuma diferentes grupos alimentares: frutas, vegetais, grãos integrais, proteínas magras e laticínios.
-          </p>
-
+          <p>Consuma diferentes grupos alimentares: frutas, vegetais, grãos integrais, proteínas magras e laticínios.</p>
           <h4>Dicas práticas:</h4>
-
           <ul class="segunda-lista">
             <li>5 porções de frutas e vegetais por dia</li>
             <li>Prefira grãos integrais</li>
@@ -245,23 +227,18 @@
               <h3>Alimentos Naturais</h3>
             </div>
           </div>
-          <p>Consuma diferentes grupos alimentares: frutas, vegetais, grãos integrais, proteínas magras e laticínios.
-          </p>
-
+          <p>Consuma diferentes grupos alimentares: frutas, vegetais, grãos integrais, proteínas magras e laticínios.</p>
           <h4>Dicas práticas:</h4>
-
           <ul class="segunda-lista">
             <li>5 porções de frutas e vegetais por dia</li>
             <li>Prefira grãos integrais</li>
             <li>Varie as cores no prato</li>
           </ul>
         </li>
-
       </ul>
     </div>
 
     <section class="rules">
-      
       <div>
         <h2>A Regra do Prato Equilibrado</h2>
         <ul>
@@ -272,29 +249,28 @@
         </ul>
       </div>
       <div>
-        <img src="/html/subpages/education/imagens/folhas.jpg" alt="foto de folhas saudavaeis">
+        <img src="/html/subpages/education/imagens/folhas.jpg" alt="foto de folhas saudáveis">
       </div>
     </section>
 
   </main>
-<footer>
-      <div id="footer"></div>
-</footer>
+  <footer>
+    <div id="footer"></div>
+  </footer>
 
-</body>
-
-
-</html>
-
-<script>
-      document.addEventListener("DOMContentLoaded", () => {
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
       const nav = document.getElementById("footer");
 
-  fetch("../nav-footer/footer.html")
+      // Caminho absoluto para o footer
+      fetch("/html/nav-footer/footer.html")
         .then(response => response.text())
         .then(data => {
           nav.innerHTML = data;
         })
         .catch(err => console.error("Erro ao carregar navbar:", err));
     });
-</script>
+  </script>
+
+</body>
+</html>
