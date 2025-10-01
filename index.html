@@ -188,7 +188,7 @@
     document.addEventListener("DOMContentLoaded", () => {
         const nav = document.getElementById("globalNav");
 
-        fetch("html/nav-footer/nav.html")
+        fetch("nav.html")
             .then(response => response.text())
             .then(data => {
                 nav.innerHTML = data;
@@ -199,7 +199,7 @@
     document.addEventListener("DOMContentLoaded", () => {
         const footer = document.getElementById("footer");
 
-        fetch("html/nav-footer/footer.html")
+        fetch("footer.html")
             .then(response => response.text())
             .then(data => {
                 footer.innerHTML = data;
