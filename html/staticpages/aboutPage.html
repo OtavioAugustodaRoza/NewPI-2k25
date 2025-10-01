@@ -1,11 +1,327 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre Nós</title>
+    <link rel="stylesheet" href="/css/staticpages/aboutPage.css">
+    <script src="https://kit.fontawesome.com/4410d9698c.js" crossorigin="anonymous"></script>
 </head>
-<body>
 
+<body>
+    <header>
+        <div id="globalNav"></div>
+    </header>
+    <main>
+        <section class="sobre-nutrivitta">
+            <div class="content-wrapper">
+
+                <div class="text-content">
+                    <h1>Sobre o NutriVitta</h1>
+
+                    <p class="mission-statement">
+                        Somos uma plataforma dedicada a transformar a relação das pessoas com a alimentação, oferecendo
+                        conhecimento científico de forma acessível e prática.
+                    </p>
+
+                    <p class="mission-details">
+                        Nossa missão é democratizar o acesso à educação nutricional de qualidade, ajudando pessoas de
+                        todas as idades a desenvolver hábitos alimentares mais saudáveis e sustentáveis.
+                    </p>
+                </div>
+
+                <div class="image-content">
+                    <img src="/html/staticpages/img/pote-frutas.jpg" alt="Imagem salada de frutas">
+                </div>
+
+            </div>
+        </section>
+        <section class="nossa-missao">
+
+            <div class="header-missao">
+                <h1>Nossa Missão</h1>
+                <p>Transformar vidas através da educação nutricional, oferecendo ferramentas e conhecimentos que
+                    permitam a cada pessoa fazer escolhas alimentares mais conscientes e saudáveis.</p>
+            </div>
+
+            <div class="cards-missao-container">
+
+                <div class="card-missao">
+                    <div class="icon-circle verde-claro">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <h3>Compromisso com a Saúde</h3>
+                    <p>Nossa missão é promover a saúde através de informações confiáveis e práticas nutricionais
+                        baseadas em evidências científicas.</p>
+                </div>
+
+                <div class="card-missao">
+                    <div class="icon-circle verde-claro">
+                        <i class="fa-solid fa-bullseye"></i>
+                    </div>
+                    <h3>Personalização</h3>
+                    <p>Acreditamos que cada pessoa é única e merece orientações nutricionais adaptadas às suas
+                        necessidades específicas.</p>
+                </div>
+
+                <div class="card-missao">
+                    <div class="icon-circle verde-claro">
+                        <i class="fa-solid fa-people-group"></i>
+                    </div>
+                    <h3>Inclusão e Diversidade</h3>
+                    <p>Oferecemos soluções que respeitam diferentes culturas alimentares, restrições e preferências
+                        pessoais.</p>
+                </div>
+
+                <div class="card-missao">
+                    <div class="icon-circle verde-claro">
+                        <i class="fa-solid fa-shield-alt"></i>
+                    </div>
+                    <h3>Confiabilidade</h3>
+                    <p>Todas as nossas informações são baseadas em pesquisas científicas atuais e validadas por
+                        profissionais da área.</p>
+                </div>
+
+                <div class="card-missao">
+                    <div class="icon-circle verde-claro">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+                    <h3>Sustentabilidade</h3>
+                    <p>Promovemos escolhas alimentares que sejam benéficas tanto para a saúde humana quanto para o meio
+                        ambiente.</p>
+                </div>
+
+                <div class="card-missao">
+                    <div class="icon-circle verde-claro">
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+                    <h3>Excelência</h3>
+                    <p>Buscamos continuamente a melhoria de nossos serviços para oferecer a melhor experiência aos
+                        nossos usuários.</p>
+                </div>
+
+            </div>
+        </section>
+        <section>
+
+            <h1 class="cola-titulo">Colaboradores</h1>
+            <section class="colaboradores">
+                <div id="Otavio" class="colaborador" onmouseover="contri('Otavio')">
+                    <img src="../../otavio.jpeg" alt="Otávio">
+                    <h2>Otávio</h2>
+                    <div class="tooltip">
+                        <img src="../../otavio.jpeg" alt="Otávio">
+                        <p id="msg-Otavio"></p>
+                    </div>
+                </div>
+
+                <div id="jota" class="colaborador" onmouseover="contri('jota')">
+                    <img src="../../joao.jpeg" alt="João">
+                    <h2>João</h2>
+                    <div class="tooltip">
+                        <img src="../../joao.jpeg" alt="João">
+                        <p id="msg-jota"></p>
+                    </div>
+                </div>
+
+                <div id="Miguel" class="colaborador" onmouseover="contri('Miguel')">
+                    <img src="../../miguel.jpeg" alt="Miguel">
+                    <h2>Miguel</h2>
+                    <div class="tooltip">
+                        <img src="../../miguel.jpeg" alt="Miguel">
+                        <p id="msg-Miguel"></p>
+                    </div>
+                </div>
+
+                <div id="sofia" class="colaborador" onmouseover="contri('sofia')">
+                    <img src="../../sofia.jpeg" alt="Sofia">
+                    <h2>Sofia</h2>
+                    <div class="tooltip">
+                        <img src="../../sofia.jpeg" alt="Sofia">
+                        <p id="msg-sofia"></p>
+                    </div>
+                </div>
+
+                <div id="Alice" class="colaborador" onmouseover="contri('Alice')">
+                    <img src="../../alice.jpeg" alt="Alice">
+                    <h2>Alice</h2>
+                    <div class="tooltip">
+                        <img src="../../alice.jpeg" alt="Alice">
+                        <p id="msg-Alice"></p>
+                    </div>
+                </div>
+
+                <div id="Flavia" class="colaborador" onmouseover="contri('Flavia')">
+                    <img src="../../flavia.jpeg" alt="Flavia">
+                    <h2>Flavia</h2>
+                    <div class="tooltip">
+                        <img src="../../flavia.jpeg" alt="Flavia">
+                        <p id="msg-Flavia"></p>
+                    </div>
+                </div>
+            </section>
+            <section class="projetinho">
+                <div class="container">
+                    <h3>Funções do Grupo</h3>
+                    <ul class="funçãodoscrias">
+                        <li><strong>Líder:</strong> Sofia Martins de Bona</li>
+                        <li><strong>Secretária:</strong> Sofia Martins de Bona</li>
+                        <li><strong>Desenvolvedores:</strong> João Pedro Matos Santos, Miguel Silva da Roza e Otávio
+                            Augusto
+                            da Roza</li>
+                        <li><strong>Grupo de Pesquisa:</strong> Alice Lanznaster e Flavia Busarello Corrêa</li>
+                    </ul>
+
+                    <h3>Atas do Projeto</h3>
+                    <div class="containerdoscards">
+                        <div class="cards">
+                            <h4>Ata de Reunião: 09/07</h4>
+                            <p>O professor apresentou a proposta do trabalho e explicou os objetivos gerais. Sofia
+                                organizou a divisão inicial de funções, enquanto registrava as primeiras decisões. O
+                                grupo
+                                discutiu possíveis temas e, após debate, definiu “Alimentação Equilibrada” como foco do
+                                projeto.
+                                .</p>
+                        </div>
+
+                        <div class="cards">
+                            <h4>Ata de Reunião: 09/07 à 15/07</h4>
+                            <p>Alice e Flavia iniciaram o levantamento de informações, buscando conteúdos em sites
+                                confiáveis, artigos e vídeos. João Pedro, Miguel e Otávio começaram a estruturar como os
+                                arquivos seriam organizados. Sofia garantiu que todas as etapas fossem registradas.</p>
+                        </div>
+
+                        <div class="cards">
+                            <h4>Ata de Reunião: 16/07</h4>
+                            <p>João Pedro, Miguel e Otávio iniciaram a criação dos arquivos base do projeto, enquanto
+                                Alice
+                                e Flavia continuaram reunindo referências sobre nutrição e hábitos alimentares
+                                saudáveis.
+                                Sofia acompanhou os dois núcleos de trabalho para manter equilíbrio na carga de tarefas.
+                            </p>
+                        </div>
+
+                        <div class="cards">
+                            <h4>Ata de Reunião: 13/08</h4>
+                            <p>Foi criado o perfil do projeto nas redes sociais, escolhido o nome oficial “NutriVitta” e
+                                iniciada a estruturação das páginas do site. O grupo definiu a paleta de cores e
+                                discutiu
+                                detalhes de layout. João Pedro, Miguel e Otávio começaram os primeiros rascunhos do
+                                design,
+                                enquanto Alice e Flavia forneceram materiais de apoio.</p>
+                        </div>
+
+                        <div class="cards">
+                            <h4>Ata de Reunião: 20/08</h4>
+                            <p>Os desenvolvedores avançaram na programação do site e integraram parte do conteúdo
+                                produzido.
+                                Alice e Flavia finalizaram materiais para as redes sociais. Houve alinhamento sobre como
+                                cada página deveria funcionar para manter a proposta clara e acessível.
+                            </p>
+                        </div>
+
+                        <div class="cards">
+                            <h4>Ata de Reunião: 23/08</h4>
+                            <p>O design do site começou a ser detalhado, incluindo seções como receitas, dicas e
+                                formulários
+                                interativos. Alice e Flavia trouxeram referências de páginas semelhantes, ajudando João
+                                Pedro, Miguel e Otávio a estruturar os elementos de forma mais eficiente. Sofia
+                                registrou
+                                ajustes sobre a divisão das etapas seguintes e avançou com as redes sociais.</p>
+                        </div>
+
+                        <div class="cards">
+                            <h4>Ata de Reunião: 03/09</h4>
+                            <p>A equipe avançou na produção de conteúdos para as redes sociais e no desenvolvimento do
+                                design no Figma. João Pedro, Miguel e Otávio iniciaram a implementação no site
+                                definitivo.
+                                Alice e Flavia encerraram a etapa de coleta de informações e passaram a colaborar
+                                diretamente na elaboração dos roteiros de cada página.</p>
+                        </div>
+                        <div class="cards">
+                            <h4>Ata de Reunião – 10/09</h4>
+                            <p>Os desenvolvedores avançaram na estrutura do site, ajustando o menu de navegação e
+                                testando a responsividade. João Pedro, Miguel e Otávio foram responsáveis por essa etapa
+                                técnica. Alice e Flávia continuaram na pesquisa, organizando conteúdos para as páginas
+                                de dicas e curiosidades. Sofia acompanhou o andamento das atividades e registrou os
+                                próximos passos.</p>
+                        </div>
+                        <div class="cards">
+                            <h4>Ata de Reunião – 17/09</h4>
+                            <p>O grupo focou na revisão do design e na integração entre as páginas. João Pedro, Miguel e
+                                Otávio trabalharam na implementação das cores e fontes do layout. A partir dessa data,
+                                Sofia, Alice e Flávia também passaram a colaborar no desenvolvimento do site, ajudando
+                                na estruturação em HTML e nos primeiros ajustes de CSS.</p>
+                        </div>
+                        <div class="cards">
+                            <h4>Ata de Reunião – 24/09</h4>
+                            <p>O grupo se dedicou a ajustes finais no site. Os desenvolvedores corrigiram erros e
+                                adicionaram os últimos detalhes visuais. Sofia, Alice e Flávia deram suporte no código,
+                                contribuindo principalmente na estilização em CSS e na revisão do HTML. O trabalho foi
+                                consolidado em equipe, preparando o projeto para a finalização e apresentação.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </main>
+    <footer>
+        <div id="footer"></div>
+    </footer>
 </body>
+
 </html>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const nav = document.getElementById("globalNav");
+
+        fetch("../nav-footer/nav.html")
+            .then(response => response.text())
+            .then(data => {
+                nav.innerHTML = data;
+            })
+            .catch(err => console.error("Erro ao carregar navbar:", err));
+    });
+
+    document.addEventListener("DOMContentLoaded", () => {
+        const footer = document.getElementById("footer");
+
+        fetch("../nav-footer/footer.html")
+            .then(response => response.text())
+            .then(data => {
+                footer.innerHTML = data;
+            })
+            .catch(err => console.error("Erro ao carregar footer:", err));
+    });
+
+    const contribuicao = {
+        Otavio: "Desenvolvedor, colabora na programação do site e na implementação das funcionalidades.",
+        jota: "Desenvolvedor, responsável por auxiliar na criação do site e no design das páginas.",
+        Miguel: "Desenvolvedor do projeto, encarregado de trabalhar na programação e na estruturação do site.",
+        sofia: "Líder e secretária do grupo, responsável por coordenar as atividades, organizar as reuniões e registrar as decisões tomadas.",
+        Alice: "Pesquisadora do grupo, dedicada a buscar informações confiáveis sobre alimentação equilibrada. ",
+        Flavia: "Pesquisadora, responsável por complementar a coleta de dados e organizar materiais teóricos. "
+    };
+    //fiz uns texto meio provisorio não sei direito o que cada um fez, dai muda depois .
+
+    // to construindo o javascript ainda, NÂO QUERO CRITICAS !!!!
+    function contri(id) {
+        const msg = document.getElementById("msg-" + id);
+
+        if (msg) {
+            msg.textContent = contribuicao[id];
+        }
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+        const footer = document.getElementById("footer");
+
+        fetch("../nav-footer/footer.html")
+            .then(response => response.text())
+            .then(data => {
+                footer.innerHTML = data;
+            })
+            .catch(err => console.error("Erro ao carregar footer:", err));
+    });
+</script>

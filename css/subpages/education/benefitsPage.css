@@ -328,3 +328,7 @@ section.rules div ul li.vermelho::marker{
     font-size: 30px;
     color: rgb(255, 0, 0);
 }
+
+#footer {
+    margin-top: 100px;
+}

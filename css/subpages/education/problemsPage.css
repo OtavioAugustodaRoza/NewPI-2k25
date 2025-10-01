@@ -295,3 +295,7 @@ main section.stats div.result ul li p {
     display: flex;
     justify-content: center;
 }
+
+#footer {
+    margin-top: 100px;
+}
