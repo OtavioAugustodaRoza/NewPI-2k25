@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>home</title>
     <script src="https://kit.fontawesome.com/4410d9698c.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
 
 </head>
 
@@ -66,7 +66,7 @@
                 </div>
             </div>
             <div class="img-banner">
-                <img src="banner-homepage.jpeg" alt="banner">
+                <img src="/html/staticpages/img/banner-homepage.jpeg" alt="banner">
             </div>
         </section>
         <section class="why-choose-us">
@@ -225,7 +225,7 @@
     document.addEventListener("DOMContentLoaded", () => {
         const nav = document.getElementById("globalNav");
 
-        fetch("nav.html")
+        fetch("../nav-footer/nav.html")
             .then(response => response.text())
             .then(data => {
                 nav.innerHTML = data;
@@ -236,7 +236,7 @@
     document.addEventListener("DOMContentLoaded", () => {
         const footer = document.getElementById("footer");
 
-        fetch("footer.html")
+        fetch("../nav-footer/footer.html")
             .then(response => response.text())
             .then(data => {
                 footer.innerHTML = data;
