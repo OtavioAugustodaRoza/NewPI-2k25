@@ -12,7 +12,7 @@ header nav {
     align-items: center;
     box-shadow: 1px 1px 15px rgba(117, 109, 86, 0.205);
     background-color: #ffffff;
-    padding: 2vw 8vw 2vw 8vw;
+    padding: 2vw 8vw;
 }
 
 .navegacao {
@@ -28,23 +28,23 @@ header nav {
     font-size: 1.55rem;
     font-family: Inter, sans-serif;
     margin-left: 15px;
-
 }
 
 .logo:hover {
     transform: scale(1.1);
+    transition: transform 0.3s ease;
 }
 
 .navegacao li a {
     color: #16A34A;
     font-size: 1.20rem;
-    font-family: Inter;
+    font-family: Inter, sans-serif;
     margin-right: 20px;
+    transition: color 0.2s ease;
 }
 
 .navegacao a:hover {
     color: #1e8544;
-    transition: .2;
 }
 
 ul.navegacao li:hover ul {
@@ -66,6 +66,7 @@ ul.navegacao li:hover ul {
 .navegacao li ul {
     opacity: 0;
     transform: translateY(-10px);
+    pointer-events: none; /* evita clique quando invisível */
     position: absolute;
     top: 110%;
     left: 0;
@@ -94,4 +95,5 @@ ul.navegacao li:hover ul {
 .navegacao li:hover ul {
     opacity: 1;
     transform: translateY(0);
+    pointer-events: auto; /* habilita clique quando visível */
 }
