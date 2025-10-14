@@ -12,7 +12,42 @@
 
 <body>
     <header>
-        <div id="globalNav"></div>
+        <nav class="nav-bar globalNav">
+            <div class="logo">
+                <a href="/index.html"><i class="fa-solid fa-leaf fa-lg" style="color: #36ce4f;"></i></a>
+                <a href="/index.html">NutriVitta</i></a>
+
+            </div>
+            <div>
+                <ul class="navegacao">
+                    <li>
+                        <a href="/index.html">Início</a>
+                    </li>
+                    <li>
+                        <a href="/html/subpages/education/benefitsPage.html">Educação <i class="fa-solid fa-chevron-down" style="color: #16a34a;" class="arrow"></i></a>
+
+                        <ul>
+                            <li><a href="/html/subpages/education/benefitsPage.html">Benefícios</a></li>
+                            <li><a href="#pilares">Pilares</a></li>
+                            <li><a href="/html/subpages/education/problemsPage.html">Problemas dos Ultraprocessados</a></li>
+                        </ul>
+                       
+                    </li>
+                    <li>
+                        <a href="/html/subpages/tools/advicePage.html">Feramentas  <i class="fa-solid fa-chevron-down" style="color: #16a34a;" class="arrow"></i></a>
+                        <ul>
+                            <li><a href="/html/subpages/tools/advicePage.html">Avaliação Nutricional</a></li>
+                            <li><a href="/html/subpages/tools/menuPage.html">Cardápios</a></li>
+                            <li><a href="/html/subpages/tools/assessmentPage.html">Dicas Práticas</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/html/staticpages/aboutPage.html">Sobre</a>
+                        
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
     <main>
         <section class="text-main">
@@ -138,32 +173,66 @@
             </div>        
         </section>
     </main>
-    <footer>
-        <div id="footer"></div>
-    </footer>
+    <footer class="footer" id="footer">
+        <div class="footer-container">
+          <!-- Coluna 1 -->
+          <div class="footer-col">
+            <h2 class="logo"><i class="fa-solid fa-leaf fa-lg" style="color: #36ce4f;"></i> NutriVitta</h2>
+            <p>
+              Transformando vidas através de uma alimentação equilibrada e consciente. 
+              Sua jornada para uma vida mais saudável começa aqui.
+            </p>
+            <p class="love">Feito com amor pela sua saúde</p>
+          </div>
+      
+          <!-- Coluna 2 -->
+          <div class="footer-col">
+            <h3>Links Rápidos</h3>
+            <ul>
+              <li><a href="#">Avaliação</a></li>
+              <li><a href="#">Educação</a></li>
+              <li><a href="#">Dicas</a></li>
+              <li><a href="#">Cardápios</a></li>
+            </ul>
+          </div>
+      
+          <!-- Coluna 3 -->
+          <div class="footer-col">
+            <h3>Recursos</h3>
+            <ul>
+              <li><a href="#">Calculadora de IMC</a></li>
+              <li><a href="#">Guia de Substituições</a></li>
+              <li><a href="#">Receitas Saudáveis</a></li>
+              <li><a href="#">Dicas Nutricionais</a></li>
+            </ul>
+          </div>
+      
+          <!-- Coluna 4 -->
+          <div class="footer-col">
+            <ul>
+           <li> <h3>Contato</h3></li>
+           <li> <p> contato@nutrivitta.com</p></li>
+           <li> <p> (47) 99999-9999</p></li>
+           <li> <p> Araquari, SC</p></li>
+           </ul>
+          </div>
+        </div>
+      
+        <div class="footer-bottom">
+          <p>© 2024 NutriVitta. Todos os direitos reservados.</p>
+          <div class="footer-links">
+            <a href="#">Política de Privacidade</a> | 
+            <a href="#">Termos de Uso</a>
+          </div>
+        </div>
+      
+        <div class="footer-warning">
+          <strong>Aviso Importante:</strong> As informações contidas neste site são apenas 
+          para fins educacionais e não substituem o aconselhamento médico profissional. 
+          Sempre consulte um nutricionista ou médico antes de fazer mudanças significativas em sua dieta, 
+          especialmente se você tiver condições médicas específicas.
+        </div>
+        </footer>
 </body>
 
 </html>
-<script>
-    document.addEventListener("DOMContentLoaded", () => {
-        const nav = document.getElementById("globalNav");
-
-        fetch("../nav-footer/nav.html")
-            .then(response => response.text())
-            .then(data => {
-                nav.innerHTML = data;
-            })
-            .catch(err => console.error("Erro ao carregar navbar:", err));
-    });
-
-    document.addEventListener("DOMContentLoaded", () => {
-        const footer = document.getElementById("footer");
-
-        fetch("../nav-footer/footer.html")
-            .then(response => response.text())
-            .then(data => {
-                footer.innerHTML = data;
-            })
-            .catch(err => console.error("Erro ao carregar footer:", err));
-    });
-</script>
