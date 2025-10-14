@@ -306,16 +306,17 @@ ul.navegacao li:hover ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color:#05aa1b10;
+  background-color: rgba(5, 170, 27, 0.1);
   color: #23ce62;
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  margin-bottom: 20px;
+  margin: 0 auto 20px auto; 
   font-size: 2rem;
   transition: transform 0.3s ease;
-  position: relative;
-  left: 110px;
+}
+.quote-icon:hover {
+  transform: scale(1.1);
 }
 
 .testimonial-text {

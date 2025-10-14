@@ -3,72 +3,68 @@
     font-family: Inter;
     
 }
-body {
-    background-color: #f9fafb;
-    color: #1f2937;
-    line-height: 1.6;
-  }
-  
+
   header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-shadow: 1px 1px 15px rgba(117, 109, 86, 0.205);
     background-color: #ffffff;
-    padding: 2vw 8vw 2vw 8vw;
-  }
-  
-  .navegacao {
+    padding: 2vw 8vw;
+}
+
+.navegacao {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
     margin-right: 15px;
-  }
-  
-  .logo a {
+}
+
+.logo a {
     color: #16A34A;
     font-size: 1.55rem;
     font-family: Inter, sans-serif;
     margin-left: 15px;
-  
-  }
-  
-  .logo:hover {
+}
+
+.logo:hover {
     transform: scale(1.1);
-  }
-  
-  .navegacao li a {
+    transition: transform 0.3s ease;
+}
+
+.navegacao li a {
     color: #16A34A;
     font-size: 1.20rem;
-    font-family: Inter;
+    font-family: Inter, sans-serif;
     margin-right: 20px;
-  }
-  
-  .navegacao a:hover {
+    transition: color 0.2s ease;
+}
+
+.navegacao a:hover {
     color: #1e8544;
-    transition: .2;
-  }
-  
-  ul.navegacao li:hover ul {
+}
+
+ul.navegacao li:hover ul {
     display: block;
-  }
-  
-  .navegacao li>a i {
+}
+
+.navegacao li>a i {
     transition: transform 0.3s ease;
-  }
-  
-  .navegacao li:hover>a i {
+}
+
+.navegacao li:hover>a i {
     transform: rotate(180deg);
-  }
-  
-  .navegacao li {
+}
+
+.navegacao li {
     position: relative;
-  }
-  
-  .navegacao li ul {
+}
+
+.navegacao li ul {
     opacity: 0;
     transform: translateY(-10px);
+    pointer-events: none; 
     position: absolute;
     top: 110%;
     left: 0;
@@ -78,29 +74,28 @@ body {
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
     border-radius: 10px;
     transition: opacity 0.3s ease, transform 0.3s ease;
-  }
-  
-  .navegacao li ul li a {
+}
+
+.navegacao li ul li a {
     display: block;
     padding: 12px 18px;
     font-size: 1rem;
     color: #16A34A;
     font-family: 'Inter', sans-serif;
     transition: background 0.2s ease, color 0.2s ease;
-  }
-  
-  .navegacao li ul li a:hover {
+}
+
+.navegacao li ul li a:hover {
     background: #f9f9f9;
     color: #1e8544;
-  }
-  
-  .navegacao li:hover ul {
+}
+
+.navegacao li:hover ul {
     opacity: 1;
     transform: translateY(0);
-  }
+    pointer-events: auto; 
+}
 
-
-  /* ----------- CONTAINER PRINCIPAL ----------- */
   main {
     max-width: 880px;
     margin: 0 auto;
@@ -134,7 +129,7 @@ body {
     margin-bottom: 20px;
   }
   
-  /* ----------- FORM CONTAINER ----------- */
+  
   .form-container {
     background: #ffffff;
     border-radius: 16px;
@@ -143,7 +138,7 @@ body {
     border: 1px solid #e2e8f0;
   }
   
-  /* FIELDSETS */
+  
   fieldset {
     border: none;
     margin-bottom: 30px;
@@ -155,8 +150,7 @@ body {
     margin-bottom: 20px;
     color: #14532d;
   }
-  
-  /* Inputs agrupados */
+
   .input-group {
     display: flex;
     gap: 20px;
@@ -176,7 +170,7 @@ body {
     flex-direction: column;
   }
   
-  /* Labels e Inputs */
+
   label {
     font-weight: 500;
     margin-bottom: 6px;
@@ -199,7 +193,7 @@ body {
     box-shadow: 0 0 0 3px rgba(34,197,94,0.25);
   }
   
-  /* ----------- CHECKBOX GRID ----------- */
+
   .checkbox-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
@@ -227,7 +221,7 @@ body {
     accent-color: #22c55e;
   }
   
-  /* ----------- BOTÃO ----------- */
+  
   .submit-btn {
     width: 100%;
     padding: 16px;
@@ -253,7 +247,6 @@ body {
     box-shadow: 0 4px 10px rgba(22, 163, 74, 0.2);
   }
   
-  /* ----------- RESPONSIVIDADE ----------- */
   @media (max-width: 600px) {
     .input-group {
       flex-direction: column;
