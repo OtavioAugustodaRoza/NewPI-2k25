@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cardápio Equilibrado</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/cardapio.css">
+  <script src="https://kit.fontawesome.com/4410d9698c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+        <nav class="nav-bar globalNav">
+            <div class="logo">
+                <a href="/index.html"><i class="fa-solid fa-leaf fa-lg" style="color: #36ce4f;"></i></a>
+                <a href="/index.html">NutriVitta</a>
+            </div>
+            <div>
+                <ul class="navegacao">
+                    <li>
+                        <a href="/index.html">Início</a>
+                    </li>
+                    <li>
+                        <a href="/html/subpages/education/benefitsPage.html">Educação <i
+                                class="fa-solid fa-chevron-down arrow"></i></a>
+                        <ul class="submenu">
+                            <li><a href="/html/subpages/education/benefitsPage.html">Benefícios</a></li>
+                            <li><a href="#">Pilares</a></li>
+                            <li><a href="/html/subpages/education/problemsPage.html">Problemas dos Ultraprocessados</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Ferramentas <i class="fa-solid fa-chevron-down arrow"></i></a>
+                        <ul class="submenu">
+                            <li><a href="/html/subpages/tools/advicePage.html">Avaliação Nutricional</a></li>
+                            <li><a href="/html/subpages/tools/menuPage.html">Cardápios</a></li>
+                            <li><a href="/html/subpages/tools/assessmentPage.html">Dicas Práticas</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/html/staticpages/aboutPage.html">Sobre</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+<main>
+  <div class="tipo-container">
+    <h2>Escolha seu tipo de cardápio:</h2>
+    <div class="tipos">
+      <div class="tipo-btn ativo" onclick="selecionarTipo('geral', event)">🍽️ <span>Geral</span></div>
+      <div class="tipo-btn" onclick="selecionarTipo('vegetariano', event)">🥦 <span>Vegetariano</span></div>
+      <div class="tipo-btn" onclick="selecionarTipo('semLactose', event)">🥛 <span>Sem Lactose</span></div>
+      <div class="tipo-btn" onclick="selecionarTipo('semGluten', event)">🌾 <span>Sem Glúten</span></div>
+    </div>
+  </div>
+
+  <h2 id="tituloCardapio">Cardápio Geral Equilibrado</h2>
+  <p id="descricaoCardapio">Para pessoas sem restrições específicas</p>
+
+  <div class="abas">
+    <div class="aba ativo" onclick="selecionarRefeicao('cafe', event)">☀️ Café da Manhã</div>
+    <div class="aba" onclick="selecionarRefeicao('almoco', event)">🌞 Almoço</div>
+    <div class="aba" onclick="selecionarRefeicao('jantar', event)">🌙 Jantar</div>
+  </div>
+
+  <div class="conteudo" id="conteudo"></div>
+</main>
+<footer class="footer" id="footer">
+        <div class="footer-container">
+          <div class="footer-col">
+            <h2 class="logo"><i class="fa-solid fa-leaf fa-lg" style="color: #36ce4f;"></i> NutriVitta</h2>
+            <p>
+              Transformando vidas através de uma alimentação equilibrada e consciente. 
+              Sua jornada para uma vida mais saudável começa aqui.
+            </p>
+            <p class="love"><i class="fa-solid fa-heart fa-lg" style="color: #ff0000;"></i> Feito com amor pela sua saúde</p>
+          </div>
+      
+          <div class="footer-col">
+            <h3>Links Rápidos</h3>
+            <ul>
+              <li><a href="/html/subpages/tools/advicePage.html">Avaliação</a></li>
+              <li><a href="/html/subpages/education/benefitsPage.html">Educação</a></li>
+              <li><a href="#">Dicas</a></li>
+              <li><a href="#">Cardápios</a></li>
+            </ul>
+          </div>
+      
+          <!-- Coluna 3 -->
+          <div class="footer-col">
+            <h3>Recursos</h3>
+            <ul>
+              <li><a href="/html/subpages/tools/advicePage.html">Calculadora de IMC</a></li>
+              <li><a href="#">Guia de Substituições</a></li>
+              <li><a href="#">Receitas Saudáveis</a></li>
+              <li><a href="#">Dicas Nutricionais</a></li>
+            </ul>
+          </div>
+      
+          <!-- Coluna 4 -->
+          <div class="footer-col">
+            <ul>
+           <li> <h3>Contato</h3></li>
+           <li> <p> contato@nutrivitta.com</p></li>
+           <li> <p> (47) 99999-9999</p></li>
+           <li> <p> Araquari, SC</p></li>
+           </ul>
+          </div>
+        </div>
+      
+        <div class="footer-bottom">
+          <p>&copy; 2025 NutriVitta. Todos os direitos reservados.</p>
+          <div class="footer-links">
+            <a href="#">Política de Privacidade</a> | 
+            <a href="#">Termos de Uso</a>
+          </div>
+        </div>
+      
+        <div class="footer-warning">
+          <strong>Aviso Importante:</strong> As informações contidas neste site são apenas 
+          para fins educacionais e não substituem o aconselhamento médico profissional. 
+          Sempre consulte um nutricionista ou médico antes de fazer mudanças significativas em sua dieta, 
+          especialmente se você tiver condições médicas específicas.
+        </div>
+</footer>
+
+  <script>
+    const cardapios = {
+      geral: {
+        cafe: [
+          { titulo: "Opção 1: Energético", tempo: "10 min", kcal: "320 kcal", itens: ["2 fatias de pão integral", "Pasta de abacate", "1 ovo cozido", "Suco de laranja natural"] },
+          { titulo: "Opção 2: Nutritivo", tempo: "5 min", kcal: "280 kcal", itens: ["Iogurte natural", "1 banana fatiada", "2 colheres de granola", "Mel a gosto"] }
+        ],
+        almoco: [
+          { titulo: "Opção 1: Tradicional", tempo: "20 min", kcal: "500 kcal", itens: ["Arroz integral", "Feijão", "Frango grelhado", "Salada de folhas verdes", "Suco natural"] },
+          { titulo: "Opção 2: Fit", tempo: "25 min", kcal: "480 kcal", itens: ["Quinoa", "Legumes no vapor", "Peito de frango", "Mix de folhas", "Água saborizada"] }
+        ],
+        jantar: [
+          { titulo: "Opção 1: Leve", tempo: "10 min", kcal: "290 kcal", itens: ["Sopa de legumes", "Torradas integrais", "Chá de camomila"] },
+          { titulo: "Opção 2: Proteico", tempo: "15 min", kcal: "320 kcal", itens: ["Omelete de claras", "Salada de tomate e pepino", "Água de coco"] }
+        ]
+      },
+      vegetariano: {
+        cafe: [
+          { titulo: "Opção 1", tempo: "8 min", kcal: "300 kcal", itens: ["Pão integral com pasta de amendoim", "Mamão picado", "Chá verde"] },
+          { titulo: "Opção 2", tempo: "7 min", kcal: "270 kcal", itens: ["Iogurte vegetal", "Granola", "Banana"] }
+        ],
+        almoco: [
+          { titulo: "Opção 1", tempo: "25 min", kcal: "480 kcal", itens: ["Arroz integral", "Feijão preto", "Lasanha de berinjela", "Salada colorida"] },
+          { titulo: "Opção 2", tempo: "20 min", kcal: "460 kcal", itens: ["Couscous marroquino", "Legumes salteados", "Tofu grelhado"] }
+        ],
+        jantar: [
+          { titulo: "Opção 1", tempo: "15 min", kcal: "300 kcal", itens: ["Creme de abóbora", "Torradas integrais"] },
+          { titulo: "Opção 2", tempo: "10 min", kcal: "280 kcal", itens: ["Salada de grão-de-bico", "Suco natural"] }
+        ]
+      },
+      semLactose: {
+        cafe: [
+          { titulo: "Opção 1", tempo: "10 min", kcal: "310 kcal", itens: ["Tapioca com ovo", "Suco de melancia"] },
+          { titulo: "Opção 2", tempo: "5 min", kcal: "250 kcal", itens: ["Mamão com aveia", "Café preto"] }
+        ],
+        almoco: [
+          { titulo: "Opção 1", tempo: "20 min", kcal: "500 kcal", itens: ["Arroz", "Feijão", "Carne magra", "Salada verde"] },
+          { titulo: "Opção 2", tempo: "25 min", kcal: "490 kcal", itens: ["Purê de batata-doce", "Frango grelhado", "Legumes cozidos"] }
+        ],
+        jantar: [
+          { titulo: "Opção 1", tempo: "10 min", kcal: "280 kcal", itens: ["Sopa de ervilha", "Chá de ervas"] },
+          { titulo: "Opção 2", tempo: "12 min", kcal: "300 kcal", itens: ["Omelete de legumes", "Água com limão"] }
+        ]
+      },
+      semGluten: {
+        cafe: [
+          { titulo: "Opção 1", tempo: "8 min", kcal: "290 kcal", itens: ["Tapioca com banana e mel", "Chá de hortelã"] },
+          { titulo: "Opção 2", tempo: "6 min", kcal: "260 kcal", itens: ["Iogurte sem glúten", "Frutas vermelhas"] }
+        ],
+        almoco: [
+          { titulo: "Opção 1", tempo: "25 min", kcal: "470 kcal", itens: ["Arroz", "Feijão", "Carne assada", "Salada"] },
+          { titulo: "Opção 2", tempo: "30 min", kcal: "480 kcal", itens: ["Purê de mandioquinha", "Peixe grelhado", "Legumes cozidos"] }
+        ],
+        jantar: [
+          { titulo: "Opção 1", tempo: "10 min", kcal: "280 kcal", itens: ["Sopa de legumes", "Suco natural"] },
+          { titulo: "Opção 2", tempo: "12 min", kcal: "290 kcal", itens: ["Omelete com espinafre", "Chá de ervas"] }
+        ]
+      }
+    };
+
+    let tipoAtual = "geral";
+    let refeicaoAtual = "cafe";
+
+    function atualizarConteudo() {
+      const conteudo = document.getElementById("conteudo");
+      const titulo = document.getElementById("tituloCardapio");
+      const desc = document.getElementById("descricaoCardapio");
+      conteudo.innerHTML = "";
+
+      titulo.textContent = `Cardápio ${tipoAtual.charAt(0).toUpperCase() + tipoAtual.slice(1)}`;
+      desc.textContent = "Para pessoas sem restrições específicas";
+
+      cardapios[tipoAtual][refeicaoAtual].forEach(opcao => {
+        const card = document.createElement("div");
+        card.className = "card";
+        card.innerHTML = `
+          <h3>${opcao.titulo}</h3>
+          <div class="etiquetas">
+            <span class="etiqueta tempo">⏱️ ${opcao.tempo}</span>
+            <span class="etiqueta kcal">🔥 ${opcao.kcal}</span>
+          </div>
+          <ul>${opcao.itens.map(i => `<li>${i}</li>`).join("")}</ul>
+        `;
+        conteudo.appendChild(card);
+      });
+    }
+
+    function selecionarTipo(tipo, e) {
+      tipoAtual = tipo;
+      document.querySelectorAll(".tipo-btn").forEach(b => b.classList.remove("ativo"));
+      e.currentTarget.classList.add("ativo");
+      atualizarConteudo();
+    }
+
+    function selecionarRefeicao(refeicao, e) {
+      refeicaoAtual = refeicao;
+      document.querySelectorAll(".aba").forEach(a => a.classList.remove("ativo"));
+      e.currentTarget.classList.add("ativo");
+      atualizarConteudo();
+    }
+
+    atualizarConteudo();
+  </script>
+</body>
+</html>
