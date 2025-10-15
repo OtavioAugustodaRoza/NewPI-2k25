@@ -315,7 +315,9 @@
             icon: 'success',
             title: 'Avaliação concluída!',
             html: `Seu formulário foi enviado com sucesso.<br><br>IMC: <b>${imc}</b><br>${mensagem_imc}`,
-            confirmButtonColor: '#23ce62'
+            confirmButtonColor: '#23ce62',
+            allowEnterKey: true,
+            background: '#ECFDF5',
           })
           form.reset()
         }, function (error) {
@@ -324,7 +326,8 @@
             icon: 'error',
             title: 'Erro!',
             text: 'Ocorreu um erro ao enviar. Tente novamente!',
-            confirmButtonColor: '#d33'
+            confirmButtonColor: '#d33',
+            allowEnterKey: true,
           })
         })
     })
