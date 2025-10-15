@@ -89,7 +89,7 @@
         </div>
 
         <div class="form-container">
-          <form action="#" method="POST">
+          <form action="#" method="POST" id="meuFormulario">
             <fieldset class="info-pessoais">
               <legend>Suas informações</legend>
               <div class="input-group">
@@ -313,4 +313,109 @@
       </div>
     </footer>
   </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script>
+  ;(function () {
+    emailjs.init('KJydgZ8JmOQ-UDPPg')
+  })()
+  
+  document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('meuFormulario')
+  
+    form.addEventListener('submit', function (event) {
+      event.preventDefault()
+  
+     
+      const peso = parseFloat(form.peso.value)
+      const altura = parseFloat(form.altura.value) / 100
+      const objetivo = form.objetivo.value
+      const atividade = form['atividade-fisica'].value
+  
+      const imc = (peso / (altura * altura)).toFixed(1)
+  
+    
+      let mensagem_imc = ''
+      if (imc < 18.5) {
+        mensagem_imc = 'Você está abaixo do peso. Procure aumentar sua ingestão calórica de forma saudável.'
+      } else if (imc < 24.9) {
+        mensagem_imc = 'Você está com um peso considerado saudável! Continue assim!'
+      } else if (imc < 29.9) {
+        mensagem_imc = 'Você está com sobrepeso. Uma alimentação equilibrada pode te ajudar a melhorar esse índice.'
+      } else {
+        mensagem_imc = 'Você está na faixa de obesidade. Recomendamos procurar um nutricionista.'
+      }
+  
+      
+      let mensagem_objetivo = ''
+      switch (objetivo) {
+        case 'perder-peso':
+          mensagem_objetivo = 'Como seu objetivo é perder peso, priorize alimentos naturais, evite ultraprocessados e mantenha-se ativo!'
+          break
+        case 'ganhar-massa':
+          mensagem_objetivo = 'Para ganhar massa muscular, aumente a ingestão de proteínas e mantenha uma rotina de treinos.'
+          break
+        case 'manter-peso':
+          mensagem_objetivo = 'Seu foco é manter o peso. Continue equilibrando bem suas refeições e atividades.'
+          break
+        case 'alimentacao-saudavel':
+          mensagem_objetivo = 'Buscando uma alimentação saudável? Invista em frutas, verduras e alimentos integrais!'
+          break
+      }
+  
+      // Mensagem atividade
+      let mensagem_atividade = ''
+      if (atividade === 'sedentario') {
+        mensagem_atividade = 'Tente incluir caminhadas leves na sua rotina!'
+      } else if (atividade === 'leve' || atividade === 'moderado' || atividade === 'muito-ativo' || atividade === 'extremamente-ativo') {
+        mensagem_atividade = 'Ótimo nível de atividade! Mantenha o ritmo e cuide da hidratação.'
+      }
+ 
+      const restricoesSelecionadas = Array.from(form.querySelectorAll('input[name="restricoes"]:checked'))
+        .map(input => input.value)
+        .join(', ') || 'Nenhuma'
+  
+      const dadosEmail = {
+        imc: imc,
+        mensagem_imc: mensagem_imc,
+        objetivo: objetivo,
+        mensagem_objetivo: mensagem_objetivo,
+        'atividade-fisica': atividade,
+        mensagem_atividade: mensagem_atividade,
+        restricoes: restricoesSelecionadas,
+        gostos: form.gostos.value || 'Não informado',
+        'condicao-especial': form['condicao-especial'].value || 'Não informado'
+      }
+  
+      Swal.fire({
+        title: 'Enviando...',
+        text: 'Aguarde um momento',
+        allowOutsideClick: false,
+        didOpen: () => {
+          Swal.showLoading()
+        },
+      })
+
+      emailjs.send('service_tdikpbk', 'template_5hicul9', dadosEmail)
+        .then(function () {
+          Swal.fire({
+            icon: 'success',
+            title: 'Avaliação concluída!',
+            html: `Seu formulário foi enviado com sucesso.<br><br>IMC: <b>${imc}</b><br>${mensagem_imc}`,
+            confirmButtonColor: '#23ce62'
+          })
+          form.reset()
+        }, function (error) {
+          console.error('Erro:', error)
+          Swal.fire({
+            icon: 'error',
+            title: 'Erro!',
+            text: 'Ocorreu um erro ao enviar. Tente novamente!',
+            confirmButtonColor: '#d33',
+          })
+        })
+    })
+  })
+  </script>
 </html>
