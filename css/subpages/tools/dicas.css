@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+* {
+    font-family: Inter;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*---------------Header------------*/
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 1px 15px rgba(117, 109, 86, 0.205);
+    background-color: #ffffff;
+    padding: 2vw 8vw;
+}
+
+.navegacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-right: 15px;
+}
+
+.logo a {
+    color: #16A34A;
+    font-size: 1.55rem;
+    font-family: Inter, sans-serif;
+    margin-left: 15px;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.navegacao li a {
+    color: #16A34A;
+    font-size: 1.20rem;
+    font-family: Inter, sans-serif;
+    margin-right: 20px;
+    transition: color 0.2s ease;
+}
+
+.navegacao a:hover {
+    color: #1e8544;
+}
+
+ul.navegacao li:hover ul {
+    display: block;
+}
+
+.navegacao li>a i {
+    transition: transform 0.3s ease;
+}
+
+.navegacao li:hover>a i {
+    transform: rotate(180deg);
+}
+
+.navegacao li {
+    position: relative;
+}
+
+.navegacao li ul {
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none; /* evita clique quando invisível */
+    position: absolute;
+    top: 110%;
+    left: 0;
+    min-width: 220px;
+    background-color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.navegacao li ul li a {
+    display: block;
+    padding: 12px 18px;
+    font-size: 1rem;
+    color: #16A34A;
+    font-family: 'Inter', sans-serif;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.navegacao li ul li a:hover {
+    background: #f9f9f9;
+    color: #1e8544;
+}
+
+.navegacao li:hover ul {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto; /* habilita clique quando visível */
+}
+
+
+/*---------------banner------------*/
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    background-color: #05aa1b10;
+    width: 100%;
+    height: 500px;
+    margin-top: 50px;
+    & h1 {
+        color: #186b36;
+        font-size: 45px;
+    }
+    & p {
+        color: #20b355;
+        font-size: 20px;
+    }
+}
+
+/*---------------Principios------------*/
+.principios {
+    padding: calc(50px + 6vw) calc(50px + 3vw);
+    & h2 {
+        color: #186b36;
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 35px;
+    }
+    & .txt {
+        color: #20b355;
+        text-align: center;
+        font-size: 18px;
+    }
+    & ul {
+        margin-top: 40px;
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        flex-wrap: wrap;
+        & li {
+            width: 30%;
+            height: 500px;
+            border-radius: 20px;
+            box-shadow: 5px 7px 10px #d4d4d4;
+            background-color: #77d68410;
+            transition: ease 200ms;
+        }
+        & li:hover {
+            box-shadow: 3px 5px 15px #838383;
+            transform: scale(1.05);
+            border: solid 1px #72ffa6;
+        }
+        & li .image{
+            /* COLOCAR IMAGEM E REMOVER ESTES TEXTOS PFV */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60%;
+            width: 100%;
+            & img {
+                width: 100%;
+                height: 100%;
+                border-radius: 20px 20px 0 0;
+            }
+        }
+        & li .text {
+            height: 40%;
+            line-height: calc(28px + 0.4vw);
+            padding: 20px 0 0 20px;
+            color: #13883e;
+            font-size: calc(18px + 0.1vw);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    }
+}
+
+/*---------------Dicas------------*/
+.dicas {
+    padding: calc(50px + 6vw) calc(50px + 3vw);
+    background-color: #05aa1b10;
+    & h2 {
+        text-align: center;
+        color: #186b36;
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+    & .textDicas {
+        text-align: center;
+        color: #20b355;
+        font-size: 20px;
+        margin-bottom: 50px;
+    }
+    & .listaDicas {
+        display: flex;
+        gap: 50px;
+        flex-wrap: wrap;
+        justify-content: center;
+        & .itemDicas {
+            width: 30%;
+            box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.438);
+            border-radius: 30px;
+            background-color: #ffffff;
+            transition: ease 200ms;
+            & .title {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 30px;
+                & h3 {
+                    font-size: 20px;
+                    color: #0e5026;
+                }
+                & i {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 50%;
+                    margin-bottom: 20px;
+                    padding: 15px;
+                    font-size: 2rem;
+                }
+            }
+            & ul {
+                display: flex;
+                flex-direction: column;
+            }
+            & ul li{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                padding: 20px;
+                & i {
+                    color: #72ffa6;
+                }
+                & p {
+                    width: 70%;
+                }
+            }
+        }
+        & .itemDicas:hover {
+            box-shadow: 1px 1px 15px rgba(103, 122, 109, 0.603);
+        }
+    }
+}
+
+/*---------------Desafios------------*/
+.desafios {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 40px;
+    margin-top: calc(50px + 3vw);
+    box-shadow: 1px 1px 15px rgba(103, 122, 109, 0.603);
+    & .titleDesafio {
+        display: flex;
+        gap: 20px;
+    }
+    & ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        & li {
+            width: 30%;
+            padding: 30px;
+            background-color: #16ad4e1e;
+            border: solid 1px #20b355;
+            border-radius: 15px;
+            & .easy {
+                background-color: #27f171;
+                padding: 2px 10px;
+                border-radius: 10px;
+            }
+            & .medium {
+                background-color: #f8cb02;
+                padding: 2px 10px;
+                border-radius: 10px;
+            }
+            & .hard {
+                background-color: #ce5353;
+                padding: 2px 10px;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+/*---------------Regra------------*/
+.regra {
+    background-color: #faf5a070;
+    border-radius: 20px;
+    padding: 40px;
+    margin-top: calc(50px + 3vw);
+    box-shadow: 1px 1px 15px rgba(103, 122, 109, 0.925);
+    & .textRegra {
+        color: #13883e;
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 30px;
+        line-height: 30px;
+    }
+    & .listaRegra {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        & .itemRegra {
+            background-color: #ffffff86;
+            padding: 40px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            border-radius: 20px;
+            box-shadow: 1px 1px 15px rgba(103, 122, 109, 0.377);
+            & h3 {
+                color: #0e5026;
+                font-size: 18px;
+            }
+            & ul {
+                list-style: disc;
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                justify-content: center;
+            }
+        }
+    }
+}
+/*---------------Receitas------------*/
+.receitas {
+    background-color: #32680562;
+    padding: calc(50px + 6vw) calc(50px + 3vw);
+    & h2 {
+        text-align: center;
+        color: #0e5026;
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+    & p {
+        color: #13883e;
+    }
+    & .listaReceitas {
+        display: flex;
+        margin-top: 50px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+        & .itemReceitas {
+            background-color: #ffffff;
+            box-shadow: 1px 1px 15px rgba(103, 122, 109, 0.24);
+            border-radius: 30px;
+            padding: 30px;
+            width: 30%;
+            transition: ease 200ms;
+            & .image {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 30%;
+                width: 100%;
+                & img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 20px 20px 0 0;
+                }
+            }
+            & .content {
+                height: 70%;
+                display: flex;
+                flex-direction: column;
+                & h3 {
+                    color: #0e5026;
+                    font-size: 20px;
+                    margin-top: 20px;
+                    margin-bottom: 10px;
+                }
+                & p {
+                    line-height: 20px;
+                    width: 65%;
+                    font-size: 18px;
+                }
+                & ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    & li {
+                        width: 50%;
+                        margin-top: 40px;
+                        margin-bottom: 40px;
+                        & i {
+                            margin-right: 10px;
+                        }
+                    }
+                }
+                & .stars {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 20px 0;
+                    margin-bottom: 10px;
+                    & p {
+                        margin-left: 10px;
+                    }
+                }
+                & button {
+                    padding: 10px;
+                    background-color: #13883e;
+                    border: none;
+                    border-radius: 10px;
+                    color: #ffffff;
+                    font-size: 15px;
+                    transition: ease 200ms;
+                }
+                & button:hover {
+                    cursor: pointer;
+                    background-color: #0b5225;
+                }
+            }
+        }
+        & .itemReceitas:hover {
+            transform: scale(1.05);
+        }
+    }
+}
+
+/*---------------Footer------------*/
+
+.footer {
+  background: #006B3F;
+  color: #ffffff;
+  padding: 40px 80px 30px 80px;
+  font-family: Inter, sans-serif;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.footer h2,
+.footer h3 {
+  margin-bottom: 30px;
+}
+
+
+.footer-col ul li {
+  margin-bottom: 18px;
+}
+
+.footer-col ul li a {
+  color: #ffffff;
+}
+
+.love {
+  margin-top: 10px;
+  color: #ffffff;
+}
+
+.footer-bottom {
+  border-top: 1px solid #fff3;
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+
+.footer-bottom a {
+  color: #fff;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+.footer-warning {
+  margin-top: 20px;
+  background: #015E36;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+h2{
+    font-size: 1.55rem;
+}
+.love{
+    margin-top: 30px;
+}
