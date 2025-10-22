@@ -336,6 +336,7 @@
 
         fetch("/html/nav-footer/nav.html")
             .then(response => response.text())
+            
             .then(data => {
                 nav.innerHTML = data;
             })
