@@ -237,7 +237,7 @@ main section.nossa-equipe div.header-equipe p {
     left: 50%;
     transform: translateX(-50%);
     width: 220px;
-    background: rgba(51, 211, 51, 0.925);
+    background-color:  #809671;
     border-radius: 10px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.12);
     padding: 10px;
@@ -245,8 +245,8 @@ main section.nossa-equipe div.header-equipe p {
     z-index: 10;
 }
 .tooltip p {
-    color: #fff;
-    font-size: 1.2rem;
+    color: white;
+    font-size: 1.5rem;
     font-family:'Inria Serif', serif;
 }
 .tooltip img {
