@@ -104,3 +104,4 @@ O usuário informa peso e altura e recebe o valor do IMC com classificação:
 - Foco em **educação nutricional** e **programação web prática**  
 - Ideal para estudo e demonstração de **HTML, CSS e JavaScript**  
 - Pode ser expandido com novas funcionalidades, quizzes, gráficos e conteúdos educativos adicionais
+
