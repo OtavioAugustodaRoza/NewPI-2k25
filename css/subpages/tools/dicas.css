@@ -297,11 +297,11 @@ ul.navegacao li:hover ul {
 
 /*---------------Regra------------*/
 .regra {
-    background-color: #faf5a070;
+    background-color: #dfdfdf70;
     border-radius: 20px;
     padding: 40px;
     margin-top: calc(50px + 3vw);
-    box-shadow: 1px 1px 15px rgba(103, 122, 109, 0.925);
+    box-shadow: 1px 1px 15px rgba(103, 122, 109, 0.725);
     & .textRegra {
         color: #13883e;
         font-size: 18px;
@@ -340,6 +340,7 @@ ul.navegacao li:hover ul {
 .receitas {
     background-color: #32680562;
     padding: calc(50px + 6vw) calc(50px + 3vw);
+
     & h2 {
         text-align: center;
         color: #0e5026;
@@ -348,6 +349,7 @@ ul.navegacao li:hover ul {
     }
     & p {
         color: #13883e;
+        text-align: left;
     }
     & .listaReceitas {
         display: flex;
@@ -361,6 +363,7 @@ ul.navegacao li:hover ul {
             border-radius: 30px;
             padding: 30px;
             width: 30%;
+            height: 550px;
             transition: ease 200ms;
             & .image {
                 display: flex;
@@ -394,8 +397,8 @@ ul.navegacao li:hover ul {
                     flex-wrap: wrap;
                     & li {
                         width: 50%;
-                        margin-top: 40px;
-                        margin-bottom: 40px;
+                        margin-top: 15px;
+                        margin-bottom: 10px;
                         & i {
                             margin-right: 10px;
                         }
