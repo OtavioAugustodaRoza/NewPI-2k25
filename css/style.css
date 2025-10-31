@@ -113,6 +113,7 @@ ul.navegacao li:hover ul {
   color: #1e8544;
   line-height: 1.2;
   margin-bottom: 20px;
+  font-weight: bolder;
 }
 
 .banner h1 span {
@@ -120,7 +121,7 @@ ul.navegacao li:hover ul {
 }
 
 .banner p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: #16A34A;
   line-height: 1.6;
   margin-bottom: 20px;
@@ -185,13 +186,13 @@ ul.navegacao li:hover ul {
 }
 
 .why-choose-us h2 {
-  font-size: 2rem;
+  font-size: 3rem;
   color: #1e8544;
   margin-bottom: 10px;
 }
 
 .text-why-choose-us p {
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   color: #16A34A;
   margin-top: 20px;
   margin-bottom: 40px;
@@ -248,13 +249,13 @@ ul.navegacao li:hover ul {
 }
 
 .container-cards .card h3 {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   color: #1e8544;
   margin-bottom: 15px;
 }
 
 .container-cards .card p {
-  font-size: 1rem;
+  font-size: 1.25rem;
   line-height: 1.4;
   color: #16A34A;
 }
@@ -275,13 +276,13 @@ ul.navegacao li:hover ul {
 }
 
 .testimonials-header h2 {
-  font-size: 2.2rem;
+  font-size: 3rem;
   color: #1e8544;
   margin-bottom: 20px;
 }
 
 .testimonials-header h3 {
-  font-size: 18px;
+  font-size: 1.3rem;
   color: #16A34A;
 }
 
@@ -321,7 +322,7 @@ ul.navegacao li:hover ul {
 
 .testimonial-text {
   text-align: center;
-  font-size: 16px;
+  font-size: 1.25rem;
   line-height: 1.6;
   color: #1e8544;
   margin-bottom: 20px;
@@ -374,7 +375,7 @@ ul.navegacao li:hover ul {
   text-align: center;
 }
 .resultados h2 {
-  font-size: 2.2rem;
+  font-size: 3rem;
   color: #1e8544;
   margin-bottom: 10px;
 }
