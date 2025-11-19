@@ -8,14 +8,12 @@
 
 header nav {
     display: flex;
-    
     justify-content: space-between;
     align-items: center;
     box-shadow: 1px 1px 15px rgba(117, 109, 86, 0.205);
     background-color: #ffffff;
     padding: 2vw 8vw;
 }
-
 .navegacao {
     display: flex;
     justify-content: center;
