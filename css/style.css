@@ -94,7 +94,9 @@ ul.navegacao li:hover ul {
   transform: translateY(0);
 }
 
-
+.hamburguer {
+  display: none;
+}
 .banner {
   background-color: #05aa1b10;
   display: flex;
@@ -128,6 +130,7 @@ ul.navegacao li:hover ul {
     }
 
     & .hamburguer {
+      display: block;
       transform: rotate(90deg);
       font-size: 20px;
       padding: 5px;
