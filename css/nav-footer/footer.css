@@ -4,6 +4,7 @@
   color: #ffffff;
   padding: 40px 80px 30px 80px;
   font-family: Inter, sans-serif;
+  font-size: 1.1rem;
 }
 
 .footer-container {
@@ -11,11 +12,13 @@
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 40px;
   margin-bottom: 30px;
+  line-height: 20px;
 }
 
 .footer h2,
 .footer h3 {
   margin-bottom: 30px;
+  font-weight: 600;
 }
 
 
@@ -52,8 +55,9 @@
   background: #015E36;
   padding: 12px;
   border-radius: 8px;
-  font-size: 13px;
+  font-size: 15px;
   line-height: 1.5;
+
 }
 h2{
     font-size: 1.55rem;

@@ -112,6 +112,7 @@ main section.banner h1 {
     display: flex;
     justify-content: center;
     margin: 30px 0 30px 0;
+    font-weight: bold;
 
 }
 
@@ -140,7 +141,7 @@ main section.beneficios div h2 {
     display: flex;
     justify-content: center;
     margin: 30px 0 30px 0;
-
+    font-weight: 600;
 }
 
 main section.beneficios div p.p-um {
@@ -186,6 +187,7 @@ main section.beneficios div.container div.lista ul li h3 p {
 main section.beneficios div.container div.lista ul li h3 {
     opacity: 60%;
     margin: 0 0 5px 0;
+    font-weight: bold;
 }
 
 
