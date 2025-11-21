@@ -26,16 +26,18 @@
                             <a href="index.html">Início</a>
                         </li>
                         <li>
-                            <a href="html/subpages/education/benefitsPage.html">Educação <i class="fa-solid fa-chevron-down" style="color: #16a34a;" class="arrow"></i></a>
-                            <ul>
+                            <a href="html/subpages/education/benefitsPage.html" class="pc">Educação <i class="fa-solid fa-chevron-down" style="color: #16a34a;" class="arrow"></i></a>
+                            <button class="moba" onclick="toggleMenu1()">Educação<i id="icon1" class="fa-solid fa-chevron-down" style="color: #16a34a; margin-left: 5px; rotate: -90deg;" class="arrow"></i></button>
+                            <ul class="submenu" id="menu1">
                                 <li><a href="html/subpages/education/benefitsPage.html">Benefícios</a></li>
                                 <li><a href="#pilares">Pilares</a></li>
                                 <li><a href="/html/subpages/education/problemsPage.html">Problemas dos Ultraprocessados</a></li>
                             </ul>
                         </li>
                         <li>
-                            <a href="/html/subpages/tools/advicePage.html">Ferramentas  <i class="fa-solid fa-chevron-down" style="color: #16a34a;" class="arrow"></i></a>
-                            <ul>
+                            <a href="/html/subpages/tools/advicePage.html" class="pc">Ferramentas  <i class="fa-solid fa-chevron-down" style="color: #16a34a;" class="arrow"></i></a>
+                            <button class="moba" onclick="toggleMenu2()">Ferramentas<i id="icon2" class="fa-solid fa-chevron-down" style="color: #16a34a; margin-left: 5px; rotate: -90deg;" class="arrow"></i></button>
+                            <ul class="submenu" id="menu2">
                                 <li><a href="/html/subpages/tools/advicePage.html">Avaliação Nutricional</a></li>
                                 <li><a href="/html/subpages/tools/cardapio.html">Cardápios</a></li>
                                 <li><a href="/html/subpages/tools/dicas.html">Dicas</a></li>
@@ -219,18 +221,53 @@
 
 </html>
 <script>
-    let menu = document.getElementById("paginas");
-    function toggleMenu() {
-        let botao = document.getElementById("hamburguer");
-        if (menu.style.display === "block") {
-            menu.style.display = "none";
-            botao.style.rotate = "0deg";
-            botao.textContent = "|||"
-        } else {
-            menu.style.display = "block";
-            botao.style.rotate = "90deg";
-            botao.textContent = "X"
-            botao.style.transition = "ease 400ms"
-        }
+const menu = document.getElementById('paginas');
+const botao = document.getElementById('hamburguer');
+
+function toggleMenu() {
+    if (menu.style.display === "block") {
+        menu.style.display = "none"
+        botao.style.rotate = "0deg"
+        botao.textContent = "|||"
+    } else {
+        menu.style.display = "block"
+        botao.style.rotate = "90deg"
+        botao.textContent = "X"
     }
+}
+
+const menu1 = document.getElementById("menu1")
+const menu2 = document.getElementById("menu2")
+function toggleMenu1() {
+    const icon = document.getElementById("icon1")
+    if (menu1.style.display === "block") {
+        menu1.style.display = "none"
+        icon.style.rotate = "-90deg"
+    } else {
+        menu1.style.display = "block"
+        icon.style.rotate = "0deg"
+    }
+}
+function toggleMenu2() {
+    const icon = document.getElementById("icon2")
+    if (menu2.style.display === "block") {
+        menu2.style.display = "none"
+        icon.style.rotate = "-90deg"
+    } else {
+        menu2.style.display = "block"
+        icon.style.rotate = "0deg"
+    }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+      const nav = document.getElementById("footer");
+
+      // Caminho absoluto para o footer
+      fetch("/html/nav-footer/footer.html")
+        .then(response => response.text())
+        .then(data => {
+          nav.innerHTML = data;
+        })
+        .catch(err => console.error("Erro ao carregar navbar:", err));
+    });
 </script>
