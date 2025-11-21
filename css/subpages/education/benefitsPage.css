@@ -349,12 +349,12 @@ main section.pilares div.title p {
 
 section.rules {
     display: flex;
-    position: relative;
-    left: 320px;
     justify-content: center;
+    position: relative;
+    /*left: 320px; */
     background-color: rgba(144, 238, 144, 0.233);
-    margin: 150px 0 0 0;
-    width: 1250px;
+    margin: 150px 185px;
+    /* width: 1250px; */
     padding: 40px;
     align-items: center;
     text-align: left;
