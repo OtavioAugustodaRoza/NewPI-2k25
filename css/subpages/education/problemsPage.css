@@ -106,7 +106,7 @@ main section.banner {
 
 main section.banner h1 {
     font-family: 'inter';
-    font-size: 3.5vw;
+    font-size: 3.3vw;
     font-weight: bold;
     color: rgba(128, 0, 0, 0.87);
     display: flex;
@@ -119,8 +119,8 @@ main section.banner h1 {
 
 main section.banner p {
     padding: 13px 0 0 0;
-    font-size: 1.6vw;
-    line-height: 37px;
+    font-size: 1.2vw;
+    line-height: 20px;
     color: rgb(221, 2, 2);
     display: flex;
     justify-content: center;
@@ -137,7 +137,7 @@ main section.maleficios h2 {
     justify-content: center;
     text-align: center;
     margin: auto;
-
+    font-weight: 600;
 
 }
 
@@ -164,9 +164,10 @@ main section.maleficios .aviso {
 }
 
 main section.maleficios .aviso h3 {
-    color: red;
+    color: rgb(217, 1, 1);
     text-align: center;
-    font-size: 2vw;
+    font-size: 1.7vw;
+    font-weight: 600;
 }
 
 main section.maleficios .aviso p {
@@ -225,7 +226,7 @@ main section.maleficios .aviso p {
 
 .icon-circle span {
     font-size: 24px;
-    color: #ff8c42;
+    color: #a04d19;
 }
 
 .card-title {
@@ -237,11 +238,12 @@ main section.maleficios .aviso p {
 }
 
 
-.card-body {
+.card-description {
     font-size: 0.9em;
-    color: #666;
+    color: #3c3c3c;
     margin-bottom: 20px;
     flex-grow: 1;
+
 }
 
 
@@ -255,7 +257,7 @@ main section.maleficios .aviso p {
     margin-top: 20px;
 }
 
-.impact-band strong {
+.impact-band span {
     color: #d9534f;
     font-weight: bold;
     margin-right: 5px;
