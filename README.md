@@ -9,7 +9,7 @@ O tema central é a **Alimentação Equilibrada**, destacando a importância da 
 
 O site apresenta uma experiência completa para o usuário aprender e praticar hábitos saudáveis:  
 - **Informações teóricas detalhadas** sobre benefícios e malefícios de diferentes tipos de alimentos  
-- **Dicas práticas** para montar refeições equilibradas e evitar alimentos ultraprocessados  
+- **Dicas** para montar refeições equilibradas e evitar alimentos ultraprocessados  
 - **Calculadora de IMC** em HTML, CSS e JavaScript, permitindo avaliar peso e altura, com orientações sobre como melhorar a saúde corporal  
 - **Sugestões de cardápio personalizadas**, considerando restrições alimentares, estilo de vida e objetivos nutricionais  
 - **Seções educativas interativas**, como quizzes sobre alimentação, curiosidades nutricionais e gráficos simples mostrando pirâmide alimentar  
