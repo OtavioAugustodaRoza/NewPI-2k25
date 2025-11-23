@@ -136,7 +136,7 @@ main section.beneficios {
 
 main section.beneficios div h2 {
     font-family: 'inter';
-    font-size: 1.8vw;
+    font-size: 2vw;
     color: green;
     display: flex;
     justify-content: center;
@@ -146,7 +146,7 @@ main section.beneficios div h2 {
 
 main section.beneficios div p.p-um {
     font-family: 'inter';
-    font-size: 1vw;
+    font-size: 1.1vw;
     color: green;
     display: flex;
     justify-content: center;
@@ -180,7 +180,7 @@ main section.beneficios div.container div.lista ul li div.card {
 }
 
 main section.beneficios div.container div.lista ul li h3 p {
-    font-size: 20px;
+    font-size: 30px;
     margin: 0 0 0 20px;
 }
 
@@ -230,7 +230,7 @@ main section.beneficios div.result ul {
     justify-content: center;
     text-align: center;
     gap: 30px;
-    padding: 20px 0;
+    padding: 20px 0 30px;
 }
 
 main section.beneficios div.result h2 {
@@ -242,6 +242,9 @@ main section.beneficios div.result h3 {
     margin: 0 0 10px 0;
 }
 
+main section.beneficios div.result p{
+    margin: 0 15px 0 15px ;
+}
 main section.pilares {
     margin: 30px;
 }
@@ -254,12 +257,13 @@ main section.pilares {
 
 main section.pilares div.title h2 {
     color: green;
-    font-size: 3vh;
+    font-size: 27px;
     margin: 10px;
+    font-weight: 600;
 }
 
 main section.pilares div.title p {
-    font-size: 2vh;
+    font-size: 18px;
     color: rgba(1, 136, 1, 0.658);
     width: 800px;
     margin: 20px;
@@ -376,8 +380,10 @@ section.rules div img {
 }
 
 section.rules div h2 {
-    font-size: 25px;
+    font-size: 30px;
     margin: 0 0 20px 0;
+    font-weight: 600;
+    color: #1b8642;
 }
 
 section.rules div ul li {
@@ -389,6 +395,7 @@ section.rules div ul li {
 section.rules div p {
     font-size: 13px;
     width: 400px;
+    line-height: 15px;
 }
 
 section.rules div ul li.verde::marker {
