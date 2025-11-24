@@ -106,7 +106,7 @@ main section.banner {
 
 main section.banner h1 {
     font-family: 'inter';
-    font-size: 3.3vw;
+    font-size: 3vw;
     font-weight: bold;
     color: rgba(128, 0, 0, 0.87);
     display: flex;
@@ -119,8 +119,8 @@ main section.banner h1 {
 
 main section.banner p {
     padding: 13px 0 0 0;
-    font-size: 1.2vw;
-    line-height: 20px;
+    font-size: 1.3vw;
+    line-height: 37px;
     color: rgb(221, 2, 2);
     display: flex;
     justify-content: center;
@@ -128,11 +128,14 @@ main section.banner p {
     width: 40vw;
     margin: auto;
 }
-
+main section.maleficios{
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
 main section.maleficios h2 {
     padding: 40px 0 0 0;
     font-family: 'inter';
-    font-size: 2vw;
+    font-size: 2.5vw;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -149,7 +152,8 @@ main section.maleficios div p {
     text-align: center;
     width: 45vw;
     margin: auto;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
+    line-height: 37px;
 }
 
 main section.maleficios .aviso {

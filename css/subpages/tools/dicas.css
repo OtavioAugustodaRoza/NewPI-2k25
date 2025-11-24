@@ -117,14 +117,14 @@ ul.navegacao li:hover ul {
     /*margin-top: 50px;*/
     & h1 {
         color: #186b36;
-        font-size: 65px;
+        font-size: 3vw;
         font-weight: bolder;
         margin-bottom: 20px;
     }
     & p {
         color: #18ac4e;
-        font-size: 25px;
-        font-weight: 600;
+        font-size: 1.3vw;
+        font-weight: 510;
     }
 }
 
@@ -135,13 +135,15 @@ ul.navegacao li:hover ul {
         color: #186b36;
         text-align: center;
         margin-bottom: 10px;
-        font-size: 55px;
+        font-size: 2.5vw;
         font-weight: 600;
     }
     & .txt {
         color: #20b355;
         text-align: center;
-        font-size: 30px;
+        font-size: 1.3vw;
+        margin-bottom: 30px;
+        margin-top: 20px;
     }
     & ul {
         margin-top: 40px;
@@ -180,8 +182,9 @@ ul.navegacao li:hover ul {
             line-height: calc(28px + 0.4vw);
             padding: 20px 0 0 20px;
             color: #13883e;
-            font-size: calc(25px + 0.1vw);
+            font-size: 1.3vw;
             font-family: Arial, Helvetica, sans-serif;
+            
         }
     }
 }
@@ -193,14 +196,14 @@ ul.navegacao li:hover ul {
     & h2 {
         text-align: center;
         color: #186b36;
-        font-size: 55px;
+        font-size: 2.5vw;
         font-weight: 600;
         margin-bottom: 20px;
     }
     & .textDicas {
         text-align: center;
         color: #20b355;
-        font-size: 30px;
+        font-size: 1.3vw;
         margin-bottom: 50px;
     }
     & .listaDicas {
@@ -214,6 +217,7 @@ ul.navegacao li:hover ul {
             border-radius: 30px;
             background-color: #ffffff;
             transition: ease 200ms;
+            padding-bottom: 35px;
             & .title {
                 display: flex;
                 flex-direction: column;
@@ -221,7 +225,7 @@ ul.navegacao li:hover ul {
                 align-items: center;
                 padding: 30px;
                 & h3 {
-                    font-size: 30px;
+                    font-size: 1.3vw;
                     color: #0c4d24;
                     font-weight: 600;
                 }
@@ -249,11 +253,11 @@ ul.navegacao li:hover ul {
                 padding: 20px;
                 & i {
                     color: #72ffa6;
-                    font-size: 2rem;
+                    font-size: 1.5rem;
                 }
                 & p {
                     width: 70%;
-                    font-size: 20px;
+                    font-size: 1.1vw;
                 }
             }
         }
@@ -273,6 +277,10 @@ ul.navegacao li:hover ul {
     & .titleDesafio {
         display: flex;
         gap: 20px;
+        font-size: 20px;
+    }
+    & h2{
+        font-size: 2.5vw;
     }
     & ul {
         display: flex;
@@ -285,7 +293,7 @@ ul.navegacao li:hover ul {
             border: solid 1px #20b355;
             border-radius: 15px;
             & p{
-                font-size: 19px;
+                font-size: 1.1vw;
             }
             & .easy {
                 background-color: #27f171;
@@ -325,10 +333,13 @@ ul.navegacao li:hover ul {
     box-shadow: 1px 1px 15px rgba(103, 122, 109, 0.925);
     & .textRegra {
         color: #13883e;
-        font-size: 18px;
+        font-size: 1.3vw;
         text-align: center;
         margin-bottom: 30px;
         line-height: 30px;
+    }
+    & h2{
+        font-size: 2.5vw;
     }
     & .listaRegra {
         display: flex;
@@ -345,7 +356,8 @@ ul.navegacao li:hover ul {
             box-shadow: 1px 1px 15px rgba(103, 122, 109, 0.377);
             & h3 {
                 color: #0e5026;
-                font-size: 18px;
+                font-size: 1.3vw;
+                font-weight: 600;
             }
             & ul {
                 list-style: disc;
@@ -353,6 +365,10 @@ ul.navegacao li:hover ul {
                 flex-direction: column;
                 gap: 30px;
                 justify-content: center;
+                padding: 20px 0px 20px 20px;
+                & li {
+                    font-size: 1vw;
+                }
             }
         }
     }
@@ -364,11 +380,13 @@ ul.navegacao li:hover ul {
     & h2 {
         text-align: center;
         color: #0e5026;
-        font-size: 40px;
+        font-size: 2.5vw;
+        font-weight: bold;
         margin-bottom: 15px;
     }
     & p {
-        color: #13883e;
+        color: #0f923f;
+        font-size: 1.3vw;
     }
     & .listaReceitas {
         display: flex;
@@ -401,14 +419,14 @@ ul.navegacao li:hover ul {
                 flex-direction: column;
                 & h3 {
                     color: #0e5026;
-                    font-size: 20px;
+                    font-size: 1.3vw;
                     margin-top: 20px;
                     margin-bottom: 10px;
                 }
                 & p {
                     line-height: 20px;
                     width: 65%;
-                    font-size: 18px;
+                    font-size: 1.1vw;
                 }
                 & ul {
                     display: flex;
