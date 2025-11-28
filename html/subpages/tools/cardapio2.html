@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cardapios</title>
+    <link rel="stylesheet" href="/css/reset.css" />
+  </head>
+  <style>
+    * {
+      font-family: sans-serif;
+    }
+    main {
+      height: 60vh;
+      padding: 5vw;
+      & section.cardapio {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+      }
+    }
+    h1 {
+      text-align: center;
+      font-size: calc(20px + 1vw);
+    }
+
+    /*botoes*/
+    .botoes {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+    .tipo nav {
+      display: flex;
+      overflow: hidden;
+      border-radius: 200px;
+      & .btn-tipo {
+        background-color: #f6f6f6;
+        border: none;
+        padding: 5px 20px;
+      }
+      & .ativo {
+        background-color: #5dbe54;
+      }
+      & .btn-tipo:hover {
+        background-color: #5dbe54;
+        cursor: pointer;
+      }
+    }
+
+    .horario nav {
+      display: flex;
+      overflow: hidden;
+      border-radius: 200px;
+      margin-left: -30px;
+      & .btn-horario {
+        background-color: #f6f6f6;
+        border: none;
+        padding: 5px 20px;
+      }
+      & .ativo {
+        background-color: #5dbe54;
+      }
+      & .btn-horario:hover {
+        background-color: #5dbe54;
+        cursor: pointer;
+      }
+    }
+
+    /* Card */
+    .cards-container {
+      & .card {
+        padding: 3vw;
+        border: solid 1px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        background-color: #f6f6f6;
+        border-radius: 20px;
+        & h2 {
+          font-size: 20px;
+        }
+        & a {
+          display: block;
+          background-color: #5dbe54;
+          color: #fff;
+          padding: 10px 20px;
+          border-radius: 200px;
+          transition: ease 200ms;
+          font-weight: 700;
+          letter-spacing: 1.2px;
+        }
+        & a:hover {
+          background-color: #57a750;
+        }
+      }
+    }
+  </style>
+  <body>
+    <header></header>
+    <main>
+      <section class="cardapio">
+        <h1>Cardapios</h1>
+        <div class="botoes">
+          <div class="tipo">
+            <nav>
+              <button class="btn-tipo ativo" value="geral">Geral</button>
+              <button class="btn-tipo" value="vegano">Vegano</button>
+              <button class="btn-tipo" value="lactose">Sem lactose</button>
+            </nav>
+          </div>
+          <div class="horario">
+            <nav>
+              <button class="btn-horario ativo" value="cafe">Café</button>
+              <button class="btn-horario" value="almoco">Almoço</button>
+              <button class="btn-horario" value="janta">Janta</button>
+            </nav>
+          </div>
+        </div>
+        <div class="cards-container" id="cardsContainer"></div>
+      </section>
+    </main>
+    <footer></footer>
+    <script>
+      const cardapios = {
+        geral: {
+          cafe: {
+            titulo: "Torrada Integral com Ovos Mexidos, Banana e Mel",
+            calorias: "320Kcal",
+            tempo: "10min",
+            link: "https://www.mrcook.app/pt-BR/recipes/0194f655-f9fb-7de8-8e9e-f1fca363ab07",
+          },
+          almoco: {
+            titulo: "Bowl de Frango Grelhado com Batata Doce",
+            calorias: "450Kcal",
+            tempo: "25min",
+            link: "https://receitas.globo.com/receitas-da-tv/e-de-casa/bowl-de-frango-com-batata-doce.ghtml",
+          },
+          janta: {
+            titulo: "Espaguete de Abobrinha (Zoodles) com Patinho Moído",
+            calorias: "277Kcal",
+            tempo: "20min",
+            link: "https://naturallisas.com.br/espaguete-de-abobrinha-com-patinho-moido-250g?srsltid=AfmBOoqaK6gPUfRCVzk8UAEUsDrb23TWJ575YYZLKP0aUp3JdKPVim3y",
+          },
+        },
+        vegano: {
+          cafe: {
+            titulo: "Mingau de Aveia com frutas vermelhas",
+            calorias: "300kcal",
+            tempo: "15min",
+            link: "https://madeleineolivia-co-uk.translate.goog/mixed-berry-oatmeal/?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt&_x_tr_pto=tc",
+          },
+          almoco: {
+            titulo: "Curry de Grão-de-Bico com Abóbora e Arroz Integral",
+            calorias: "450kcal",
+            tempo: "35min",
+            link: "https://rainbowplantlife-com.translate.goog/thai-butternut-squash-chickpea-curry/?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt&_x_tr_pto=tc",
+          },
+          janta: {
+            titulo: "Salteado de Tofu com legumes",
+            calorias: "300kcal",
+            tempo: "20min",
+            link: "https://raquelicias.com.br/2017/12/11/salteado-de-tofu-com-legumes/",
+          },
+        },
+        lactose: {
+          cafe: {
+            titulo: "Panqueca de Banana com Aveia e Mel (sem leite)",
+            calorias: "250kcal",
+            tempo: "20min",
+            link: "https://www.tudogostoso.com.br/receita/189500-panqueca-saudavel-de-aveia-e-banana.html",
+          },
+          almoco: {
+            titulo: "Filé de Tilápia com Purê de Mandioquinha",
+            calorias: "360kcal",
+            tempo: "40min",
+            link: "https://www.tiktok.com/@receitasdorafa/video/7370105951396924677",
+          },
+          janta: {
+            titulo: "Creme de Abobora com Gengibre e Frango",
+            calorias: "250kcal",
+            tempo: "30min",
+            link: "https://www.receiteria.com.br/receita/creme-de-abobora-com-gengibre-e-frango/",
+          },
+        },
+      };
+
+      let tipo = "geral";
+      let horario = "cafe";
+
+      function atualizar() {
+        const prato = cardapios[tipo][horario];
+        const container = document.getElementById("cardsContainer");
+
+        container.innerHTML = `
+                <div class="card">
+                    <h2>${prato.titulo}</h2>
+                    <div class="info">
+                        <p><strong>Calorias:</strong> ${prato.calorias}</p>
+                        <p><strong>Tempo:</strong> ${prato.tempo}</p>
+                    </div>
+                    <a href="${prato.link}" target="_blank">Clique aqui para acessar a receita</a>
+                </div>
+            `;
+      }
+
+      document.querySelectorAll(".btn-tipo").forEach((btn) => {
+        btn.addEventListener("click", function () {
+          document
+            .querySelectorAll(".btn-tipo")
+            .forEach((b) => b.classList.remove("ativo"));
+          this.classList.add(
+            "ativo"
+          ); /* Caso alguem venha ver o meu codigo e não esteja entendendo 
+                isso aqui ta pegando todos os botoes com a classe btn-tipo e tirando a classe ativo,
+                para quando eu clicar em outro botao ele fique verde apenas o tipo ativo*/
+
+          tipo = this.value;
+          atualizar();
+        });
+      });
+
+      document.querySelectorAll(".btn-horario").forEach((btn) => {
+        btn.addEventListener("click", function () {
+          document
+            .querySelectorAll(".btn-horario")
+            .forEach((b) => b.classList.remove("ativo"));
+          this.classList.add("ativo"); // fiz a mesma coisa pra horario obviamente
+
+          horario = this.value;
+          atualizar();
+        });
+      });
+
+      atualizar();
+    </script>
+  </body>
+</html>
