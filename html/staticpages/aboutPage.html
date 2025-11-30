@@ -15,22 +15,22 @@
     <header>
             <nav class="nav-bar">
                 <div class="logo">
-                    <a href="index.html"><i class="fa-solid fa-leaf fa-lg" style="color: #36ce4f;"></i></a>
-                    <a href="index.html">NutriVitta</i></a>
+                    <a href="/index.html"><i class="fa-solid fa-leaf fa-lg" style="color: #36ce4f;"></i></a>
+                    <a href="/index.html">NutriVitta</i></a>
     
                 </div>
                 <button class="hamburguer" onclick="toggleMenu()" id="hamburguer">|||</button>
                 <div class="paginas" id="paginas">
                     <ul class="navegacao">
                         <li>
-                            <a href="index.html">Início</a>
+                            <a href="/index.html">Início</a>
                         </li>
                         <li>
-                            <a href="html/subpages/education/benefitsPage.html" class="pc">Educação <i class="fa-solid fa-chevron-down" style="color: #16a34a;" class="arrow"></i></a>
+                            <a href="/html/subpages/education/benefitsPage.html" class="pc">Educação <i class="fa-solid fa-chevron-down" style="color: #16a34a;" class="arrow"></i></a>
                             <button class="moba" onclick="toggleMenu1()">Educação<i id="icon1" class="fa-solid fa-chevron-down" style="color: #16a34a; margin-left: 5px; rotate: -90deg;" class="arrow"></i></button>
                             <ul class="submenu" id="menu1">
-                                <li><a href="html/subpages/education/benefitsPage.html">Benefícios</a></li>
-                                <li><a href="html/subpages/education/benefitsPage.html#pilares">Pilares</a></li>
+                                <li><a href="/html/subpages/education/benefitsPage.html">Benefícios</a></li>
+                                <li><a href="/html/subpages/education/benefitsPage.html#pilares">Pilares</a></li>
                                 <li><a href="/html/subpages/education/problemsPage.html">Problemas dos Ultraprocessados</a></li>
                             </ul>
                         </li>
@@ -51,6 +51,7 @@
             </nav>
         </header>
     <main>
+        
         <section class="sobre-nutrivitta">
             <div class="content-wrapper">
 
@@ -69,11 +70,69 @@
                 </div>
 
                 <div class="image-content">
-                    <img src="img/sobrenos.jpeg" alt="Imagem salada de frutas">
+                    <img class="logo" src="img/image.png" alt="Imagem salada de frutas">
                 </div>
 
             </div>
         </section>
+        <section>
+
+            <h1 class="cola-titulo">Colaboradores</h1>
+            <section class="colaboradores">
+                <div id="Otavio" class="colaborador" onmouseover="contri('Otavio')">
+                    <img src="../../otavio.jpeg" alt="Otávio">
+                    <h2>Otávio</h2>
+                    <div class="tooltip">
+                        <img src="../../otavio.jpeg" alt="Otávio">
+                        <p id="msg-Otavio"></p>
+                    </div>
+                </div>
+
+                <div id="jota" class="colaborador" onmouseover="contri('jota')">
+                    <img src="../../joao.jpeg" alt="João">
+                    <h2>João</h2>
+                    <div class="tooltip">
+                        <img src="../../joao.jpeg" alt="João">
+                        <p id="msg-jota"></p>
+                    </div>
+                </div>
+
+                <div id="Miguel" class="colaborador" onmouseover="contri('Miguel')">
+                    <img src="../../miguel.jpeg" alt="Miguel">
+                    <h2>Miguel</h2>
+                    <div class="tooltip">
+                        <img src="../../miguel.jpeg" alt="Miguel">
+                        <p id="msg-Miguel"></p>
+                    </div>
+                </div>
+
+                <div id="sofia" class="colaborador" onmouseover="contri('sofia')">
+                    <img src="../../sofia.jpeg" alt="Sofia">
+                    <h2>Sofia</h2>
+                    <div class="tooltip">
+                        <img src="../../sofia.jpeg" alt="Sofia">
+                        <p id="msg-sofia"></p>
+                    </div>
+                </div>
+
+                <div id="Alice" class="colaborador" onmouseover="contri('Alice')">
+                    <img src="../../alice.jpeg" alt="Alice">
+                    <h2>Alice</h2>
+                    <div class="tooltip">
+                        <img src="../../alice.jpeg" alt="Alice">
+                        <p id="msg-Alice"></p>
+                    </div>
+                </div>
+
+                <div id="Flavia" class="colaborador" onmouseover="contri('Flavia')">
+                    <img src="../../flavia.jpeg" alt="Flavia">
+                    <h2>Flavia</h2>
+                    <div class="tooltip">
+                        <img src="../../flavia.jpeg" alt="Flavia">
+                        <p id="msg-Flavia"></p>
+                    </div>
+                </div>
+            </section>
         <section class="nossa-missao">
 
             <div class="header-missao">
@@ -139,64 +198,6 @@
 
             </div>
         </section>
-        <section>
-
-            <h1 class="cola-titulo">Colaboradores</h1>
-            <section class="colaboradores">
-                <div id="Otavio" class="colaborador" onmouseover="contri('Otavio')">
-                    <img src="../../otavio.jpeg" alt="Otávio">
-                    <h2>Otávio</h2>
-                    <div class="tooltip">
-                        <img src="../../otavio.jpeg" alt="Otávio">
-                        <p id="msg-Otavio"></p>
-                    </div>
-                </div>
-
-                <div id="jota" class="colaborador" onmouseover="contri('jota')">
-                    <img src="../../joao.jpeg" alt="João">
-                    <h2>João</h2>
-                    <div class="tooltip">
-                        <img src="../../joao.jpeg" alt="João">
-                        <p id="msg-jota"></p>
-                    </div>
-                </div>
-
-                <div id="Miguel" class="colaborador" onmouseover="contri('Miguel')">
-                    <img src="../../miguel.jpeg" alt="Miguel">
-                    <h2>Miguel</h2>
-                    <div class="tooltip">
-                        <img src="../../miguel.jpeg" alt="Miguel">
-                        <p id="msg-Miguel"></p>
-                    </div>
-                </div>
-
-                <div id="sofia" class="colaborador" onmouseover="contri('sofia')">
-                    <img src="../../sofia.jpeg" alt="Sofia">
-                    <h2>Sofia</h2>
-                    <div class="tooltip">
-                        <img src="../../sofia.jpeg" alt="Sofia">
-                        <p id="msg-sofia"></p>
-                    </div>
-                </div>
-
-                <div id="Alice" class="colaborador" onmouseover="contri('Alice')">
-                    <img src="../../alice.jpeg" alt="Alice">
-                    <h2>Alice</h2>
-                    <div class="tooltip">
-                        <img src="../../alice.jpeg" alt="Alice">
-                        <p id="msg-Alice"></p>
-                    </div>
-                </div>
-
-                <div id="Flavia" class="colaborador" onmouseover="contri('Flavia')">
-                    <img src="../../flavia.jpeg" alt="Flavia">
-                    <h2>Flavia</h2>
-                    <div class="tooltip">
-                        <img src="../../flavia.jpeg" alt="Flavia">
-                        <p id="msg-Flavia"></p>
-                    </div>
-                </div>
-            </section>
             <section class="projetinho">
                 <div class="container">
                     <h3>Funções do Grupo</h3>
@@ -208,178 +209,6 @@
                             da Roza</li>
                         <li><strong>Grupo de Pesquisa:</strong> Alice Lanznaster e Flavia Busarello Corrêa</li>
                     </ul>
-
-                    <h3>Atas do Projeto</h3>
-                    <div class="containerdoscards">
-                        <div>
-                            <div class="cards">
-                                <h4>Ata de Reunião: 09/07</h4>
-                                <p>O professor apresentou a proposta do trabalho e explicou os objetivos gerais. Sofia
-                                    organizou a divisão inicial de funções, enquanto registrava as
-                                    primeiras decisões. O
-                                    grupo
-                                    discutiu possíveis temas e, após debate, definiu “Alimentação Equilibrada” como foco
-                                    do
-                                    projeto.
-                                    .</p>
-                            </div>
-
-                            <div class="cards">
-                                <h4>Ata de Reunião: 09/07 à 15/07</h4>
-                                <p>Alice e Flavia iniciaram o levantamento de informações, buscando conteúdos em sites
-                                    confiáveis, artigos e vídeos. João Pedro, Miguel e Otávio começaram a estruturar
-                                    como os
-                                    arquivos seriam organizados. Sofia garantiu que todas as etapas fossem registradas.
-                                </p>
-                            </div>
-
-                            <div class="cards">
-                                <h4>Ata de Reunião: 16/07</h4>
-                                <p>João Pedro, Miguel e Otávio iniciaram a criação dos arquivos base do projeto,
-                                    enquanto
-                                    Alice
-                                    e Flavia continuaram reunindo referências sobre nutrição e hábitos alimentares
-                                    saudáveis.
-                                    Sofia acompanhou os dois núcleos de trabalho para manter equilíbrio na carga de
-                                    tarefas.
-                                </p>
-                            </div>
-
-                            <div class="cards">
-                                <h4>Ata de Reunião: 13/08</h4>
-                                <p>Foi criado o perfil do projeto nas redes sociais, escolhido o nome oficial
-                                    “NutriVitta” e
-                                    iniciada a estruturação das páginas do site. O grupo definiu a paleta de cores e
-                                    discutiu
-                                    detalhes de layout. João Pedro, Miguel e Otávio começaram os primeiros rascunhos do
-                                    design,
-                                    enquanto Alice e Flavia forneceram materiais de apoio.</p>
-                            </div>
-
-                            <div class="cards">
-                                <h4>Ata de Reunião: 20/08</h4>
-                                <p>Os desenvolvedores avançaram na programação do site e integraram parte do conteúdo
-                                    produzido.
-                                    Alice e Flavia finalizaram materiais para as redes sociais. Houve alinhamento sobre
-                                    como
-                                    cada página deveria funcionar para manter a proposta clara e acessível.
-                                </p>
-                            </div>
-
-                            <div class="cards">
-                                <h4>Ata de Reunião: 23/08</h4>
-                                <p>O design do site começou a ser detalhado, incluindo seções como receitas, dicas e
-                                    formulários
-                                    interativos. Alice e Flavia trouxeram referências de páginas semelhantes, ajudando
-                                    João
-                                    Pedro, Miguel e Otávio a estruturar os elementos de forma mais eficiente. Sofia
-                                    registrou
-                                    ajustes sobre a divisão das etapas seguintes e avançou com as redes sociais.</p>
-                            </div>
-
-                            <div class="cards">
-                                <h4>Ata de Reunião: 03/09</h4>
-                                <p>A equipe avançou na produção de conteúdos para as redes sociais e no desenvolvimento
-                                    do
-                                    design no Figma. João Pedro, Miguel e Otávio iniciaram a implementação no site
-                                    definitivo.
-                                    Alice e Flavia encerraram a etapa de coleta de informações e passaram a colaborar
-                                    diretamente na elaboração dos roteiros de cada página.</p>
-                            </div>
-                            <div class="cards">
-                                <h4>Ata de Reunião – 10/09</h4>
-                                <p>Os desenvolvedores avançaram na estrutura do site, ajustando o menu de navegação e
-                                    testando a responsividade. João Pedro, Miguel e Otávio foram responsáveis por essa
-                                    etapa
-                                    técnica. Alice e Flávia continuaram na pesquisa, organizando conteúdos para as
-                                    páginas
-                                    de dicas e curiosidades. Sofia acompanhou o andamento das atividades e registrou os
-                                    próximos passos.</p>
-                            </div>
-                            <div class="cards">
-                                <h4>Ata de Reunião – 17/09</h4>
-                                <p>O grupo focou na revisão do design e na integração entre as páginas. João Pedro,
-                                    Miguel e
-                                    Otávio trabalharam na implementação das cores e fontes do layout. A partir dessa
-                                    data,
-                                    Sofia, Alice e Flávia também passaram a colaborar no desenvolvimento do site,
-                                    ajudando
-                                    na estruturação em HTML e nos primeiros ajustes de CSS.</p>
-                            </div>
-                        </div>
-
-                        <div>
-                            <div class="cards">
-                                <h4>Ata de Reunião – 24/09</h4>
-                                <p>O grupo se dedicou a ajustes finais no site. Os desenvolvedores corrigiram erros e
-                                    adicionaram os últimos detalhes visuais. Sofia, Alice e Flávia deram suporte no
-                                    código,
-                                    contribuindo principalmente na estilização em CSS e na revisão do HTML. O trabalho
-                                    foi
-                                    consolidado em equipe, preparando o projeto para a finalização e apresentação.</p>
-                            </div>
-                            <div class="cards">
-                                <h4>Ata de Reunião – 01/10</h4>
-                                <p>A equipe deu continuidade ao desenvolvimento da página principal. A estrutura em HTML
-                                    foi
-                                    finalizada e os desenvolvedores corrigiram erros de alinhamento. A imagem inicial da
-                                    página foi ajustada e o tamanho das letras foi ampliado para melhor leitura.</p>
-                            </div>
-                            <div class="cards">
-                                <h4>Ata de Reunião – 08/10</h4>
-                                <p>O grupo revisou o HTML já criado, corrigindo trechos desalinhados. A imagem do banner
-                                    foi
-                                    substituída por uma versão mais nítida. Títulos e subtítulos tiveram suas fontes
-                                    aumentadas. Também foram feitos testes de responsividade.</p>
-                            </div>
-                            <div class="cards">
-                                <h4>Ata de Reunião – 15/10</h4>
-                                <p>As páginas internas passaram por correções em HTML e CSS, arrumando problemas de
-                                    espaçamento e links que não funcionavam. As imagens foram atualizadas e o tamanho
-                                    dos
-                                    textos padronizado.
-                                </p>
-                            </div>
-                            <div class="cards">
-                                <h4>Ata de Reunião – 22/10</h4>
-                                <p>A equipe revisou o visual geral: menu, caixas e botões. Algumas fontes foram
-                                    aumentadas e
-                                    a imagem de fundo foi substituída por uma opção mais leve. O HTML foi limpo para
-                                    remover
-                                    códigos repetidos.</p>
-                            </div>
-                            <div class="cards">
-                                <h4>Ata de Reunião – 29/10</h4>
-                                <p>O grupo finalizou ajustes importantes, padronizando imagens e corrigindo erros finais
-                                    no
-                                    HTML. Textos receberam ajustes de espaçamento e leitura. O layout geral foi revisado
-                                    para deixar tudo organizado.</p>
-                            </div>
-                            <div class="cards">
-                                <h4>Ata de Reunião – 05/11</h4>
-                                <p>A equipe revisou o HTML das páginas e corrigiu incoerências de estrutura. Imagens
-                                    internas foram otimizadas para carregar mais rápido. Fontes pequenas foram
-                                    aumentadas,
-                                    principalmente no celular. Foram feitos testes de navegação.</p>
-                            </div>
-                            <div class="cards">
-                                <h4>Ata de Reunião – 12/11</h4>
-                                <p>O grupo reorganizou o HTML para deixá-lo mais limpo. Margens e espaçamentos em CSS
-                                    foram
-                                    corrigidos. Uma das imagens principais foi trocada por uma versão melhor. Cores e
-                                    contrastes foram revisados para maior acessibilidade.</p>
-                            </div>
-                            <div class="cards">
-                                <h4>Ata de Reunião – 19/11</h4>
-                                <p>A página inicial passou por uma revisão completa. O banner foi atualizado, as fontes
-                                    ampliadas e o layout reorganizado. Links quebrados foram corrigidos e o HTML recebeu
-                                    uma
-                                    limpeza final para remover códigos desnecessários.</p>
-                            </div>
-                        </div>
-
-
-                    </div>
                 </div>
             </section>
     </main>

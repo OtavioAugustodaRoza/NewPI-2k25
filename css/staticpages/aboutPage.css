@@ -223,8 +223,8 @@ main section.sobre-nutrivitta div.content-wrapper {
     align-items: center;
     justify-content: space-between;
     width: 90vw;
-    max-width: 1200px;
-    gap: 50px;
+    max-width: 1360px;
+    gap: 10vw;
 }
 
 main section.sobre-nutrivitta div.text-content {
