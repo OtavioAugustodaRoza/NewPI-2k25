@@ -14,57 +14,57 @@ header nav {
     box-shadow: 1px 1px 15px rgba(117, 109, 86, 0.205);
     background-color: #ffffff;
     padding: 2vw 8vw 2vw 8vw;
-  }
-  
-  .navegacao {
+}
+
+.navegacao {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
     margin-right: 15px;
-  }
-  
-  .logo a {
+}
+
+.logo a {
     color: #16A34A;
     font-size: 1.55rem;
     font-family: Inter, sans-serif;
     margin-left: 15px;
-  
-  }
-  
-  .logo:hover {
+
+}
+
+.logo:hover {
     transform: scale(1.1);
-  }
-  
-  .navegacao li a {
+}
+
+.navegacao li a {
     color: #16A34A;
     font-size: 1.20rem;
     font-family: Inter;
     margin-right: 20px;
-  }
-  
-  .navegacao a:hover {
+}
+
+.navegacao a:hover {
     color: #1e8544;
     transition: .2;
-  }
-  
-  ul.navegacao li:hover ul {
+}
+
+ul.navegacao li:hover ul {
     display: block;
-  }
-  
-  .navegacao li>a i {
+}
+
+.navegacao li>a i {
     transition: transform 0.3s ease;
-  }
-  
-  .navegacao li:hover>a i {
+}
+
+.navegacao li:hover>a i {
     transform: rotate(180deg);
-  }
-  
-  .navegacao li {
+}
+
+.navegacao li {
     position: relative;
-  }
-  
-  .navegacao li ul {
+}
+
+.navegacao li ul {
     opacity: 0;
     transform: translateY(-10px);
     position: absolute;
@@ -76,47 +76,47 @@ header nav {
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
     border-radius: 10px;
     transition: opacity 0.3s ease, transform 0.3s ease;
-  }
-  
-  .navegacao li ul li a {
+}
+
+.navegacao li ul li a {
     display: block;
     padding: 12px 18px;
     font-size: 1rem;
     color: #16A34A;
     font-family: 'Inter', sans-serif;
     transition: background 0.2s ease, color 0.2s ease;
-  }
-  
-  .navegacao li ul li a:hover {
+}
+
+.navegacao li ul li a:hover {
     background: #f9f9f9;
     color: #1e8544;
-  }
-  
-  .navegacao li:hover ul {
+}
+
+.navegacao li:hover ul {
     opacity: 1;
     transform: translateY(0);
-  }
-  
+}
+
 
 main section.banner {
     background-color: rgba(0, 255, 21, 0.062);
-    padding: 30px 0 60px 0;
-    margin: 50px 0 0 0;
+    padding: 60px 0 120px 0;
 
 }
 
 main section.banner h1 {
     font-family: 'inter';
-    font-size: 2.5vw;
+    font-size: 3vw;
     color: green;
     display: flex;
     justify-content: center;
     margin: 30px 0 30px 0;
+    font-weight: bold;
 
 }
 
 main section.banner p {
-    font-size: 1vw;
+    font-size: 1.5vw;
     color: green;
     display: flex;
     justify-content: center;
@@ -135,17 +135,17 @@ main section.beneficios {
 
 main section.beneficios div h2 {
     font-family: 'inter';
-    font-size: 1.8vw;
+    font-size: 2.5vw;
     color: green;
     display: flex;
     justify-content: center;
     margin: 30px 0 30px 0;
-
+    font-weight: 600;
 }
 
 main section.beneficios div p.p-um {
     font-family: 'inter';
-    font-size: 1vw;
+    font-size: 1.3vw;
     color: green;
     display: flex;
     justify-content: center;
@@ -154,25 +154,9 @@ main section.beneficios div p.p-um {
     margin: auto;
 }
 
-
 main section.beneficios div.container {
-    display: flex;
     justify-content: center;
     align-items: center;
-}
-
-main section.beneficios div.container div.imagem img {
-    width: 800px;
-    height: 900px;
-    border-radius: 10px;
-    margin: 30px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-}
-
-main section.beneficios div.container img:hover {
-    transform: scale(1.01);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 main section.beneficios div.container div.lista ul li {
@@ -181,10 +165,9 @@ main section.beneficios div.container div.lista ul li {
     margin: 20px;
     border-radius: 20px;
     transition: box-shadow 0.2s ease;
-    width: 600px;
+    width: 40%;
     border: solid 1px rgba(0, 199, 27, 0.116);
 }
-
 
 main section.beneficios div.container div.lista ul li:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -192,26 +175,25 @@ main section.beneficios div.container div.lista ul li:hover {
 
 main section.beneficios div.container div.lista ul li div.card {
     display: flex;
-
+    width: 100%;
 }
 
 main section.beneficios div.container div.lista ul li h3 p {
-    font-size: 20px;
+    font-size: 30px;
     margin: 0 0 0 20px;
-
 }
-
-
 
 main section.beneficios div.container div.lista ul li h3 {
     opacity: 60%;
     margin: 0 0 5px 0;
+    font-weight: bold;
+    font-size: 1.3vw;
 }
 
 
 main section.beneficios div.container div.lista ul li i {
-    margin: 0 20px 0 0;
-    padding: 15px 15px 0.1px 15px;
+    margin-right: 20px;
+    padding: 15px;
     border-radius: 10px;
     background-color: rgba(0, 255, 0, 0.116);
 
@@ -219,6 +201,13 @@ main section.beneficios div.container div.lista ul li i {
 
 main section.beneficios div.container div.lista ul li p {
     color: rgba(1, 150, 38, 0.781);
+    font-size: 1.3vw;
+}
+
+main section.beneficios div.container div.lista ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 main section.beneficios div.result {
@@ -241,16 +230,12 @@ main section.beneficios div.result ul {
     display: flex;
     justify-content: center;
     text-align: center;
-
+    gap: 30px;
+    padding: 20px 0 30px;
 }
 
 main section.beneficios div.result h2 {
     font-size: 30px;
-}
-
-main section.beneficios div.result ul li {
-    margin: 10px 90px 40px 0;
-    color: rgb(1, 148, 1);
 }
 
 main section.beneficios div.result h3 {
@@ -258,6 +243,9 @@ main section.beneficios div.result h3 {
     margin: 0 0 10px 0;
 }
 
+main section.beneficios div.result p{
+    margin: 0 15px 0 15px ;
+}
 main section.pilares {
     margin: 30px;
 }
@@ -270,12 +258,13 @@ main section.pilares {
 
 main section.pilares div.title h2 {
     color: green;
-    font-size: 3vh;
+    font-size: 27px;
     margin: 10px;
+    font-weight: 600;
 }
 
 main section.pilares div.title p {
-    font-size: 2vh;
+    font-size: 18px;
     color: rgba(1, 136, 1, 0.658);
     width: 800px;
     margin: 20px;
@@ -294,8 +283,6 @@ main section.pilares div.title p {
     justify-content: center;
     width: 1000px;
     margin: auto;
-
-
 }
 
 .cards ul li.card {
@@ -309,16 +296,18 @@ main section.pilares div.title p {
 }
 
 .cards ul li.card:hover {
-  transform: translateY(-8px); 
+    transform: translateY(-8px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
-.cards ul li h4{
+
+.cards ul li h4 {
     margin: 0 0 5px 0;
     color: rgba(11, 129, 11, 0.74);
 }
+
 .cards ul li ul li {
     list-style-type: disc;
-    color:  rgba(16, 170, 16, 0.74);
+    color: rgba(16, 170, 16, 0.74);
 
 
 }
@@ -358,28 +347,29 @@ main section.pilares div.title p {
 
 .cards ul li p {
     font-size: 14px;
-    margin: 20px 0 20px 0; 
+    margin: 20px 0 20px 0;
     color: rgba(16, 170, 16, 0.74);
 }
 
 
-section.rules{
+section.rules {
     display: flex;
-    position: relative;
-    left: 320px;
     justify-content: center;
+    position: relative;
+    /*left: 320px; */
     background-color: rgba(144, 238, 144, 0.233);
-    margin: 150px 0 0 0;
-    width: 1250px;
+    margin: 150px 185px;
+    margin-top: 250px;
+    /* width: 1250px; */
     padding: 40px;
     align-items: center;
     text-align: left;
     border-radius: 20px;
-     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 section.rules:hover {
-  transform: translateY(-5px); 
+    transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
@@ -391,8 +381,10 @@ section.rules div img {
 }
 
 section.rules div h2 {
-    font-size: 25px;
+    font-size: 30px;
     margin: 0 0 20px 0;
+    font-weight: 600;
+    color: #1b8642;
 }
 
 section.rules div ul li {
@@ -404,18 +396,21 @@ section.rules div ul li {
 section.rules div p {
     font-size: 13px;
     width: 400px;
+    line-height: 15px;
 }
 
-section.rules div ul li.verde::marker{
+section.rules div ul li.verde::marker {
     font-size: 30px;
     color: rgb(43, 255, 0);
 
 }
-section.rules div ul li.amarelo::marker{
+
+section.rules div ul li.amarelo::marker {
     font-size: 30px;
     color: rgb(255, 196, 0);
 }
-section.rules div ul li.vermelho::marker{
+
+section.rules div ul li.vermelho::marker {
     font-size: 30px;
     color: rgb(255, 0, 0);
 }

@@ -106,19 +106,21 @@ main section.banner {
 
 main section.banner h1 {
     font-family: 'inter';
-    font-size: 2.5vw;
+    font-size: 3vw;
+    font-weight: bold;
     color: rgba(128, 0, 0, 0.87);
     display: flex;
     justify-content: center;
     text-align: center;
     margin: auto;
-    width: 600px;
-
+    margin-bottom: 20px;
+   /*width: 600px;*/
 }
 
 main section.banner p {
     padding: 13px 0 0 0;
-    font-size: 1vw;
+    font-size: 1.3vw;
+    line-height: 37px;
     color: rgb(221, 2, 2);
     display: flex;
     justify-content: center;
@@ -126,30 +128,32 @@ main section.banner p {
     width: 40vw;
     margin: auto;
 }
-
+main section.maleficios{
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
 main section.maleficios h2 {
     padding: 40px 0 0 0;
     font-family: 'inter';
-    font-size: 1.5vw;
-    color: rgba(39, 39, 39, 0.87);
+    font-size: 2.5vw;
     display: flex;
     justify-content: center;
     text-align: center;
     margin: auto;
-
+    font-weight: 600;
 
 }
 
 main section.maleficios div p {
     padding: 20px 0 0 0;
-    font-size: 1vw;
-    color: rgb(95, 95, 95);
+    font-size: 1.2vw;
     display: flex;
     justify-content: center;
     text-align: center;
     width: 45vw;
     margin: auto;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
+    line-height: 37px;
 }
 
 main section.maleficios .aviso {
@@ -164,23 +168,26 @@ main section.maleficios .aviso {
 }
 
 main section.maleficios .aviso h3 {
-    color: red;
+    color: rgb(217, 1, 1);
+    text-align: center;
+    font-size: 1.7vw;
+    font-weight: 600;
 }
 
 main section.maleficios .aviso p {
     position: relative;
-    text-align: left;
-    right: 68px;
+    text-align: center;
     width: 1200px;
-    font-size: 15px;
+    font-size: 1.2vw;
 }
 
 .cards-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    max-width: 1200px;
-    width: 100%;
+    /*max-width: 1200px;*/
+    margin-left: 10vw;
+    margin-right: 10vw;
 }
 
 .card {
@@ -191,8 +198,8 @@ main section.maleficios .aviso p {
     padding: 25px;
     display: flex;
     flex-direction: column;
-    position: relative;
-    left: 360px;
+    /*position: relative;*/
+    /*left: 360px;*/
     text-align: left;
     transition: transform 0.3s ease;
 }
@@ -223,7 +230,7 @@ main section.maleficios .aviso p {
 
 .icon-circle span {
     font-size: 24px;
-    color: #ff8c42;
+    color: #a04d19;
 }
 
 .card-title {
@@ -235,11 +242,12 @@ main section.maleficios .aviso p {
 }
 
 
-.card-body {
+.card-description {
     font-size: 0.9em;
-    color: #666;
+    color: #3c3c3c;
     margin-bottom: 20px;
     flex-grow: 1;
+
 }
 
 
@@ -253,7 +261,7 @@ main section.maleficios .aviso p {
     margin-top: 20px;
 }
 
-.impact-band strong {
+.impact-band span {
     color: #d9534f;
     font-weight: bold;
     margin-right: 5px;
@@ -283,13 +291,14 @@ main section.identificacao-alimentos div.lista-identificacao {
 }
 
 main section.identificacao-alimentos div.lista-alimentos {
-    background-color: white;
-    border: 1px solid #ffe8d6;
+    background-color: rgba(247, 204, 204, 0.541);
+    border: 1px solid rgba(151, 92, 92, 0.575);
 }
 
 main section.identificacao-alimentos div.lista-alimentos h2 {
-    font-size: 1.5vw;
-    color: #ff8c42;
+    font-size: 2vw;
+    font-weight: bold;
+    color: rgba(128, 0, 0, 0.87);
     margin-top: 0;
     margin-bottom: 30px;
 }
@@ -301,19 +310,20 @@ main section.identificacao-alimentos div.lista-alimentos ul {
 
 main section.identificacao-alimentos div.lista-alimentos ul li {
     padding: 10px 0;
-    font-size: 1vw;
-    color: #333;
-    border-bottom: 1px solid #f0f0f0;
+    font-size: 1.3vw;
+    color: rgba(128, 0, 0, 0.87);
+    border-bottom: 1px solid rgba(252, 246, 246, 0.87);
 }
 
 
 main section.identificacao-alimentos div.lista-identificacao {
     background-color: #f6fff6;
-    border: 1px solid #e0ffe0;
+    border: 1px solid #73b673;
 }
 
 main section.identificacao-alimentos div.lista-identificacao h2 {
-    font-size: 1.5vw;
+    font-size: 2vw;
+    font-weight: bold;
     color: green;
     margin-top: 0;
     margin-bottom: 30px;
@@ -326,14 +336,14 @@ main section.identificacao-alimentos div.lista-identificacao ul {
 
 main section.identificacao-alimentos div.lista-identificacao ul li {
     padding: 15px 0;
-    font-size: 1vw;
+    font-size: 1.3vw;
     color: green;
     font-weight: 600;
 }
 
 
 main section.identificacao-alimentos div.lista-identificacao ul li p {
-    font-size: 0.9vw;
+    font-size: 1.1vw;
     color: rgba(0, 128, 0, 0.7);
     margin: 5px 0 0 0;
     padding-left: 1em;
@@ -342,16 +352,15 @@ main section.identificacao-alimentos div.lista-identificacao ul li p {
 
 main section.stats div.result {
     background-color: white;
-    padding: 20px 0 20px 150px;
+    padding: 30px 35px 30px 35px;
     border-radius: 20px;
-    width: 76vw;
+    width: 1300px;
     margin: auto;
-    border: solid 1px rgba(0, 199, 27, 0.116);
+    border: 1px solid rgba(151, 92, 92, 0.575);
     transition: box-shadow 0.2s ease;
 }
 
 main section.stats div.result:hover {
-
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -360,33 +369,35 @@ main section.stats div.result ul {
     display: flex;
     justify-content: center;
     text-align: center;
-
 }
 
 main section.stats div.result h2 {
-    font-size: 30px;
-    margin-bottom: 10px;
+    font-size: 2vw;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
     display: flex;
     justify-content: center;
-    color: rgba(150, 0, 0, 0.733);
+    color: rgba(128, 0, 0, 0.87);
 }
 
 main section.stats div.result ul li {
-    margin: 10px 90px 40px 0;
+   /* margin: 10px 90px 40px 0;*/
     color: rgb(148, 43, 1);
     align-items: center;
     text-align: center;
 }
 
 main section.stats div.result h3 {
-    font-size: 29px;
-    margin: 0 0 10px 0;
+    font-size: 1.5vw;
+    margin-bottom: 10px;
 }
 
 main section.stats div.result ul li p {
-    width: 400px;
     display: flex;
     justify-content: center;
+    width: 20vw;
+    font-size: 1.3vw;
 }
 
 #footer {

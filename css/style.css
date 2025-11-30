@@ -113,6 +113,7 @@ ul.navegacao li:hover ul {
   color: #1e8544;
   line-height: 1.2;
   margin-bottom: 20px;
+  font-weight: bolder;
 }
 
 .banner h1 span {
@@ -120,7 +121,7 @@ ul.navegacao li:hover ul {
 }
 
 .banner p {
-  font-size: 1.2rem;
+  font-size: 1.7rem;
   color: #16A34A;
   line-height: 1.6;
   margin-bottom: 20px;
@@ -185,13 +186,18 @@ ul.navegacao li:hover ul {
 }
 
 .why-choose-us h2 {
-  font-size: 2rem;
+  font-size: 3rem;
   color: #1e8544;
   margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.why-choose-us h3 {
+  font-weight: 600 ;
 }
 
 .text-why-choose-us p {
-  font-size: 1.25rem;
+  font-size: 1.6rem;
   color: #16A34A;
   margin-top: 20px;
   margin-bottom: 40px;
@@ -208,7 +214,7 @@ ul.navegacao li:hover ul {
 .container-cards .card {
   background-color: #fff;
   border-radius: 15px;
-  padding: 40px 30px;
+  padding: 40px 30px 50px 30px;
   height: 300px;
   width: 280px;
   border: 1px solid #e0e0e0;
@@ -248,13 +254,13 @@ ul.navegacao li:hover ul {
 }
 
 .container-cards .card h3 {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   color: #1e8544;
   margin-bottom: 15px;
 }
 
 .container-cards .card p {
-  font-size: 1rem;
+  font-size: 1.25rem;
   line-height: 1.4;
   color: #16A34A;
 }
@@ -275,13 +281,14 @@ ul.navegacao li:hover ul {
 }
 
 .testimonials-header h2 {
-  font-size: 2.2rem;
+  font-size: 3rem;
+  font-weight: 600;
   color: #1e8544;
   margin-bottom: 20px;
 }
 
 .testimonials-header h3 {
-  font-size: 18px;
+  font-size: 1.6rem;
   color: #16A34A;
 }
 
@@ -321,7 +328,7 @@ ul.navegacao li:hover ul {
 
 .testimonial-text {
   text-align: center;
-  font-size: 16px;
+  font-size: 1.25rem;
   line-height: 1.6;
   color: #1e8544;
   margin-bottom: 20px;
@@ -374,12 +381,13 @@ ul.navegacao li:hover ul {
   text-align: center;
 }
 .resultados h2 {
-  font-size: 2.2rem;
+  font-size: 3rem;
   color: #1e8544;
   margin-bottom: 10px;
+  font-weight: 600;
 }
 .resultados p {
-  font-size: 1.25rem;
+  font-size: 1.55rem;
   color: #16A34A;
   margin-top: 20px;
   margin-bottom: 40px;
@@ -411,9 +419,10 @@ ul.navegacao li:hover ul {
 .call-to-action h2 {
   font-size: 2.2rem;
   margin-bottom: 20px;
+  font-weight: bold;
 }
 .call-to-action p {
-  font-size: 1.25rem;
+  font-size: 1.55rem;
   margin-bottom: 30px;
   color: #e0f7e9;
 }
@@ -422,9 +431,10 @@ ul.navegacao li:hover ul {
   top: 30px;
   background-color: #fff;
   color: #16A34A;
+  font-weight: 600;
   padding: 20px 20px;
   border-radius: 10px;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   transition: all 0.3s ease;
 }
 .call-to-action a:hover {
