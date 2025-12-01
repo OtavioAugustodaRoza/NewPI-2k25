@@ -544,14 +544,14 @@ section.rules div ul li.vermelho::marker {
 @media (max-width: 650px) {
 
   main section.banner h1 {
-    font-size: 6vw; /* antes 2.5vw */
+    font-size: 6vw;
     text-align: center;
     width: 90vw;
     margin: 20px auto;
   }
 
   main section.banner p {
-    font-size: 3.5vw; /* antes 1vw */
+    font-size: 3.5vw;
     width: 85vw;
   }
 
@@ -610,12 +610,11 @@ section.rules div ul li.vermelho::marker {
 
   .cards ul {
     grid-template-columns: 1fr;
-    gap: 25px;
+    gap: 100px;
   }
 
   .cards ul li.card {
     width: 80vw;
-    height: auto;
   }
 }
 

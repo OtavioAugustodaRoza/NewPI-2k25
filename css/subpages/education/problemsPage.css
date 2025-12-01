@@ -306,7 +306,6 @@ main section.maleficios .aviso p {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    /*max-width: 1200px;*/
     margin-left: 10vw;
     margin-right: 10vw;
 }
@@ -319,8 +318,6 @@ main section.maleficios .aviso p {
     padding: 25px;
     display: flex;
     flex-direction: column;
-    /*position: relative;*/
-    /*left: 360px;*/
     text-align: left;
     transition: transform 0.3s ease;
 }
@@ -560,6 +557,7 @@ main section.stats div.result ul li p {
     }
 
 
+
     .cards-container {
         grid-template-columns: 1fr;
         max-width: 100%;
@@ -642,7 +640,28 @@ main section.stats div.result ul li p {
     }
 }
 
+@media screen and (max-width: 600px) {
+  main section.maleficios .aviso h3 {
+        font-size: calc(12px + 3vw) !important;
+    }
+
+  main section.maleficios .aviso p {
+        font-size: calc(12px + 2vw);
+    }
+
+}
+
 
 #footer {
     margin-top: 100px;
+}
+
+
+@media screen and (max-width: 600px) {
+.lista-alimentos {
+  width: 80vw !important;
+}
+.lista-identificacao {
+  width: 80vw !important;
+}  
 }

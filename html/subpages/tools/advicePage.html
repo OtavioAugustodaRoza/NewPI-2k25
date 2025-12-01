@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Avaliação Nutricional | NutriVitta</title>
 
-    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/reset.css"/>
     <link rel="stylesheet" href="/css/subpages/features/avaliation.css" />
 
     <script
@@ -158,63 +158,8 @@
           </div>
     </main>
 
-    <footer class="footer" id="footer">
-      <div class="footer-container">
-        <div class="footer-col">
-          <h2 class="logo">
-            <i class="fa-solid fa-leaf fa-lg" style="color: #36ce4f"></i>
-            NutriVitta
-          </h2>
-          <p>
-            Transformando vidas através de uma alimentação equilibrada e
-            consciente. Sua jornada para uma vida mais saudável começa aqui.
-          </p>
-          <p class="love"><i class="fa-solid fa-heart fa-lg" style="color: #ff0000;"></i> Feito com amor pela sua saúde</p>
-        </div>
-
-        <div class="footer-col">
-          <h3>Links Rápidos</h3>
-          <ul>
-            <li><a href="#">Avaliação</a></li>
-            <li><a href="#">Educação</a></li>
-            <li><a href="#">Dicas</a></li>
-            <li><a href="#">Cardápios</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h3>Recursos</h3>
-          <ul>
-            <li><a href="#">Calculadora de IMC</a></li>
-            <li><a href="#">Guia de Substituições</a></li>
-            <li><a href="#">Receitas Saudáveis</a></li>
-            <li><a href="#">Dicas Nutricionais</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col-2">
-          <h3>Contato</h3>
-          <p>contato@nutrivitta.com</p>
-          <p>(47) 99999-9999</p>
-          <p>Araquari, SC</p>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <p>© 2025 NutriVitta. Todos os direitos reservados.</p>
-        <div class="footer-links">
-          <a href="#">Política de Privacidade</a> |
-          <a href="#">Termos de Uso</a>
-        </div>
-      </div>
-
-      <div class="footer-warning">
-        <strong>Aviso Importante:</strong> As informações contidas neste site
-        são apenas para fins educacionais e não substituem o aconselhamento
-        médico profissional. Sempre consulte um nutricionista ou médico antes de
-        fazer mudanças significativas em sua dieta, especialmente se tiver
-        condições médicas específicas.
-      </div>
+    <footer>
+      <div id="footer"></div>
     </footer>
   </body>
   <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
@@ -354,5 +299,14 @@ function toggleMenu2() {
         })
     })
   })
+
+
+  document.addEventListener("DOMContentLoaded", () => {
+            const nav = document.getElementById("footer");
+            fetch("/html/nav-footer/footer.html")
+                .then(response => response.text())
+                .then(data => { nav.innerHTML = data; })
+                .catch(err => console.error("Erro ao carregar navbar:", err));
+  });
   </script>
 </html>

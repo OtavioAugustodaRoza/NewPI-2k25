@@ -771,6 +771,41 @@
     }
 
 }
+/*---------------Videos--------------*/
+
+.othersMedia {
+  padding: 3vw 1vw;
+  & h1 {
+    text-align: center;
+    font-size: calc(20px + 1vw);
+    font-weight: bold;
+    color: #16a34a;
+  }
+  & ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 3vw;
+    flex-wrap: wrap;
+    & li {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10px;
+      & iframe {
+        min-width: 250px;
+        min-height: 150px;
+        width: 25vw;
+        height: 15vw;
+      }
+      & h2 {
+        font-size: calc(15px + 0.5vw);
+      }
+    }
+  }
+}
 
 
 /*---------------Footer------------*/
