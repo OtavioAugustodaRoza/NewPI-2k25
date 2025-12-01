@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
-*{
-    font-family: Inter;
-    
+
+* {
+  font-family: Inter;
 }
 
- @media (min-width: 650px) {
+/* ---------------------------- DESKTOP NAV ---------------------------- */
+
+@media (min-width: 650px) {
   header nav {
     display: flex;
     justify-content: space-between;
@@ -179,7 +181,7 @@
   }
 }
 
-@media (max-width:650px) {
+@media (max-width:650px){
   i {
     transition: 100ms;
   }
@@ -208,45 +210,44 @@
   .pc {
     display: none;
   }
-  .banner {
-    & .text-banner {
-      padding-left: 10vw;
-    }
-  }
 }
 
-  main {
-    max-width: 880px;
-    margin: 0 auto;
-    padding: 50px 20px;
-  }
-  
-  section h1 {
-    font-size: 2.4rem;
-    margin-bottom: 15px;
-    color: #14532d;
-    text-align: center;
-    font-weight: 700;
-  }
-  
-  section p {
-    font-size: 1.05rem;
-    text-align: center;
-    margin-bottom: 40px;
-    color: #475569;
-  }
-  
-  section h2 {
-    font-size: 1.6rem;
-    margin-bottom: 8px;
-    color: #166534;
-  }
-  
-  section div > p {
-    text-align: left;
-    color: #64748b;
-    margin-bottom: 20px;
-  }
+/* ---------------------------- MAIN ---------------------------- */
+
+main {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+section h1 {
+  font-size: 2.4rem;
+  margin-bottom: 15px;
+  color: #14532d;
+  text-align: center;
+  font-weight: 700;
+}
+
+section p {
+  font-size: 1.05rem;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #475569;
+}
+
+section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 8px;
+  color: #166534;
+}
+
+section div > p {
+  text-align: left;
+  color: #64748b;
+  margin-bottom: 20px;
+}
+
+/* ---------------------------- FORM ---------------------------- */
 
 .form-container {
   background: #ffffff;
@@ -254,17 +255,7 @@
   padding: 35px;
   box-shadow: 0 8px 30px rgba(0,0,0,0.07);
   border: 1px solid #e2e8f0;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-  animation: formFadeIn 0.8s ease forwards;
 }
-
-.form-container:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
-}
-
-
-
 
 fieldset {
   border: none;
@@ -276,26 +267,7 @@ legend {
   font-weight: 600;
   color: #14532d;
   margin-bottom: 20px;
-  position: relative;
-  animation: fadeSlide 0.8s ease forwards;
 }
-
-
-legend::after {
-  content: "";
-  display: block;
-  width: 60px;
-  height: 3px;
-  background: linear-gradient(90deg, #22c55e, #16a34a);
-  border-radius: 2px;
-  margin-top: 6px;
-  transition: width 0.4s ease;
-}
-
-legend:hover::after {
-  width: 100px;
-}
-
 
 .input-group {
   display: flex;
@@ -308,16 +280,12 @@ legend:hover::after {
   display: flex;
   flex-direction: column;
   margin-bottom: 22px;
-  animation: fadeUp 0.6s ease both;
 }
-
-
 
 label {
   font-weight: 500;
   margin-bottom: 6px;
   color: #334155;
-  transition: color 0.2s ease;
 }
 
 input, select, textarea {
@@ -326,7 +294,6 @@ input, select, textarea {
   border-radius: 10px;
   font-size: 1rem;
   background-color: #f9fafb;
-  transition: all 0.25s ease, box-shadow 0.3s ease;
 }
 
 input:hover, select:hover, textarea:hover {
@@ -338,15 +305,7 @@ input:focus, select:focus, textarea:focus {
   outline: none;
   border-color: #22c55e;
   background-color: #ffffff;
-  box-shadow: 0 0 0 4px rgba(34,197,94,0.25);
-  transform: scale(1.02);
 }
-
-input:focus + label,
-textarea:focus + label {
-  color: #16a34a;
-}
-
 
 .checkbox-grid {
   display: grid;
@@ -361,45 +320,19 @@ textarea:focus + label {
   background: #f1f5f9;
   padding: 10px 14px;
   border-radius: 10px;
-  transition: all 0.3s ease;
-  cursor: pointer;
-  border: 1px solid transparent;
-  position: relative;
 }
 
 .checkbox-item:hover {
   background: #e2fbe8;
-  transform: translateY(-2px);
-  border-color: #bbf7d0;
 }
 
 .checkbox-item input {
   width: 18px;
   height: 18px;
   accent-color: #22c55e;
-  transition: transform 0.25s ease;
 }
 
-.checkbox-item input:checked {
-  transform: scale(1.15);
-  accent-color:  #A7F3D0;
-}
-
-.checkbox-item input:checked + span::after {
-  content: "✔";
-  position: absolute;
-  right: 10px;
-  font-size: 1rem;
-  color: #16a34a;
-  animation: pop 0.3s ease;
-}
-
-@keyframes pop {
-  0% { transform: scale(0); opacity: 0; }
-  80% { transform: scale(1.2); opacity: 1; }
-  100% { transform: scale(1); }
-}
-
+/* ---------------------------- BOTÃO ---------------------------- */
 
 .submit-btn {
   width: 100%;
@@ -408,156 +341,77 @@ textarea:focus + label {
   font-weight: 600;
   border: none;
   border-radius: 12px;
-  background: linear-gradient(135deg, #22c55e, #16a34a);
+  background: #22c55e;
   color: #fff;
   cursor: pointer;
-  transition: all 0.35s ease;
-  box-shadow: 0 6px 15px rgba(22, 163, 74, 0.25);
-  position: relative;
-  overflow: hidden;
-}
-
-.submit-btn::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -75%;
-  width: 50%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.25);
-  transform: skewX(-25deg);
-  transition: left 0.6s ease;
-}
-
-.submit-btn:hover::before {
-  left: 125%;
 }
 
 .submit-btn:hover {
-  background: linear-gradient(135deg, #16a34a, #15803d);
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(22, 163, 74, 0.3);
+  background: #16a34a;
 }
 
-.submit-btn:active {
-  transform: scale(0.98);
-  box-shadow: 0 4px 10px rgba(22, 163, 74, 0.2);
-}
+/* ---------------------------- MOBILE FORM ---------------------------- */
 
-.submit-btn:focus {
-  outline: 2px solid #86efac;
-}
-
-
-.submit-btn.success {
-  background: linear-gradient(135deg, #16a34a, #22c55e);
-  box-shadow: 0 6px 20px rgba(34,197,94,0.3);
-}
-
-.submit-btn.success::after {
-  content: "✔ Enviado!";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0.8);
-  opacity: 0;
-  animation: successPop 0.6s forwards;
-}
-
-@keyframes successPop {
-  0% {
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(0.6);
+@media (max-width: 600px) {
+  .input-group {
+    flex-direction: column;
   }
-  80% {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1.1);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
+
+  .form-container {
+    padding: 25px 20px;
   }
 }
 
-  
-  @media (max-width: 600px) {
-    .input-group {
-      flex-direction: column;
-    }
-    
-    .form-container {
-      padding: 25px 20px;
-    }
-  }
-  
+/* ---------------------------- FOOTER ---------------------------- */
 
-  .footer {
-    background: #006B3F;
-    color: #ffffff;
-    padding: 40px 80px 30px 80px;
-    font-family: Inter, sans-serif;
-    font-size: 1.1rem;
-  }
-  
-  .footer-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 40px;
-    margin-bottom: 30px;
-    line-height: 20px;
-  }
-  
-  .footer h2,
-  .footer h3 {
-    margin-bottom: 30px;
-    font-weight: 600;
-  }
-  
-  
-  .footer-col ul li{
-    margin-bottom: 18px;
-  }
-  
-  .footer-col ul li a {
-    color: #ffffff;
-  }
-  
-  .love {
-    margin-top: 10px;
-    color: #ffffff;
-  }
-  
-  .footer-bottom {
-    border-top: 1px solid #fff3;
-    padding-top: 15px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    
-    font-size: 14px;
-  }
-  
-  .footer-bottom a {
-    color: #fff;
-    margin-left: 10px;
-    text-decoration: none;
-  }
-  
-  .footer-warning {
-    margin-top: 20px;
-    background: #015E36;
-    padding: 12px;
-    border-radius: 8px;
-    font-size: 13px;
-    line-height: 1.5;
-  }
-  h2{
-      font-size: 1.55rem;
-  }
-  .love{
-      margin-top: 30px;
-  }
-  .footer-col-2 h3,p {
-    margin-bottom: 20px;
-  }
-  
+.footer {
+  background: #006B3F;
+  color: #ffffff;
+  padding: 40px 80px 30px 80px;
+  font-size: 1.1rem;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.footer h2,
+.footer h3 {
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.footer-col ul li {
+  margin-bottom: 18px;
+}
+
+.footer-col ul li a {
+  color: #ffffff;
+}
+
+.love {
+  margin-top: 30px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #fff3;
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+
+.footer-warning {
+  margin-top: 20px;
+  background: #015E36;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+h2 { font-size: 1.55rem; }

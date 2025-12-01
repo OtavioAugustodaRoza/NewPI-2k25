@@ -1,230 +1,209 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre Nós</title>
+
     <link rel="stylesheet" href="/css/staticpages/aboutPage.css">
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/nav-footer/footer.css">
+
     <script src="https://kit.fontawesome.com/4410d9698c.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header>
-            <nav class="nav-bar">
-                <div class="logo">
-                    <a href="/index.html"><i class="fa-solid fa-leaf fa-lg" style="color: #36ce4f;"></i></a>
-                    <a href="/index.html">NutriVitta</i></a>
-    
-                </div>
-                <button class="hamburguer" onclick="toggleMenu()" id="hamburguer">|||</button>
-                <div class="paginas" id="paginas">
-                    <ul class="navegacao">
-                        <li>
-                            <a href="/index.html">Início</a>
-                        </li>
-                        <li>
-                            <a href="/html/subpages/education/benefitsPage.html" class="pc">Educação <i class="fa-solid fa-chevron-down" style="color: #16a34a;" class="arrow"></i></a>
-                            <button class="moba" onclick="toggleMenu1()">Educação<i id="icon1" class="fa-solid fa-chevron-down" style="color: #16a34a; margin-left: 5px; rotate: -90deg;" class="arrow"></i></button>
-                            <ul class="submenu" id="menu1">
-                                <li><a href="/html/subpages/education/benefitsPage.html">Benefícios</a></li>
-                                <li><a href="/html/subpages/education/benefitsPage.html#pilares">Pilares</a></li>
-                                <li><a href="/html/subpages/education/problemsPage.html">Problemas dos Ultraprocessados</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="/html/subpages/tools/advicePage.html" class="pc">Ferramentas  <i class="fa-solid fa-chevron-down" style="color: #16a34a;" class="arrow"></i></a>
-                            <button class="moba" onclick="toggleMenu2()">Ferramentas<i id="icon2" class="fa-solid fa-chevron-down" style="color: #16a34a; margin-left: 5px; rotate: -90deg;" class="arrow"></i></button>
-                            <ul class="submenu" id="menu2">
-                                <li><a href="/html/subpages/tools/advicePage.html">Avaliação Nutricional</a></li>
-                                <li><a href="/html/subpages/tools/cardapio.html">Cardápios</a></li>
-                                <li><a href="/html/subpages/tools/dicas.html">Dicas</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="/html/staticpages/aboutPage.html">Sobre Nós</a>
-                        </li>
+
+<header>
+    <nav class="nav-bar">
+        <div class="logo">
+            <a href="/index.html"><i class="fa-solid fa-leaf fa-lg" style="color: #36ce4f;"></i></a>
+            <a href="/index.html">NutriVitta</a>
+        </div>
+
+        <button class="hamburguer" id="hamburguer" onclick="toggleMenu()">|||</button>
+
+        <div class="paginas" id="paginas">
+            <ul class="navegacao">
+
+                <li><a href="/index.html">Início</a></li>
+
+                <li>
+                    <a href="/html/subpages/education/benefitsPage.html" class="pc">
+                        Educação <i class="fa-solid fa-chevron-down arrow" style="color:#16a34a;"></i>
+                    </a>
+
+                    <button class="moba" onclick="toggleMenu1()">
+                        Educação
+                        <i id="icon1" class="fa-solid fa-chevron-down arrow" style="color:#16a34a; margin-left:5px; rotate:-90deg;"></i>
+                    </button>
+
+                    <ul class="submenu" id="menu1">
+                        <li><a href="/html/subpages/education/benefitsPage.html">Benefícios</a></li>
+                        <li><a href="/html/subpages/education/benefitsPage.html#pilares">Pilares</a></li>
+                        <li><a href="/html/subpages/education/problemsPage.html">Problemas dos Ultraprocessados</a></li>
                     </ul>
-                </div>
-            </nav>
-        </header>
-    <main>
-        
-        <section class="sobre-nutrivitta">
-            <div class="content-wrapper">
+                </li>
 
-                <div class="text-content">
-                    <h1>Sobre o NutriVitta</h1>
+                <li>
+                    <a class="pc" href="/html/subpages/tools/advicePage.html">
+                        Ferramentas <i class="fa-solid fa-chevron-down arrow" style="color:#16a34a;"></i>
+                    </a>
 
-                    <p class="mission-statement">
-                        Somos uma plataforma dedicada a transformar a relação das pessoas com a alimentação, oferecendo
-                        conhecimento científico de forma acessível e prática.
-                    </p>
+                    <button class="moba" onclick="toggleMenu2()">
+                        Ferramentas
+                        <i id="icon2" class="fa-solid fa-chevron-down arrow" style="color:#16a34a; margin-left:5px; rotate:-90deg;"></i>
+                    </button>
 
-                    <p class="mission-details">
-                        Nossa missão é democratizar o acesso à educação nutricional de qualidade, ajudando pessoas de
-                        todas as idades a desenvolver hábitos alimentares mais saudáveis e sustentáveis.
-                    </p>
-                </div>
-
-                <div class="image-content">
-                    <img class="logo" src="img/image.png" alt="Imagem salada de frutas">
-                </div>
-
-            </div>
-        </section>
-        <section>
-
-            <h1 class="cola-titulo">Colaboradores</h1>
-            <section class="colaboradores">
-                <div id="Otavio" class="colaborador" onmouseover="contri('Otavio')">
-                    <img src="../../otavio.jpeg" alt="Otávio">
-                    <h2>Otávio</h2>
-                    <div class="tooltip">
-                        <img src="../../otavio.jpeg" alt="Otávio">
-                        <p id="msg-Otavio"></p>
-                    </div>
-                </div>
-
-                <div id="jota" class="colaborador" onmouseover="contri('jota')">
-                    <img src="../../joao.jpeg" alt="João">
-                    <h2>João</h2>
-                    <div class="tooltip">
-                        <img src="../../joao.jpeg" alt="João">
-                        <p id="msg-jota"></p>
-                    </div>
-                </div>
-
-                <div id="Miguel" class="colaborador" onmouseover="contri('Miguel')">
-                    <img src="../../miguel.jpeg" alt="Miguel">
-                    <h2>Miguel</h2>
-                    <div class="tooltip">
-                        <img src="../../miguel.jpeg" alt="Miguel">
-                        <p id="msg-Miguel"></p>
-                    </div>
-                </div>
-
-                <div id="sofia" class="colaborador" onmouseover="contri('sofia')">
-                    <img src="../../sofia.jpeg" alt="Sofia">
-                    <h2>Sofia</h2>
-                    <div class="tooltip">
-                        <img src="../../sofia.jpeg" alt="Sofia">
-                        <p id="msg-sofia"></p>
-                    </div>
-                </div>
-
-                <div id="Alice" class="colaborador" onmouseover="contri('Alice')">
-                    <img src="../../alice.jpeg" alt="Alice">
-                    <h2>Alice</h2>
-                    <div class="tooltip">
-                        <img src="../../alice.jpeg" alt="Alice">
-                        <p id="msg-Alice"></p>
-                    </div>
-                </div>
-
-                <div id="Flavia" class="colaborador" onmouseover="contri('Flavia')">
-                    <img src="../../flavia.jpeg" alt="Flavia">
-                    <h2>Flavia</h2>
-                    <div class="tooltip">
-                        <img src="../../flavia.jpeg" alt="Flavia">
-                        <p id="msg-Flavia"></p>
-                    </div>
-                </div>
-            </section>
-        <section class="nossa-missao">
-
-            <div class="header-missao">
-                <h1>Nossa Missão</h1>
-                <p>Transformar vidas através da educação nutricional, oferecendo ferramentas e conhecimentos que
-                    permitam a cada pessoa fazer escolhas alimentares mais conscientes e saudáveis.</p>
-            </div>
-
-            <div class="cards-missao-container">
-
-                <div class="card-missao">
-                    <div class="icon-circle verde-claro">
-                        <i class="fa-solid fa-heart-pulse"></i>
-                    </div>
-                    <h3>Compromisso com a Saúde</h3>
-                    <p>Nossa missão é promover a saúde através de informações confiáveis e práticas nutricionais
-                        baseadas em evidências científicas.</p>
-                </div>
-
-                <div class="card-missao">
-                    <div class="icon-circle verde-claro">
-                        <i class="fa-solid fa-bullseye"></i>
-                    </div>
-                    <h3>Personalização</h3>
-                    <p>Acreditamos que cada pessoa é única e merece orientações nutricionais adaptadas às suas
-                        necessidades específicas.</p>
-                </div>
-
-                <div class="card-missao">
-                    <div class="icon-circle verde-claro">
-                        <i class="fa-solid fa-people-group"></i>
-                    </div>
-                    <h3>Inclusão e Diversidade</h3>
-                    <p>Oferecemos soluções que respeitam diferentes culturas alimentares, restrições e preferências
-                        pessoais.</p>
-                </div>
-
-                <div class="card-missao">
-                    <div class="icon-circle verde-claro">
-                        <i class="fa-solid fa-shield-alt"></i>
-                    </div>
-                    <h3>Confiabilidade</h3>
-                    <p>Todas as nossas informações são baseadas em pesquisas científicas atuais e validadas por
-                        profissionais da área.</p>
-                </div>
-
-                <div class="card-missao">
-                    <div class="icon-circle verde-claro">
-                        <i class="fa-solid fa-leaf"></i>
-                    </div>
-                    <h3>Sustentabilidade</h3>
-                    <p>Promovemos escolhas alimentares que sejam benéficas tanto para a saúde humana quanto para o meio ambiente.</p>
-                </div>
-
-                <div class="card-missao">
-                    <div class="icon-circle verde-claro">
-                        <i class="fa-solid fa-award"></i>
-                    </div>
-                    <h3>Excelência</h3>
-                    <p>Buscamos continuamente a melhoria de nossos serviços para oferecer a melhor experiência aos
-                        nossos usuários.</p>
-                </div>
-
-            </div>
-        </section>
-            <section class="projetinho">
-                <div class="container">
-                    <h3>Funções do Grupo</h3>
-                    <ul class="funçãodoscrias">
-                        <li><strong>Líder:</strong> Sofia Martins de Bona</li>
-                        <li><strong>Secretária:</strong> Sofia Martins de Bona</li>
-                        <li><strong>Desenvolvedores:</strong> João Pedro Matos Santos, Miguel Silva da Roza e Otávio
-                            Augusto
-                            da Roza</li>
-                        <li><strong>Grupo de Pesquisa:</strong> Alice Lanznaster e Flavia Busarello Corrêa</li>
+                    <ul class="submenu" id="menu2">
+                        <li><a href="/html/subpages/tools/advicePage.html">Avaliação Nutricional</a></li>
+                        <li><a href="/html/subpages/tools/cardapio2.html">Cardápios</a></li>
+                        <li><a href="/html/subpages/tools/dicas.html">Dicas</a></li>
                     </ul>
-                </div>
-            </section>
-    </main>
+                </li>
+
+                <li><a href="/html/staticpages/aboutPage.html">Sobre Nós</a></li>
+
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<main>
+
+<section class="sobre-nutrivitta">
+    <div class="content-wrapper">
+
+        <div class="text-content">
+            <h1>Sobre o NutriVitta</h1>
+
+            <p class="mission-statement">
+                Somos uma plataforma dedicada a transformar a relação das pessoas com a alimentação.
+            </p>
+
+            <p class="mission-details">
+                Nossa missão é democratizar o acesso à educação nutricional de qualidade.
+            </p>
+        </div>
+
+        <div class="image-content">
+            <img class="logo" src="img/image.png" alt="Imagem salada de frutas">
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <h2 class="cola-titulo">Colaboradores</h2>
+
+    <section class="colaboradores">
+
+        <div id="Otavio" class="colaborador">
+            <img src="../../otavio.jpeg" alt="Otávio">
+            <h3>Otávio</h3>
+        </div>
+
+        <div id="jota" class="colaborador">
+            <img src="../../joao.jpeg" alt="João">
+            <h3>João</h3>
+        </div>
+
+        <div id="Miguel" class="colaborador" >
+            <img src="../../miguel.jpeg" alt="Miguel">
+            <h3>Miguel</h3>
+        </div>
+
+        <div id="sofia" class="colaborador" >
+            <img src="../../sofia.jpeg" alt="Sofia">
+            <h3>Sofia</h3>
+         
+        </div>
+
+        <div id="Alice" class="colaborador" >
+            <img src="../../alice.jpeg" alt="Alice">
+            <h3>Alice</h3>
+        </div>
+
+        <div id="Flavia" class="colaborador">
+            <img src="../../flavia.jpeg" alt="Flavia">
+            <h3>Flavia</h3>
+         
+        </div>
+
+    </section>
+</section>
+
+<section class="projetinho">
+    <div class="container">
+        <h3>Funções do Grupo</h3>
+        <ul class="funçãodoscrias">
+            <li><strong>Líder:</strong> Sofia Martins de Bona</li>
+            <li><strong>Secretária:</strong> Sofia Martins de Bona</li>
+            <li><strong>Desenvolvedores:</strong> João Pedro Matos Santos, Miguel Silva da Roza e Otávio Augusto da Roza</li>
+            <li><strong>Grupo de Pesquisa:</strong> Alice Lanznaster e Flavia Busarello Corrêa</li>
+        </ul>
+    </div>
+</section>
+<section class="nossa-missao">
+    <div class="header-missao">
+        <h2>Nossa Missão</h2>
+        <p>Transformar vidas através da educação nutricional.</p>
+    </div>
+
+    <div class="cards-missao-container">
+
+        <div class="card-missao">
+            <div class="icon-circle verde-claro"><i class="fa-solid fa-heart-pulse"></i></div>
+            <h3>Compromisso com a Saúde</h3>
+            <p>Informações confiáveis baseadas em ciência.</p>
+        </div>
+
+        <div class="card-missao">
+            <div class="icon-circle verde-claro"><i class="fa-solid fa-bullseye"></i></div>
+            <h3>Personalização</h3>
+            <p>Orientações adaptadas para cada pessoa.</p>
+        </div>
+
+        <div class="card-missao">
+            <div class="icon-circle verde-claro"><i class="fa-solid fa-people-group"></i></div>
+            <h3>Inclusão e Diversidade</h3>
+            <p>Respeito a diferentes culturas e preferências.</p>
+        </div>
+
+        <div class="card-missao">
+            <div class="icon-circle verde-claro"><i class="fa-solid fa-shield-alt"></i></div>
+            <h3>Confiabilidade</h3>
+            <p>Conteúdo validado por profissionais.</p>
+        </div>
+
+        <div class="card-missao">
+            <div class="icon-circle verde-claro"><i class="fa-solid fa-leaf"></i></div>
+            <h3>Sustentabilidade</h3>
+            <p>Saúde humana e ambiental.</p>
+        </div>
+
+        <div class="card-missao">
+            <div class="icon-circle verde-claro"><i class="fa-solid fa-award"></i></div>
+            <h3>Excelência</h3>
+            <p>Melhoria contínua.</p>
+        </div>
+
+    </div>
+</section>
+</main>
+
     <footer class="footer" id="footer">
         <div class="footer-container">
-          <!-- Coluna 1 -->
           <div class="footer-col">
             <h2 class="logo"><i class="fa-solid fa-leaf fa-lg" style="color: #36ce4f;"></i> NutriVitta</h2>
             <p>
               Transformando vidas através de uma alimentação equilibrada e consciente. 
               Sua jornada para uma vida mais saudável começa aqui.
             </p>
-            <p class="love">Feito com amor pela sua saúde</p>
+            <p class="love"><i class="fa-solid fa-heart fa-lg" style="color: #ff0000;"></i> Feito com amor pela sua saúde</p>
           </div>
       
-          <!-- Coluna 2 -->
           <div class="footer-col">
             <h3>Links Rápidos</h3>
             <ul>
@@ -258,7 +237,7 @@
         </div>
       
         <div class="footer-bottom">
-          <p>© 2025 NutriVitta. Todos os direitos reservados.</p>
+          <p>&copy; 2025 NutriVitta. Todos os direitos reservados.</p>
           <div class="footer-links">
             <a href="#">Política de Privacidade</a> | 
             <a href="#">Termos de Uso</a>
@@ -272,100 +251,30 @@
           especialmente se você tiver condições médicas específicas.
         </div>
         </footer>
-</body>
-
-</html><script src="/html/nav-footer/nav.html"></script>
 <script>
     const menu = document.getElementById('paginas');
-const botao = document.getElementById('hamburguer');
+    const botao = document.getElementById('hamburguer');
 
-function toggleMenu() {
-    if (menu.style.display === "block") {
-        menu.style.display = "none"
-        botao.style.rotate = "0deg"
-        botao.textContent = "|||"
-    } else {
-        menu.style.display = "block"
-        botao.style.rotate = "90deg"
-        botao.textContent = "X"
-    }
-}
-
-const menu1 = document.getElementById("menu1")
-const menu2 = document.getElementById("menu2")
-function toggleMenu1() {
-    const icon = document.getElementById("icon1")
-    if (menu1.style.display === "block") {
-        menu1.style.display = "none"
-        icon.style.rotate = "-90deg"
-    } else {
-        menu1.style.display = "block"
-        icon.style.rotate = "0deg"
-    }
-}
-function toggleMenu2() {
-    const icon = document.getElementById("icon2")
-    if (menu2.style.display === "block") {
-        menu2.style.display = "none"
-        icon.style.rotate = "-90deg"
-    } else {
-        menu2.style.display = "block"
-        icon.style.rotate = "0deg"
-    }
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-      const nav = document.getElementById("footer");
-
-      // Caminho absoluto para o footer
-      fetch("/html/nav-footer/footer.html")
-        .then(response => response.text())
-        .then(data => {
-          nav.innerHTML = data;
-        })
-        .catch(err => console.error("Erro ao carregar navbar:", err));
-    });
-    document.addEventListener("DOMContentLoaded", () => {
-        const nav = document.getElementById("globalNav");
-
-        fetch("/html/nav-footer/nav.html")
-            .then(response => response.text())
-            
-            .then(data => {
-                nav.innerHTML = data;
-            })
-            .catch(err => console.error("Erro ao carregar navbar:", err));
-    });
-
-    document.addEventListener("DOMContentLoaded", () => {
-        const footer = document.getElementById("footer");
-
-        fetch("../nav-footer/footer.html")
-            .then(response => response.text())
-            .then(data => {
-                footer.innerHTML = data;
-            })
-            .catch(err => console.error("Erro ao carregar footer:", err));
-    });
-
-    const contribuicao = {
-        Otavio: "Desenvolvedor, colabora na programação do site e na implementação das funcionalidades.",
-        jota: "Desenvolvedor, responsável por auxiliar na criação do site e no design das páginas.",
-        Miguel: "Desenvolvedor do projeto, encarregado de trabalhar na programação e na estruturação do site.",
-        sofia: "Líder e secretária do grupo, responsável por coordenar as atividades, organizar as reuniões e registrar as decisões tomadas.",
-        Alice: "Pesquisadora do grupo, dedicada a buscar informações confiáveis sobre alimentação equilibrada. ",
-        Flavia: "Pesquisadora, responsável por complementar a coleta de dados e organizar materiais teóricos. "
-    };
-    //fiz uns texto meio provisorio não sei direito o que cada um fez, dai muda depois .
-
-    // to construindo o javascript ainda, NÂO QUERO CRITICAS !!!!
-    function contri(id) {
-        const msg = document.getElementById("msg-" + id);
-
-        if (msg) {
-            msg.textContent = contribuicao[id];
-        }
+    function toggleMenu() {
+        menu.style.display = menu.style.display === "block" ? "none" : "block";
+        botao.textContent = botao.textContent === "|||" ? "X" : "|||";
     }
 
+    const menu1 = document.getElementById("menu1");
+    const menu2 = document.getElementById("menu2");
+
+    function toggleMenu1() {
+        const icon = document.getElementById("icon1");
+        menu1.style.display = menu1.style.display === "block" ? "none" : "block";
+        icon.style.rotate = icon.style.rotate === "-90deg" ? "0deg" : "-90deg";
+    }
+
+    function toggleMenu2() {
+        const icon = document.getElementById("icon2");
+        menu2.style.display = menu2.style.display === "block" ? "none" : "block";
+        icon.style.rotate = icon.style.rotate === "-90deg" ? "0deg" : "-90deg";
+    }
 </script>
-<script src="/html/nav-footer/footer.html"></script>
+
+</body>
+</html>
