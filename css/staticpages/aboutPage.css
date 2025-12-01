@@ -234,17 +234,18 @@ main section.sobre-nutrivitta div.text-content {
 
 main section.sobre-nutrivitta div.text-content h1 {
     font-family: 'Inter', sans-serif;
-    font-size: 3vw;
+    font-size: 3.5vw;
     color: green;
     line-height: 1.1;
     margin-bottom: 30px;
     width: fit-content;
     padding-bottom: 5px;
+    font-weight: 600;
 }
 
 main section.sobre-nutrivitta div.text-content p {
     font-family: 'Inter', sans-serif;
-    font-size: 1.1vw;
+    font-size: 1.5vw;
     color: #333;
     line-height: 1.6;
     margin-bottom: 20px;
@@ -289,14 +290,15 @@ main section.nossa-missao div.header-missao {
     max-width: 800px;
 }
 
-main section.nossa-missao div.header-missao h1 {
-    font-size: 2.5vw;
+main section.nossa-missao div.header-missao h2 {
+    font-size: 3vw;
     color: green;
     margin-bottom: 15px;
+    font-weight: 600;
 }
 
 main section.nossa-missao div.header-missao p {
-    font-size: 1.2vw;
+    font-size: 1.5vw;
     color: #333;
     line-height: 1.6;
 }
@@ -391,6 +393,7 @@ main section.nossa-equipe div.header-equipe p {
     text-align: center;
     font-size: 2.5rem;
     margin-top: 30px;
+    font-weight: 600;
     margin-bottom: 40px;
 }
 
@@ -670,7 +673,7 @@ p {
     }
 
     .colaborador h2 {
-        font-size: 14px;
+        font-size: 18px;
     }
 
 

@@ -799,6 +799,8 @@
         min-height: 150px;
         width: 25vw;
         height: 15vw;
+        border: solid 5px #0c4d24;
+        padding: 10px;
       }
       & h2 {
         font-size: calc(15px + 0.5vw);
