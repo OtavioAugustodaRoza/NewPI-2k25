@@ -1,60 +1,30 @@
-# 🌱 Projeto Integrador – Alimentação Equilibrada
+# ATAS DO PROJETO
 
+## 09/07
 
----
+A proposta do trabalho foi apresentada pelo professor. O grupo discutiu ideias e decidiu que o tema seria Alimentação Equilibrada. Sofia organizou a divisão inicial de funções e registrou as primeiras decisões.
 
-## 📌 Descrição do Projeto
-Este projeto foi desenvolvido como parte do **Projeto Integrador** do curso no Instituto Federal Catarinense – Campus Araquari.  
-O tema central é a **Alimentação Equilibrada**, destacando a importância da nutrição saudável para a manutenção da qualidade de vida.  
+## 09/07 a 15/07
 
-O site apresenta uma experiência completa para o usuário aprender e praticar hábitos saudáveis:  
-- **Informações teóricas detalhadas** sobre benefícios e malefícios de diferentes tipos de alimentos  
-- **Dicas** para montar refeições equilibradas e evitar alimentos ultraprocessados  
-- **Calculadora de IMC** em HTML, CSS e JavaScript, permitindo avaliar peso e altura, com orientações sobre como melhorar a saúde corporal  
-- **Sugestões de cardápio personalizadas**, considerando restrições alimentares, estilo de vida e objetivos nutricionais  
-- **Seções educativas interativas**, como quizzes sobre alimentação, curiosidades nutricionais e gráficos simples mostrando pirâmide alimentar  
-- **Recursos visuais e animados**, incluindo cards e ícones que tornam a navegação mais intuitiva e agradável  
-- **Acesso a conteúdos extras**, como vídeos curtos, infográficos e links para artigos confiáveis sobre nutrição  
+Alice e Flávia iniciaram pesquisas gerais sobre alimentação saudável. João Pedro, Miguel e Otávio começaram a planejar como o site seria estruturado. Sofia acompanhou o andamento e garantiu a organização das tarefas.
 
-O site não apenas informa, mas também **engaja o usuário**, incentivando mudanças de hábitos de forma prática e divertida, combinando teoria, cálculo e interatividade.
+## 16/07
 
----
+Os meninos iniciaram a criação dos primeiros arquivos e pastas do projeto. Alice e Flávia continuaram reunindo conteúdos confiáveis para as páginas do site. Sofia supervisionou o progresso e registrou os encaminhamentos.
 
-## 🎯 Objetivos
-- Conscientizar sobre a importância da alimentação equilibrada  
-- Incentivar hábitos alimentares saudáveis  
-- Demonstrar efeitos nocivos do consumo excessivo de alimentos ultraprocessados  
-- Disponibilizar sugestões práticas de cardápio considerando restrições alimentares  
-- Implementar uma ferramenta de cálculo de **IMC**  
+## 13/08
 
----
+O grupo definiu o nome oficial NutriVitta, criou as redes sociais e discutiu a paleta de cores e layout inicial do site. Os desenvolvedores fizeram os primeiros rascunhos do design com base nas pesquisas das meninas.
 
-## ⚙️ Funcionalidades
-### 🧮 Cálculo de IMC
-O usuário informa peso e altura e recebe o valor do IMC com classificação:  
-- Abaixo do peso  
-- Peso normal  
-- Sobrepeso  
-- Obesidade  
+## 20/08
 
-### 📚 Conteúdo educativo
-- Benefícios da alimentação equilibrada  
-- Pilares de uma nutrição saudável  
-- Malefícios dos alimentos ultraprocessados  
-- Dicas para evitar hábitos alimentares prejudiciais  
+O desenvolvimento do site avançou com testes iniciais de páginas e organização do conteúdo. Alice e Flávia finalizaram parte dos textos para redes sociais. Houve alinhamento sobre como cada página deveria funcionar.
 
-### 🍽️ Sugestão de cardápio
-- Personalizada com base em restrições, peso e altura do usuário  
+## 23/08
 
-### 📝 Funcionalidades Extras
-- Quizzes interativos sobre alimentação saudável  
-- Gráficos simples mostrando pirâmide alimentar  
-- Cards animados e ícones flutuantes para melhor UX  
-- Links para artigos e vídeos educativos confiáveis  
+O design começou a ser detalhado, incluindo seções de receitas, dicas e curiosidades. As meninas trouxeram referências de outros sites, ajudando os desenvolvedores a ajustar o layout. Sofia registrou as próximas etapas.
 
----
-
-## 🛠️ Tecnologias Utilizadas
+# Tecnologias Utilizadas
 ![HTML5](https://img.shields.io/badge/HTML5-%23E34F26?style=for-the-badge&logo=html5&logoColor=white)  
 ![CSS3](https://img.shields.io/badge/CSS3-%231572B6?style=for-the-badge&logo=css3&logoColor=white)  
 ![JavaScript](https://img.shields.io/badge/JavaScript-%23F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)  
