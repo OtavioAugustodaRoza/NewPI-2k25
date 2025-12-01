@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cardapios</title>
     <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/nav-footer/nav.css">
+    <script src="https://kit.fontawesome.com/4410d9698c.js" crossorigin="anonymous"></script>
   </head>
   <style>
     * {
       font-family: sans-serif;
     }
     main {
-      height: 60vh;
       padding: 5vw;
       & section.cardapio {
         width: 100%;
@@ -21,11 +22,10 @@
         justify-content: center;
         align-items: center;
         gap: 30px;
+        & h1 {
+          font-size: calc(20px + 1vw);
+        }
       }
-    }
-    h1 {
-      text-align: center;
-      font-size: calc(20px + 1vw);
     }
 
     /*botoes*/
@@ -34,15 +34,25 @@
       flex-direction: column;
       gap: 20px;
       align-items: center;
+      & h2 {
+        font-size: calc(10px + 0.5vw);
+        margin-bottom: 10px;
+        font-style: italic;
+      }
     }
     .tipo nav {
       display: flex;
       overflow: hidden;
       border-radius: 200px;
+      width: 30vw;
+      height: 40px;
       & .btn-tipo {
+        width: 100%;
         background-color: #f6f6f6;
         border: none;
         padding: 5px 20px;
+        transition: ease 200ms;
+        font-weight: bold;
       }
       & .ativo {
         background-color: #5dbe54;
@@ -57,11 +67,15 @@
       display: flex;
       overflow: hidden;
       border-radius: 200px;
-      margin-left: -30px;
+      width: 20vw;
+      height: 30px;
       & .btn-horario {
         background-color: #f6f6f6;
         border: none;
         padding: 5px 20px;
+        width: 100%;
+        transition: ease 200ms;
+        font-weight: bold;
       }
       & .ativo {
         background-color: #5dbe54;
@@ -71,19 +85,31 @@
         cursor: pointer;
       }
     }
-
+    @media screen and (max-width: 1300px) {
+      .tipo nav {
+        width: 85vw;
+      }
+      .horario nav {
+        width: 65vw;
+      }
+    }
     /* Card */
     .cards-container {
       & .card {
-        padding: 3vw;
-        border: solid 1px;
+        text-align: center;
+        border: solid 2px #16a34a;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 20px;
-        background-color: #f6f6f6;
+        background-color: #f9f9f9;
         border-radius: 20px;
+        padding: 10vw;
+        & img {
+          width: 90%;
+          border-radius: 30px;
+        }
         & h2 {
           font-size: 20px;
         }
@@ -100,15 +126,70 @@
         & a:hover {
           background-color: #57a750;
         }
+        & .info {
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+          gap: 20px;
+        }
+      }
+    }
+    @media screen and (min-width: 1300px) {
+      .cards-container {
+        & .card {
+          padding: 1vw;
+          width: 400px;
+          & img {
+            width: 80%;
+          }
+        }
       }
     }
   </style>
   <body>
-    <header></header>
+    <header>
+            <nav class="nav-bar">
+                <div class="logo">
+                    <a href="index.html"><i class="fa-solid fa-leaf fa-lg" style="color: #36ce4f;"></i></a>
+                    <a href="index.html">NutriVitta</i></a>
+    
+                </div>
+                <button class="hamburguer" onclick="toggleMenu()" id="hamburguer">|||</button>
+                <div class="paginas" id="paginas">
+                    <ul class="navegacao">
+                        <li>
+                            <a href="index.html">Início</a>
+                        </li>
+                        <li>
+                            <a href="html/subpages/education/benefitsPage.html" class="pc">Educação <i class="fa-solid fa-chevron-down" style="color: #16a34a;" class="arrow"></i></a>
+                            <button class="moba" onclick="toggleMenu1()">Educação<i id="icon1" class="fa-solid fa-chevron-down" style="color: #16a34a; margin-left: 5px; rotate: -90deg;" class="arrow"></i></button>
+                            <ul class="submenu" id="menu1">
+                                <li><a href="/html/subpages/education/benefitsPage.html">Benefícios</a></li>
+                                <li><a href="/html/subpages/education/benefitsPage.html#pilares">Pilares</a></li>
+                                <li><a href="/html/subpages/education/problemsPage.html">Problemas dos Ultraprocessados</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/html/subpages/tools/advicePage.html" class="pc">Ferramentas  <i class="fa-solid fa-chevron-down" style="color: #16a34a;" class="arrow"></i></a>
+                            <button class="moba" onclick="toggleMenu2()">Ferramentas<i id="icon2" class="fa-solid fa-chevron-down" style="color: #16a34a; margin-left: 5px; rotate: -90deg;" class="arrow"></i></button>
+                            <ul class="submenu" id="menu2">
+                                <li><a href="/html/subpages/tools/advicePage.html">Avaliação Nutricional</a></li>
+                                <li><a href="/html/subpages/tools/cardapio.html">Cardápios</a></li>
+                                <li><a href="/html/subpages/tools/dicas.html">Dicas</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/html/staticpages/aboutPage.html">Sobre Nós</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
     <main>
       <section class="cardapio">
         <h1>Cardapios</h1>
         <div class="botoes">
+          <h2>Escolha qual tipo de cardapio você deseja</h2>
           <div class="tipo">
             <nav>
               <button class="btn-tipo ativo" value="geral">Geral</button>
@@ -116,6 +197,7 @@
               <button class="btn-tipo" value="lactose">Sem lactose</button>
             </nav>
           </div>
+          <h2>Agora escolha a refeição desejada</h2>
           <div class="horario">
             <nav>
               <button class="btn-horario ativo" value="cafe">Café</button>
@@ -127,8 +209,60 @@
         <div class="cards-container" id="cardsContainer"></div>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <div id="footer"></div>
+    </footer>
     <script>
+      const menu = document.getElementById('paginas');
+const botao = document.getElementById('hamburguer');
+// script da NAV-BAR
+function toggleMenu() {
+    if (menu.style.display === "block") {
+        menu.style.display = "none"
+        botao.style.rotate = "0deg"
+        botao.textContent = "|||"
+    } else {
+        menu.style.display = "block"
+        botao.style.rotate = "90deg"
+        botao.textContent = "X"
+    }
+}
+
+const menu1 = document.getElementById("menu1")
+const menu2 = document.getElementById("menu2")
+function toggleMenu1() {
+    const icon = document.getElementById("icon1")
+    if (menu1.style.display === "block") {
+        menu1.style.display = "none"
+        icon.style.rotate = "-90deg"
+    } else {
+        menu1.style.display = "block"
+        icon.style.rotate = "0deg"
+    }
+}
+function toggleMenu2() {
+    const icon = document.getElementById("icon2")
+    if (menu2.style.display === "block") {
+        menu2.style.display = "none"
+        icon.style.rotate = "-90deg"
+    } else {
+        menu2.style.display = "block"
+        icon.style.rotate = "0deg"
+    }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+      const nav = document.getElementById("footer");
+
+      // Caminho absoluto para o footer
+      fetch("/html/nav-footer/footer.html")
+        .then(response => response.text())
+        .then(data => {
+          nav.innerHTML = data;
+        })
+        .catch(err => console.error("Erro ao carregar navbar:", err));
+    });
+
       const cardapios = {
         geral: {
           cafe: {
@@ -136,18 +270,21 @@
             calorias: "320Kcal",
             tempo: "10min",
             link: "https://www.mrcook.app/pt-BR/recipes/0194f655-f9fb-7de8-8e9e-f1fca363ab07",
+            imagem: "/src/img/imagensCardapio/1.jpg"
           },
           almoco: {
             titulo: "Bowl de Frango Grelhado com Batata Doce",
             calorias: "450Kcal",
             tempo: "25min",
             link: "https://receitas.globo.com/receitas-da-tv/e-de-casa/bowl-de-frango-com-batata-doce.ghtml",
+            imagem: "/src/img/imagensCardapio/2.jpeg"
           },
           janta: {
             titulo: "Espaguete de Abobrinha (Zoodles) com Patinho Moído",
             calorias: "277Kcal",
             tempo: "20min",
             link: "https://naturallisas.com.br/espaguete-de-abobrinha-com-patinho-moido-250g?srsltid=AfmBOoqaK6gPUfRCVzk8UAEUsDrb23TWJ575YYZLKP0aUp3JdKPVim3y",
+            imagem: "/src/img/imagensCardapio/3.jpg"
           },
         },
         vegano: {
@@ -156,18 +293,21 @@
             calorias: "300kcal",
             tempo: "15min",
             link: "https://madeleineolivia-co-uk.translate.goog/mixed-berry-oatmeal/?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt&_x_tr_pto=tc",
+            imagem: "/src/img/imagensCardapio/4.jpg"
           },
           almoco: {
-            titulo: "Curry de Grão-de-Bico com Abóbora e Arroz Integral",
+            titulo: "Curry de Grão-de-Bico com Abóbora e Arroz",
             calorias: "450kcal",
             tempo: "35min",
             link: "https://rainbowplantlife-com.translate.goog/thai-butternut-squash-chickpea-curry/?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt&_x_tr_pto=tc",
+            imagem: "/src/img/imagensCardapio/5.jpg"
           },
           janta: {
             titulo: "Salteado de Tofu com legumes",
             calorias: "300kcal",
             tempo: "20min",
             link: "https://raquelicias.com.br/2017/12/11/salteado-de-tofu-com-legumes/",
+            imagem: "/src/img/imagensCardapio/6.jpg"
           },
         },
         lactose: {
@@ -176,18 +316,21 @@
             calorias: "250kcal",
             tempo: "20min",
             link: "https://www.tudogostoso.com.br/receita/189500-panqueca-saudavel-de-aveia-e-banana.html",
+            imagem: "/src/img/imagensCardapio/7.jpg"
           },
           almoco: {
             titulo: "Filé de Tilápia com Purê de Mandioquinha",
             calorias: "360kcal",
             tempo: "40min",
             link: "https://www.tiktok.com/@receitasdorafa/video/7370105951396924677",
+            imagem: "/src/img/imagensCardapio/8.jpg"
           },
           janta: {
             titulo: "Creme de Abobora com Gengibre e Frango",
             calorias: "250kcal",
             tempo: "30min",
             link: "https://www.receiteria.com.br/receita/creme-de-abobora-com-gengibre-e-frango/",
+            imagem: "/src/img/imagensCardapio/9.png"
           },
         },
       };
@@ -200,11 +343,12 @@
         const container = document.getElementById("cardsContainer");
 
         container.innerHTML = `
-                <div class="card">
+                <div class="card"">
+                  <img src="${prato.imagem}">
                     <h2>${prato.titulo}</h2>
-                    <div class="info">
-                        <p><strong>Calorias:</strong> ${prato.calorias}</p>
-                        <p><strong>Tempo:</strong> ${prato.tempo}</p>
+                    <div class="info"">
+                        <p><i class="fa-solid fa-fire" style="margin-right: 10px; color: red;"></i><strong>Calorias:</strong> ${prato.calorias}</p>
+                        <p><i class="fa-regular fa-clock" style="margin-right: 10px;"></i><strong>Tempo:</strong> ${prato.tempo}</p>
                     </div>
                     <a href="${prato.link}" target="_blank">Clique aqui para acessar a receita</a>
                 </div>
@@ -240,6 +384,18 @@
       });
 
       atualizar();
+
+      document.addEventListener("DOMContentLoaded", () => {
+      const nav = document.getElementById("footer");
+
+      // Caminho absoluto para o footer
+      fetch("/html/nav-footer/footer.html")
+        .then(response => response.text())
+        .then(data => {
+          nav.innerHTML = data;
+        })
+        .catch(err => console.error("Erro ao carregar navbar:", err));
+    });
     </script>
   </body>
 </html>
