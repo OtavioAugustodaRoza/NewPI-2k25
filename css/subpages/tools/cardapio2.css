@@ -1,0 +1,79 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.cardapio {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+nav {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+button {
+  padding: 10px 20px;
+  background-color: #ddd;
+  border: 2px solid #999;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s;
+}
+button.ativo {
+  background-color: #4caf50;
+  color: white;
+  border-color: #4caf50;
+}
+button:hover {
+  background-color: #bbb;
+}
+button.ativo:hover {
+  background-color: #45a049;
+}
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+.card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.card h2 {
+  margin: 0;
+  color: #333;
+  font-size: 18px;
+}
+.info {
+  display: flex;
+  gap: 20px;
+  color: #666;
+  font-size: 14px;
+}
+.info p {
+  margin: 0;
+}
+.card a {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+.card a:hover {
+  background-color: #45a049;
+}
