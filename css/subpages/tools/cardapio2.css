@@ -12,7 +12,9 @@
         align-items: center;
         gap: 30px;
         & h1 {
-          font-size: calc(20px + 1vw);
+          font-size: 3vw;
+          color: #0c642c;
+          font-weight: 600;
         }
       }
     }

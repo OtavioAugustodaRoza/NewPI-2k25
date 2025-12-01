@@ -389,9 +389,9 @@ main section.nossa-equipe div.header-equipe p {
 }
 
 .cola-titulo {
-    color: rgb(44, 102, 44);
+    color: rgb(18, 75, 18);
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2.9rem;
     margin-top: 30px;
     font-weight: 600;
     margin-bottom: 40px;
@@ -427,14 +427,15 @@ main section.nossa-equipe div.header-equipe p {
     height: 150px;
     object-fit: cover;
     border-radius: 50%;
-    border: 3px solid rgba(84, 165, 84, 0.473);
+    border: 3px solid rgba(8, 51, 8, 0.808);
     margin-bottom: 10px;
 }
 
-.colaborador h2 {
-    font-size: 18px;
-    color: black;
+.colaborador h3 {
+    font-size: 22px;
+    color: #1b350a;
     margin: 0;
+    font-weight: 600;
 }
 
 main {
@@ -447,7 +448,7 @@ main {
 
 .sobre h2 {
     font-size: 1.8rem;
-    color: #809671;
+    color: #284d0f;
     margin-bottom: 15px; 
     font-weight: bold;
 }
@@ -475,25 +476,29 @@ main {
 }
 section.projetinho div.container h3 {
     margin-top: 120px;
+    font-weight: 600;
+    color: #284e0f;
+    font-size: 2.3vw;
 }
 .funçãodoscrias {
     padding: 40px 60px 40px 60px;
     margin: 20px auto;
     background: #ffffff;
-    border: 2px solid #809671;
+    border: 2px solid #274b0f;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .funçãodoscrias li {
     margin-bottom: 12px;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     color: #333;
 }
 
 .funçãodoscrias li strong {
-    color: #526645;
+    color: #1b350a;
     font-weight: bold;
+    font-size: 1.3vw;
 }
 .funçãodoscrias:hover {
     transform: scale(1.05); 
