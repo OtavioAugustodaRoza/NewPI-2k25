@@ -6,152 +6,15 @@
     <title>Cardapios</title>
     <link rel="stylesheet" href="/css/reset.css" />
     <link rel="stylesheet" href="/css/nav-footer/nav.css">
+    <link rel="stylesheet" href="/css/subpages/tools/cardapio2.css">
     <script src="https://kit.fontawesome.com/4410d9698c.js" crossorigin="anonymous"></script>
   </head>
-  <style>
-    * {
-      font-family: sans-serif;
-    }
-    main {
-      padding: 5vw;
-      & section.cardapio {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 30px;
-        & h1 {
-          font-size: calc(20px + 1vw);
-        }
-      }
-    }
-
-    /*botoes*/
-    .botoes {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      align-items: center;
-      & h2 {
-        font-size: calc(10px + 0.5vw);
-        margin-bottom: 10px;
-        font-style: italic;
-      }
-    }
-    .tipo nav {
-      display: flex;
-      overflow: hidden;
-      border-radius: 200px;
-      width: 30vw;
-      height: 40px;
-      & .btn-tipo {
-        width: 100%;
-        background-color: #f6f6f6;
-        border: none;
-        padding: 5px 20px;
-        transition: ease 200ms;
-        font-weight: bold;
-      }
-      & .ativo {
-        background-color: #5dbe54;
-      }
-      & .btn-tipo:hover {
-        background-color: #5dbe54;
-        cursor: pointer;
-      }
-    }
-
-    .horario nav {
-      display: flex;
-      overflow: hidden;
-      border-radius: 200px;
-      width: 20vw;
-      height: 30px;
-      & .btn-horario {
-        background-color: #f6f6f6;
-        border: none;
-        padding: 5px 20px;
-        width: 100%;
-        transition: ease 200ms;
-        font-weight: bold;
-      }
-      & .ativo {
-        background-color: #5dbe54;
-      }
-      & .btn-horario:hover {
-        background-color: #5dbe54;
-        cursor: pointer;
-      }
-    }
-    @media screen and (max-width: 1300px) {
-      .tipo nav {
-        width: 85vw;
-      }
-      .horario nav {
-        width: 65vw;
-      }
-    }
-    /* Card */
-    .cards-container {
-      & .card {
-        text-align: center;
-        border: solid 2px #16a34a;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-        background-color: #f9f9f9;
-        border-radius: 20px;
-        padding: 10vw;
-        & img {
-          width: 90%;
-          border-radius: 30px;
-        }
-        & h2 {
-          font-size: 20px;
-        }
-        & a {
-          display: block;
-          background-color: #5dbe54;
-          color: #fff;
-          padding: 10px 20px;
-          border-radius: 200px;
-          transition: ease 200ms;
-          font-weight: 700;
-          letter-spacing: 1.2px;
-        }
-        & a:hover {
-          background-color: #57a750;
-        }
-        & .info {
-          display: flex;
-          flex-direction: column;
-          align-items: start;
-          gap: 20px;
-        }
-      }
-    }
-    @media screen and (min-width: 1300px) {
-      .cards-container {
-        & .card {
-          padding: 1vw;
-          width: 400px;
-          & img {
-            width: 80%;
-          }
-        }
-      }
-    }
-  </style>
   <body>
     <header>
             <nav class="nav-bar">
                 <div class="logo">
                     <a href="index.html"><i class="fa-solid fa-leaf fa-lg" style="color: #36ce4f;"></i></a>
-                    <a href="index.html">NutriVitta</i></a>
+                    <a href="index.html">NutriVitta</a>
     
                 </div>
                 <button class="hamburguer" onclick="toggleMenu()" id="hamburguer">|||</button>
@@ -161,8 +24,8 @@
                             <a href="/index.html">Início</a>
                         </li>
                         <li>
-                            <a href="html/subpages/education/benefitsPage.html" class="pc">Educação <i class="fa-solid fa-chevron-down" style="color: #16a34a;" class="arrow"></i></a>
-                            <button class="moba" onclick="toggleMenu1()">Educação<i id="icon1" class="fa-solid fa-chevron-down" style="color: #16a34a; margin-left: 5px; rotate: -90deg;" class="arrow"></i></button>
+                            <a href="html/subpages/education/benefitsPage.html" class="pc">Educação <i class="fa-solid fa-chevron-down arrow" style="color: #16a34a;"></i></a>
+                            <button class="moba" onclick="toggleMenu1()">Educação<i id="icon1" class="fa-solid fa-chevron-down arrow" style="color: #16a34a; margin-left: 5px; rotate: -90deg;"></i></button>
                             <ul class="submenu" id="menu1">
                                 <li><a href="/html/subpages/education/benefitsPage.html">Benefícios</a></li>
                                 <li><a href="/html/subpages/education/benefitsPage.html#pilares">Pilares</a></li>
@@ -170,8 +33,8 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="/html/subpages/tools/advicePage.html" class="pc">Ferramentas  <i class="fa-solid fa-chevron-down" style="color: #16a34a;" class="arrow"></i></a>
-                            <button class="moba" onclick="toggleMenu2()">Ferramentas<i id="icon2" class="fa-solid fa-chevron-down" style="color: #16a34a; margin-left: 5px; rotate: -90deg;" class="arrow"></i></button>
+                            <a href="/html/subpages/tools/advicePage.html" class="pc">Ferramentas  <i class="fa-solid fa-chevron-down arrow" style="color: #16a34a;"></i></a>
+                            <button class="moba" onclick="toggleMenu2()">Ferramentas<i id="icon2" class="fa-solid fa-chevron-down arrow" style="color: #16a34a; margin-left: 5px; rotate: -90deg;"></i></button>
                             <ul class="submenu" id="menu2">
                                 <li><a href="/html/subpages/tools/advicePage.html">Avaliação Nutricional</a></li>
                                 <li><a href="/html/subpages/tools/cardapio2.html">Cardápios</a></li>

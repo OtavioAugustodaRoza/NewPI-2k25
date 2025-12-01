@@ -282,7 +282,6 @@
             border: solid 1px #72ffa6;
         }
         & li .image{
-            /* COLOCAR IMAGEM E REMOVER ESTES TEXTOS PFV */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -374,7 +373,7 @@
                 }
                 & p {
                     width: 70%;
-                    font-size: 1.1vw;
+                    font-size: calc(10px + 0.5vw);
                 }
             }
         }
@@ -384,6 +383,17 @@
     }
 }
 
+@media screen and (max-width: 600px) {
+  .dicas {
+    & .itemDicas {
+      & ul li {
+        & p {
+          font-size: calc(13px + 1vw) !important;
+        }
+      }
+    }
+  }
+}
 /*---------------Desafios------------*/
 .desafios {
     background-color: #ffffff;
@@ -441,6 +451,14 @@
     }
 }
 
+@media screen and (max-width:600px) {
+  .desafios {
+    & ul li p {
+      font-size: calc(12px + 1vw);
+    }
+  }
+}
+
 /*---------------Regra------------*/
 .regra {
     background-color: #dfdfdf70;
@@ -489,6 +507,16 @@
             }
         }
     }
+}
+@media screen and (max-width:600px) {
+  .regra {
+    & ul li h3 {
+      font-size: calc(15px + 1vw) !important;
+    }
+    & p {
+      font-size: calc(12px + 1vw) !important;
+    }
+  }
 }
 /*---------------Receitas------------*/
 .receitas {
