@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 * {
-    font-family: Inter;
+  font-family: Inter;
 }
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /*---------------Header------------*/
@@ -49,7 +49,7 @@
   .navegacao li p {
     color: #16a34a;
     font-size: 1.2rem;
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
   }
 
   .navegacao a:hover {
@@ -92,7 +92,7 @@
     padding: 12px 18px;
     font-size: 1rem;
     color: #16a34a;
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     transition: background 0.2s ease, color 0.2s ease;
   }
 
@@ -185,7 +185,7 @@
   }
 }
 
-@media (max-width:650px) {
+@media (max-width: 650px) {
   i {
     transition: 100ms;
   }
@@ -194,7 +194,7 @@
     gap: 8px;
     align-items: flex-start;
   }
-  header .submenu{
+  header .submenu {
     display: none;
     margin-top: 5px;
     padding-left: 15px;
@@ -204,7 +204,7 @@
     }
   }
 
-  header .hamburguer{
+  header .hamburguer {
     transition: ease 300ms;
   }
   .moba {
@@ -222,165 +222,163 @@
 }
 /*---------------banner------------*/
 .banner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    gap: 10px;
-    background-color: #05aa1b10;
-    width: 100%;
-    height: 500px;
-    /*margin-top: 50px;*/
-    & h1 {
-        color: #186b36;
-        font-size: 3vw;
-        font-weight: bolder;
-        margin-bottom: 20px;
-    }
-    & p {
-        color: #18ac4e;
-        font-size: 1.3vw;
-        font-weight: 510;
-    }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+  background-color: #05aa1b10;
+  width: 100%;
+  height: 500px;
+  /*margin-top: 50px;*/
+  & h1 {
+    color: #186b36;
+    font-size: 3vw;
+    font-weight: bolder;
+    margin-bottom: 20px;
+  }
+  & p {
+    color: #18ac4e;
+    font-size: 1.3vw;
+    font-weight: 510;
+  }
 }
 
 /*---------------Principios------------*/
 .principios {
-    padding: calc(50px + 6vw) calc(50px + 3vw);
-    & h2 {
-        color: #186b36;
-        text-align: center;
-        margin-bottom: 10px;
-        font-size: 2.5vw;
-        font-weight: 600;
+  padding: calc(50px + 6vw) calc(50px + 3vw);
+  & h2 {
+    color: #186b36;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2.5vw;
+    font-weight: 600;
+  }
+  & .txt {
+    color: #20b355;
+    text-align: center;
+    font-size: 1.3vw;
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
+  & ul {
+    margin-top: 40px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    & li {
+      width: 30%;
+      height: 700px;
+      border-radius: 20px;
+      box-shadow: 5px 7px 10px #d4d4d4;
+      background-color: #77d68410;
+      transition: ease 200ms;
     }
-    & .txt {
-        color: #20b355;
-        text-align: center;
-        font-size: 1.3vw;
-        margin-bottom: 30px;
-        margin-top: 20px;
+    & li:hover {
+      box-shadow: 3px 5px 15px #838383;
+      transform: scale(1.05);
     }
-    & ul {
-        margin-top: 40px;
-        display: flex;
-        gap: 30px;
-        justify-content: center;
-        flex-wrap: wrap;
-        & li {
-            width: 30%;
-            height: 700px;
-            border-radius: 20px;
-            box-shadow: 5px 7px 10px #d4d4d4;
-            background-color: #77d68410;
-            transition: ease 200ms;
-        }
-        & li:hover {
-            box-shadow: 3px 5px 15px #838383;
-            transform: scale(1.05);
-            border: solid 1px #72ffa6;
-        }
-        & li .image{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 60%;
-            width: 100%;
-            & img {
-                width: 100%;
-                height: 100%;
-                border-radius: 20px 20px 0 0;
-            }
-        }
-        & li .text {
-            height: 40%;
-            line-height: calc(28px + 0.4vw);
-            padding: 20px 0 0 20px;
-            color: #13883e;
-            font-size: 1.3vw;
-            font-family: Arial, Helvetica, sans-serif;
-            
-        }
+    & li .image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 60%;
+      width: 100%;
+      & img {
+        width: 100%;
+        height: 100%;
+        border-radius: 20px 20px 0 0;
+      }
     }
+    & li .text {
+      height: 40%;
+      line-height: calc(28px + 0.4vw);
+      padding: 20px 0 0 20px;
+      color: #13883e;
+      font-size: 1.3vw;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  }
 }
 
 /*---------------Dicas------------*/
 .dicas {
-    padding: calc(50px + 6vw) calc(50px + 3vw);
-    background-color: #05aa1b10;
-    & h2 {
-        text-align: center;
-        color: #186b36;
-        font-size: 2.5vw;
-        font-weight: 600;
-        margin-bottom: 20px;
-    }
-    & .textDicas {
-        text-align: center;
-        color: #20b355;
-        font-size: 1.3vw;
-        margin-bottom: 50px;
-    }
-    & .listaDicas {
+  padding: calc(50px + 6vw) calc(50px + 3vw);
+  background-color: #05aa1b10;
+  & h2 {
+    text-align: center;
+    color: #186b36;
+    font-size: 2.5vw;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  & .textDicas {
+    text-align: center;
+    color: #20b355;
+    font-size: 1.3vw;
+    margin-bottom: 50px;
+  }
+  & .listaDicas {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    & .itemDicas {
+      width: 30%;
+      box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.438);
+      border-radius: 30px;
+      background-color: #ffffff;
+      transition: ease 200ms;
+      padding-bottom: 35px;
+      & .title {
         display: flex;
-        gap: 50px;
-        flex-wrap: wrap;
+        flex-direction: column;
         justify-content: center;
-        & .itemDicas {
-            width: 30%;
-            box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.438);
-            border-radius: 30px;
-            background-color: #ffffff;
-            transition: ease 200ms;
-            padding-bottom: 35px;
-            & .title {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                padding: 30px;
-                & h3 {
-                    font-size: 1.3vw;
-                    color: #0c4d24;
-                    font-weight: 600;
-                }
-                & i {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    width: 80px;
-                    height: 80px;
-                    border-radius: 50%;
-                    margin-bottom: 20px;
-                    padding: 15px;
-                    font-size: 2rem;
-                }
-            }
-            & ul {
-                display: flex;
-                flex-direction: column;
-            }
-            & ul li{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                gap: 10px;
-                padding: 20px;
-                & i {
-                    color: #72ffa6;
-                    font-size: 1.5rem;
-                }
-                & p {
-                    width: 70%;
-                    font-size: calc(10px + 0.5vw);
-                }
-            }
+        align-items: center;
+        padding: 30px;
+        & h3 {
+          font-size: 1.3vw;
+          color: #0c4d24;
+          font-weight: 600;
         }
-        & .itemDicas:hover {
-            box-shadow: 1px 1px 15px rgba(103, 122, 109, 0.603);
+        & i {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+          margin-bottom: 20px;
+          padding: 15px;
+          font-size: 2rem;
         }
+      }
+      & ul {
+        display: flex;
+        flex-direction: column;
+      }
+      & ul li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 20px;
+        & i {
+          color: #72ffa6;
+          font-size: 1.5rem;
+        }
+        & p {
+          width: 70%;
+          font-size: calc(10px + 0.5vw);
+        }
+      }
     }
+    & .itemDicas:hover {
+      box-shadow: 1px 1px 15px rgba(103, 122, 109, 0.603);
+    }
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -396,62 +394,61 @@
 }
 /*---------------Desafios------------*/
 .desafios {
-    background-color: #ffffff;
-    border-radius: 20px;
-    padding: 40px;
-    margin-top: calc(50px + 3vw);
-    box-shadow: 1px 1px 15px rgba(103, 122, 109, 0.603);
-    & .titleDesafio {
-        display: flex;
-        gap: 20px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 40px;
+  margin-top: calc(50px + 3vw);
+  box-shadow: 1px 1px 15px rgba(103, 122, 109, 0.603);
+  & .titleDesafio {
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+  }
+  & h2 {
+    font-size: 2.5vw;
+  }
+  & ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    & li {
+      width: 30%;
+      padding: 30px;
+      background-color: #16ad4e1e;
+      border: solid 1px #20b355;
+      border-radius: 15px;
+      & p {
+        font-size: 1.1vw;
+      }
+      & .easy {
+        background-color: #27f171;
+        padding: 2px 10px;
+        border-radius: 10px;
         font-size: 20px;
+        color: #0c4d24;
+        font-weight: 600;
+      }
+      & .medium {
+        background-color: #f8cb02;
+        padding: 2px 10px;
+        border-radius: 10px;
+        font-size: 20px;
+        color: #554500;
+        font-weight: 600;
+      }
+      & .hard {
+        background-color: #ce5353;
+        padding: 2px 10px;
+        border-radius: 10px;
+        font-size: 20px;
+        color: #340303;
+        font-weight: 600;
+      }
     }
-    & h2{
-        font-size: 2.5vw;
-    }
-    & ul {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 30px;
-        & li {
-            width: 30%;
-            padding: 30px;
-            background-color: #16ad4e1e;
-            border: solid 1px #20b355;
-            border-radius: 15px;
-            & p{
-                font-size: 1.1vw;
-            }
-            & .easy {
-                background-color: #27f171;
-                padding: 2px 10px;
-                border-radius: 10px;
-                font-size: 20px;
-                color: #0c4d24;
-                font-weight: 600;
-               
-            }
-            & .medium {
-                background-color: #f8cb02;
-                padding: 2px 10px;
-                border-radius: 10px;
-                font-size: 20px;
-                color: #554500;
-                font-weight: 600;
-            }
-            & .hard {
-                background-color: #ce5353;
-                padding: 2px 10px;
-                border-radius: 10px;
-                font-size: 20px;
-                color: #340303;
-                font-weight: 600;
-            }
-        }
-    }
+  }
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width: 600px) {
   .desafios {
     & ul li p {
       font-size: calc(12px + 1vw);
@@ -461,54 +458,54 @@
 
 /*---------------Regra------------*/
 .regra {
-    background-color: #dfdfdf70;
-    border-radius: 20px;
-    padding: 40px;
-    margin-top: calc(50px + 3vw);
-    box-shadow: 1px 1px 15px rgba(103, 122, 109, 0.725);
-    & .textRegra {
-        color: #13883e;
+  background-color: #dfdfdf70;
+  border-radius: 20px;
+  padding: 40px;
+  margin-top: calc(50px + 3vw);
+  box-shadow: 1px 1px 15px rgba(103, 122, 109, 0.725);
+  & .textRegra {
+    color: #13883e;
+    font-size: 1.3vw;
+    text-align: center;
+    margin-bottom: 30px;
+    line-height: 30px;
+  }
+  & h2 {
+    font-size: 2.5vw;
+  }
+  & .listaRegra {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    & .itemRegra {
+      background-color: #ffffff86;
+      padding: 40px;
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      border-radius: 20px;
+      box-shadow: 1px 1px 15px rgba(103, 122, 109, 0.377);
+      & h3 {
+        color: #0e5026;
         font-size: 1.3vw;
-        text-align: center;
-        margin-bottom: 30px;
-        line-height: 30px;
-    }
-    & h2{
-        font-size: 2.5vw;
-    }
-    & .listaRegra {
+        font-weight: 600;
+      }
+      & ul {
+        list-style: disc;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         gap: 30px;
-        & .itemRegra {
-            background-color: #ffffff86;
-            padding: 40px;
-            width: 300px;
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            border-radius: 20px;
-            box-shadow: 1px 1px 15px rgba(103, 122, 109, 0.377);
-            & h3 {
-                color: #0e5026;
-                font-size: 1.3vw;
-                font-weight: 600;
-            }
-            & ul {
-                list-style: disc;
-                display: flex;
-                flex-direction: column;
-                gap: 30px;
-                justify-content: center;
-                padding: 20px 0px 20px 20px;
-                & li {
-                    font-size: 1vw;
-                }
-            }
+        justify-content: center;
+        padding: 20px 0px 20px 20px;
+        & li {
+          font-size: 1vw;
         }
+      }
     }
+  }
 }
-@media screen and (max-width:600px) {
+@media screen and (max-width: 600px) {
   .regra {
     & ul li h3 {
       font-size: calc(15px + 1vw) !important;
@@ -518,266 +515,160 @@
     }
   }
 }
-/*---------------Receitas------------*/
-.receitas {
-    background-color: #32680562;
-    padding: calc(50px + 6vw) calc(50px + 3vw);
-
-    & h2 {
-        text-align: center;
-        color: #0e5026;
-        font-size: 2.5vw;
-        font-weight: bold;
-        margin-bottom: 15px;
-    }
-    & p {
-        color: #13883e;
-        text-align: left;
-    }
-    & .listaReceitas {
-        display: flex;
-        margin-top: 50px;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 40px;
-        & .itemReceitas {
-            background-color: #ffffff;
-            box-shadow: 1px 1px 15px rgba(103, 122, 109, 0.24);
-            border-radius: 30px;
-            padding: 30px;
-            width: 30%;
-            height: 550px;
-            transition: ease 200ms;
-            & .image {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 30%;
-                width: 100%;
-                & img {
-                    width: 100%;
-                    height: 100%;
-                    border-radius: 20px 20px 0 0;
-                }
-            }
-            & .content {
-                height: 70%;
-                display: flex;
-                flex-direction: column;
-                & h3 {
-                    color: #0e5026;
-                    font-size: 1.3vw;
-                    margin-top: 20px;
-                    margin-bottom: 10px;
-                }
-                & p {
-                    line-height: 20px;
-                    width: 65%;
-                    font-size: 1.1vw;
-                }
-                & ul {
-                    display: flex;
-                    flex-wrap: wrap;
-                    & li {
-                        width: 50%;
-                        margin-top: 15px;
-                        margin-bottom: 10px;
-                        & i {
-                            margin-right: 10px;
-                        }
-                    }
-                }
-                & .stars {
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    padding: 20px 0;
-                    margin-bottom: 10px;
-                    & p {
-                        margin-left: 10px;
-                    }
-                }
-                & button {
-                    padding: 10px;
-                    background-color: #13883e;
-                    border: none;
-                    border-radius: 10px;
-                    color: #ffffff;
-                    font-size: 15px;
-                    transition: ease 200ms;
-                }
-                & button:hover {
-                    cursor: pointer;
-                    background-color: #0b5225;
-                }
-            }
-        }
-        & .itemReceitas:hover {
-            transform: scale(1.05);
-        }
-    }
-}
 
 @media (max-width: 768px) {
+  /* ------------------ BANNER ------------------ */
+  .banner {
+    height: auto;
+    padding: 40px 20px;
+    gap: 5px;
+    & h1 {
+      font-size: 32px;
+    }
+    & p {
+      font-size: 16px;
+      width: 90%;
+    }
+  }
 
-    /* ------------------ BANNER ------------------ */
-    .banner {
+  /* ------------------ PRINCIPIOS ------------------ */
+  .principios {
+    padding: 40px 20px;
+    & h2 {
+      font-size: 28px;
+    }
+    & .txt {
+      font-size: 16px;
+    }
+    & ul {
+      flex-direction: column;
+      align-items: center;
+
+      & li {
+        width: 100%;
+        height: 500px;
+      }
+
+      & li .text {
+        font-size: 16px;
+        line-height: 24px;
+        padding: 15px;
+      }
+    }
+  }
+
+  /* ------------------ DICAS ------------------ */
+  .dicas {
+    padding: 40px 20px;
+    & h2 {
+      font-size: 28px;
+    }
+    & .textDicas {
+      font-size: 16px;
+    }
+    & .listaDicas {
+      gap: 30px;
+      flex-direction: column;
+      align-items: center;
+
+      & .itemDicas {
+        width: 100%;
+        padding: 20px;
+
+        & .title {
+          padding: 20px;
+
+          & h3 {
+            font-size: 18px;
+          }
+        }
+
+        & ul li {
+          flex-direction: column;
+          text-align: center;
+          & p {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  /* ------------------ DESAFIOS ------------------ */
+  .desafios {
+    padding: 30px 20px;
+    & ul {
+      flex-direction: column;
+      & li {
+        width: 100%;
+        padding: 20px;
+      }
+    }
+  }
+
+  /* ------------------ REGRA ------------------ */
+  .regra {
+    padding: 30px 20px;
+
+    & .listaRegra {
+      flex-direction: column;
+      align-items: center;
+
+      & .itemRegra {
+        width: 100%;
+        padding: 25px;
+      }
+    }
+  }
+
+  /* ------------------ RECEITAS ------------------ */
+  .receitas {
+    padding: 40px 20px;
+
+    & h2 {
+      font-size: 30px;
+    }
+
+    & .listaReceitas {
+      flex-direction: column;
+      gap: 30px;
+
+      & .itemReceitas {
+        width: 100%;
         height: auto;
-        padding: 40px 20px;
-        gap: 5px;
-        & h1 {
-            font-size: 32px;
-        }
-        & p {
+        padding: 20px;
+
+        & .content {
+          & p {
+            width: 100%;
             font-size: 16px;
-            width: 90%;
-        }
-    }
+          }
 
+          & ul li {
+            width: 100%;
+          }
 
-    /* ------------------ PRINCIPIOS ------------------ */
-    .principios {
-        padding: 40px 20px;
-        & h2 {
-            font-size: 28px;
-        }
-        & .txt {
-            font-size: 16px;
-        }
-        & ul {
+          & .stars {
             flex-direction: column;
-            align-items: center;
+            gap: 10px;
+          }
 
-            & li {
-                width: 100%;
-                height: auto;
-            }
-
-            & li .text {
-                font-size: 16px;
-                line-height: 24px;
-                padding: 15px;
-            }
+          & button {
+            width: 100%;
+            padding: 12px;
+          }
         }
+      }
     }
-
-
-    /* ------------------ DICAS ------------------ */
-    .dicas {
-        padding: 40px 20px;
-        & h2 {
-            font-size: 28px;
-        }
-        & .textDicas {
-            font-size: 16px;
-        }
-        & .listaDicas {
-            gap: 30px;
-            flex-direction: column;
-            align-items: center;
-
-            & .itemDicas {
-                width: 100%;
-                padding: 20px;
-
-                & .title {
-                    padding: 20px;
-
-                    & h3 {
-                        font-size: 18px;
-                    }
-                }
-
-                & ul li {
-                    flex-direction: column;
-                    text-align: center;
-                    & p {
-                        width: 100%;
-                    }
-                }
-            }
-        }
-    }
-
-
-    /* ------------------ DESAFIOS ------------------ */
-    .desafios {
-        padding: 30px 20px;
-        & ul {
-            flex-direction: column;
-            & li {
-                width: 100%;
-                padding: 20px;
-            }
-        }
-    }
-
-
-    /* ------------------ REGRA ------------------ */
-    .regra {
-        padding: 30px 20px;
-
-        & .listaRegra {
-            flex-direction: column;
-            align-items: center;
-
-            & .itemRegra {
-                width: 100%;
-                padding: 25px;
-            }
-        }
-    }
-
-
-    /* ------------------ RECEITAS ------------------ */
-    .receitas {
-        padding: 40px 20px;
-
-        & h2 {
-            font-size: 30px;
-        }
-
-        & .listaReceitas {
-            flex-direction: column;
-            gap: 30px;
-
-            & .itemReceitas {
-                width: 100%;
-                height: auto;
-                padding: 20px;
-
-                & .content {
-                    & p {
-                        width: 100%;
-                        font-size: 16px;
-                    }
-
-                    & ul li {
-                        width: 100%;
-                    }
-
-                    & .stars {
-                        flex-direction: column;
-                        gap: 10px;
-                    }
-
-                    & button {
-                        width: 100%;
-                        padding: 12px;
-                    }
-                }
-            }
-        }
-    }
-
+  }
 }
 /*---------------Videos--------------*/
 
 .othersMedia {
   padding: 3vw 1vw;
-  & h1 {
+  & h2 {
     text-align: center;
-    font-size: 2.5vw;
+    font-size: 3rem;
     font-weight: bold;
     color: #0c5526;
   }
@@ -785,39 +676,46 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 3vw;
+    padding: 2vw;
     flex-wrap: wrap;
     & li {
       display: flex;
       flex-direction: column;
-      gap: 10px;
+      gap: 20px;
       align-items: center;
       justify-content: center;
-      margin-bottom: 10px;
       & iframe {
         min-width: 250px;
         min-height: 150px;
         width: 25vw;
         height: 15vw;
         border: solid 5px #0c4d24;
+        border-radius: 10px;
         padding: 10px;
       }
-      & h2 {
-        font-size: calc(15px + 0.5vw);
+      & h3 {
+        font-size: calc(13px + 0.5vw);
+        color: #16a34a;
+        font-weight: 600;
       }
     }
   }
 }
-
+@media screen and (max-width: 600px) {
+  .othersMedia h1 {
+    font-size: 2.5rem !important;
+    /* importante significa que a regra tem mais prioridade que as outras */
+  }
+}
 
 /*---------------Footer------------*/
 
 .footer {
-  background: #006B3F;
+  background: #006b3f;
   color: #ffffff;
   padding: 40px 80px 30px 80px;
   font-family: Inter, sans-serif;
-  font-size: 1.1rem ;
+  font-size: 1.1rem;
 }
 
 .footer-container {
@@ -833,7 +731,6 @@
   margin-bottom: 30px;
   font-weight: 600;
 }
-
 
 .footer-col ul li {
   margin-bottom: 18px;
@@ -865,15 +762,15 @@
 
 .footer-warning {
   margin-top: 20px;
-  background: #015E36;
+  background: #015e36;
   padding: 12px;
   border-radius: 8px;
   font-size: 13px;
   line-height: 1.5;
 }
-h2{
-    font-size: 1.55rem;
+h2 {
+  font-size: 1.55rem;
 }
-.love{
-    margin-top: 30px;
+.love {
+  margin-top: 30px;
 }
