@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Benefícios</title>
+  <script src="https://kit.fontawesome.com/4410d9698c.js" crossorigin="anonymous"></script>
+  <script src="/js/nav-footer/nav.js"></script>
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/subpages/education/benefitsPage.css">
+</head>
+
+<body>
+       <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <a href="/index.html"><i class="fa-solid fa-leaf fa-lg" style="color: #36ce4f;"></i></a>
+                <a href="/index.html">NutriVitta</a>
+            </div>
+
+            <button class="hamburguer" onclick="toggleMenu()" id="hamburguer">|||</button>
+
+            <div class="paginas" id="paginas">
+                <ul class="navegacao">
+                    <li><a href="/index.html">Início</a></li>
+
+                    <li>
+                        <a href="/html/subpages/education/benefitisPage.html" class="pc">
+                            Educação <i class="fa-solid fa-chevron-down arrow" style="color: #16a34a;"></i>
+                        </a>
+
+                        <button class="moba" onclick="toggleMenu1()">
+                            Educação
+                            <i id="icon1" class="fa-solid fa-chevron-down arrow" style="color: #16a34a; margin-left: 5px; rotate:-90deg;"></i>
+                        </button>
+
+                        <ul class="submenu" id="menu1">
+                            <li><a href="/html/subpages/education/benefitisPage.html">Benefícios</a></li>
+                            <li><a href="/html/subpages/education/benefitisPage.html#pilares">Pilares</a></li>
+                            <li><a href="/html/subpages/education/problemsPage.html">Problemas dos Ultraprocessados</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="/html/subpages/tools/advicePage.html" class="pc">
+                            Ferramentas <i class="fa-solid fa-chevron-down arrow" style="color: #16a34a;"></i>
+                        </a>
+
+                        <button class="moba" onclick="toggleMenu2()">
+                            Ferramentas
+                            <i id="icon2" class="fa-solid fa-chevron-down arrow" style="color: #16a34a; margin-left: 5px; rotate:-90deg;"></i>
+                        </button>
+
+                        <ul class="submenu" id="menu2">
+                            <li><a href="/html/subpages/tools/advicePage.html">Avaliação Nutricional</a></li>
+                            <li><a href="/html/subpages/tools/cardapio2.html">Cardápios</a></li>
+                            <li><a href="/html/subpages/tools/dicas.html">Dicas</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="/html/staticpages/aboutPage.html">Sobre Nós</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+  <main>
+    <section class="banner">
+      <h1>Educação Nutricional</h1>
+      <p>Aprenda os fundamentos de uma alimentação saudável e descubra como pequenas mudanças podem transformar sua
+        qualidade de vida.</p>
+    </section>
+
+    <section class="beneficios">
+      <div>
+        <h2>Benefícios da Alimentação Equilibrada</h2>
+        <p class="p-um">Uma alimentação balanceada traz inúmeros benefícios para sua saúde física e mental,
+          proporcionando mais
+          qualidade de vida e bem-estar.</p>
+      </div>
+
+      <!-- começa a lista  -->
+      <div class="container">
+        <div class="lista">
+          <ul>
+            <li>
+              <div class="card">
+                <i class="fa-solid fa-heart" style="color: green;"></i>
+                <div>
+                  <h3>Saúde Cardiovascular</h3>
+                  <p>Reduz o risco de doenças cardíacas, controla a pressão arterial e melhora a circulação sanguínea.</p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="card">
+                <i class="fa-solid fa-brain" style="color: green;"></i>
+                <div>
+                  <h3>Função Cerebral</h3>
+                  <p>Melhora a concentração, memória e reduz o risco de doenças neurodegenerativas.</p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="card">
+                <i class="fa-solid fa-shield" style="color: green;"></i>
+                <div>
+                  <h3>Sistema Imunológico</h3>
+                  <p>Fortalece as defesas naturais do corpo, prevenindo infecções e doenças.</p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="card">
+                <i class="fa-solid fa-bolt" style="color: green;"></i>
+                <div>
+                  <h3>Mais Energia</h3>
+                  <p>Fornece energia sustentável ao longo do dia, evitando picos e quedas de açúcar no sangue.</p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="card">
+                <i class="fa-solid fa-scale-balanced" style="color: green;"></i>
+                <div>
+                  <h3>Peso Ideal</h3>
+                  <p>Ajuda a manter um peso saudável e a composição corporal adequada.</p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="card">
+                <i class="fa-solid fa-face-smile" style="color: green;"></i>
+                <div>
+                  <h3>Bem-estar Mental</h3>
+                  <p>Melhora o humor, reduz a ansiedade e contribui para uma melhor qualidade de vida.</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- termina lista -->
+        
+      </div>
+
+      <div class="result">
+        <h2>Resultados Comprovados</h2>
+        <ul>
+          <li>
+            <h3>78%</h3>
+            <p>Redução no risco de diabetes</p>
+          </li>
+          <li>
+            <h3>65%</h3>
+            <p>Melhora na qualidade do sono</p>
+          </li>
+          <li>
+            <h3>92%</h3>
+            <p>Aumento na disposição diária</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="pilares" id="pilares">
+      <div class="title">
+        <h2>Os 6 Pilares da Alimentação Equilibrada</h2>
+        <p>Estes fundamentos são essenciais para construir e manter uma alimentação saudável e sustentável ao longo da
+          vida.</p>
+      </div>
+    </section>
+
+    <div class="cards">
+      <ul>
+        <li class="card">
+          <div class="card-container">
+            <div>
+              <i class="fa-brands fa-apple"></i>
+            </div>
+            <div>
+              <h3>Variedade de Alimentos</h3>
+            </div>
+          </div>
+          <p>Inclua uma ampla gama de alimentos naturais em suas refeições para garantir todos os nutrientes que o corpo precisa.</p>
+          <h4>Dicas:</h4>
+          <ul class="segunda-lista">
+            <li>Inclua ao menos 3 cores diferentes no prato</li>
+            <li>Experimente novos vegetais a cada semana</li>
+            <li>Combine frutas com oleaginosas para lanches equilibrados</li>
+          </ul>
+        </li>
+        <li class="card">
+          <div class="card-container">
+            <div>
+              <i class="fa-solid fa-bowl-food"></i>
+            </div>
+            <div>
+              <h3>Proporções Adequadas</h3>
+            </div>
+          </div>
+          <p>Equilibre os grupos alimentares no prato, respeitando as quantidades ideais para uma nutrição completa e saudável.</p>
+          <h4>Dicas:</h4>
+          <ul class="segunda-lista">
+            <li>Preencha metade do prato com vegetais</li>
+            <li>Modere no consumo de sal, açúcar e gordura</li>
+            <li>Use a palma da mão como medida para porções de proteína</li>
+          </ul>
+        </li>
+        <li class="card">
+          <div class="card-container">
+            <div>
+              <i class="fa-regular fa-clock"></i>
+            </div>
+            <div>
+              <h3>Regularidade nas Refeições</h3>
+            </div>
+          </div>
+          <p>Mantenha horários consistentes para se alimentar ao longo do dia e promova o bom funcionamento do organismo.</p>
+          <h4>Dicas:</h4>
+          <ul class="segunda-lista">
+            <li>Estabeleça horários fixos para comer</li>
+            <li>Evite longos períodos em jejum</li>
+            <li>Faça pequenas refeições entre as principais, se necessário</li>
+          </ul>
+        </li>
+        <li class="card">
+          <div class="card-container">
+            <div>
+              <i class="fa-solid fa-utensils"></i>
+            </div>
+            <div>
+              <h3>Moderação</h3>
+            </div>
+          </div>
+          <p>Equilibrar quantidades e evitar excessos é essencial para manter uma alimentação saudável e prevenir doenças.</p>
+          <h4>Dicas:</h4>
+          <ul class="segunda-lista">
+            <li>Evite porções muito grandes</li>
+            <li>Mastigue devagar e coma com atenção</li>
+            <li>Limite o consumo de alimentos ultraprocessados</li>
+          </ul>
+        </li>
+        <li class="card">
+          <div class="card-container">
+            <div>
+              <i class="fa-solid fa-glass-water-droplet"></i>
+            </div>
+            <div>
+              <h3>Hidratação Adequada</h3>
+            </div>
+          </div>
+          <p>Manter o corpo bem hidratado é fundamental para o bom funcionamento dos órgãos e a saúde como um todo.</p>
+          <h4>Dicas:</h4>
+          <ul class="segunda-lista">
+            <li>Beba ao menos 2 litros de água por dia</li>
+            <li>Consuma frutas ricas em água, como melancia e laranja</li>
+            <li>Evite bebidas açucaradas no dia a dia</li>
+          </ul>
+        </li>
+        <li class="card">
+          <div class="card-container">
+            <div>
+              <i class="fa-brands fa-pagelines"></i>
+            </div>
+            <div>
+              <h3>Alimentos Naturais</h3>
+            </div>
+          </div>
+          <p>Prefira alimentos frescos e minimamente processados para uma dieta mais nutritiva e equilibrada.</p>
+          <h4>Dicas:</h4>
+          <ul class="segunda-lista">
+            <li>Dê preferência a alimentos da feira, não do pacote</li>
+            <li>Leia os rótulos e evite ingredientes artificiais</li>
+            <li>Monte pratos com alimentos in natura sempre que possível</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <section class="rules">
+      <div>
+        <h2>A Regra do Prato Equilibrado</h2>
+        <ul>
+          <li class="verde">50% Vegetais e frutas</li>
+          <li class="amarelo">25% Grãos integrais</li>
+          <li class="vermelho">25% Proteínas magras</li>
+          <p>Esta divisão garante que você obtenha todos os nutrientes necessários em cada refeição principal.</p>
+        </ul>
+      </div>
+      <div>
+        <img src="/html/subpages/education/imagens/pratodivididoo.jpeg" alt="foto de folhas saudáveis">
+      </div>
+    </section>
+
+  </main>
+  <footer>
+    <div id="footer"></div>
+  </footer>
+
+  <script>
+        const menu = document.getElementById('paginas');
+        const botao = document.getElementById('hamburguer');
+
+        function toggleMenu() {
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+                botao.style.rotate = "0deg";
+                botao.textContent = "|||";
+            } else {
+                menu.style.display = "block";
+                botao.style.rotate = "90deg";
+                botao.textContent = "X";
+            }
+        }
+
+        const menu1 = document.getElementById("menu1");
+        const menu2 = document.getElementById("menu2");
+
+        function toggleMenu1() {
+            const icon = document.getElementById("icon1")
+            if (menu1.style.display === "block") {
+                menu1.style.display = "none";
+                icon.style.rotate = "-90deg";
+            } else {
+                menu1.style.display = "block";
+                icon.style.rotate = "0deg";
+            }
+        }
+
+        function toggleMenu2() {
+            const icon = document.getElementById("icon2")
+            if (menu2.style.display === "block") {
+                menu2.style.display = "none";
+                icon.style.rotate = "-90deg";
+            } else {
+                menu2.style.display = "block";
+                icon.style.rotate = "0deg";
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const nav = document.getElementById("footer");
+            fetch("/html/nav-footer/footer.html")
+                .then(response => response.text())
+                .then(data => { nav.innerHTML = data; })
+                .catch(err => console.error("Erro ao carregar navbar:", err));
+        });
+  </script>
+
+</body>
+</html>
