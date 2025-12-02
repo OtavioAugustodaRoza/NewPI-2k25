@@ -240,7 +240,7 @@ section h2 {
   margin-bottom: 8px;
   color: #166534;
 }
-
+/* div > p serve para estilizar os parágrafos que estão dentro de divs, que estão dentro de sections */
 section div > p {
   text-align: left;
   color: #64748b;
@@ -257,17 +257,13 @@ section div > p {
   border: 1px solid #e2e8f0;
 }
 
-fieldset {
-  border: none;
-  margin-bottom: 30px;
-}
 
 legend {
   font-size: 1.3rem;
   font-weight: 600;
-  color: #14532d;
-  margin-bottom: 20px;
+  color: #14532d; 
 }
+
 
 .input-group {
   display: flex;
@@ -279,12 +275,14 @@ legend {
 .input-field-full {
   display: flex;
   flex-direction: column;
+  gap: 20px;
   margin-bottom: 22px;
 }
 
 label {
   font-weight: 500;
-  margin-bottom: 6px;
+  margin-bottom: 20px;
+
   color: #334155;
 }
 
@@ -303,6 +301,7 @@ input:hover, select:hover, textarea:hover {
 
 input:focus, select:focus, textarea:focus {
   outline: none;
+  /*outline É a borda que aparece quando o elemento está em foco */
   border-color: #22c55e;
   background-color: #ffffff;
 }
