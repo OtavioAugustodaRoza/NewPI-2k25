@@ -249,6 +249,7 @@ main section.sobre-nutrivitta div.text-content p {
     color: #333;
     line-height: 1.6;
     margin-bottom: 20px;
+    text-align: left;
 }
 
 main section.sobre-nutrivitta div.text-content p.mission-details {
@@ -264,10 +265,16 @@ main section.sobre-nutrivitta div.image-content {
 
 main section.sobre-nutrivitta div.image-content img {
     max-width: 100%;
+    image-rendering: smooth;
+    background: rgba(0,0,0,0.15);
+    filter: contrast(1.1) saturate(1.1) drop-shadow(0 0 1px rgba(0,0,0,.3));
     height: auto;
+    border: solid 4px rgba(0, 128, 0, 0.7);
+    opacity: 0.95;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    
 }
 
 main section.sobre-nutrivitta div.image-content img:hover {
