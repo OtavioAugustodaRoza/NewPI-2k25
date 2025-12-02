@@ -270,7 +270,7 @@
     flex-wrap: wrap;
     & li {
       width: 30%;
-      height: 700px;
+      height: 600px;
       border-radius: 20px;
       box-shadow: 5px 7px 10px #d4d4d4;
       background-color: #77d68410;
@@ -663,48 +663,64 @@
   }
 }
 /*---------------Videos--------------*/
-
 .othersMedia {
-  padding: 3vw 1vw;
-  & h2 {
-    text-align: center;
-    font-size: 3rem;
-    font-weight: bold;
-    color: #0c5526;
-  }
-  & ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 2vw;
-    flex-wrap: wrap;
-    & li {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      align-items: center;
-      justify-content: center;
-      & iframe {
-        min-width: 250px;
-        min-height: 150px;
-        width: 25vw;
-        height: 15vw;
-        border: solid 5px #0c4d24;
-        border-radius: 10px;
-        padding: 10px;
-      }
-      & h3 {
-        font-size: calc(13px + 0.5vw);
-        color: #16a34a;
-        font-weight: 600;
-      }
-    }
-  }
+  padding: 6vw 2vw;
+}
+
+.othersMedia h2 {
+  text-align: center;
+  font-size: clamp(2rem, 3vw, 3.5rem);
+  font-weight: bold;
+  color: #0c5526;
+  margin-bottom: 2vw;
+}
+
+.othersMedia ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3vw;
+  flex-wrap: wrap;
+}
+
+.othersMedia ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.othersMedia ul li iframe {
+  min-width: 280px;
+  min-height: 160px;
+  width: clamp(280px, 25vw, 450px);
+  height: clamp(160px, 15vw, 300px);
+  border: solid 5px #0c4d24;
+  border-radius: 12px;
+  padding: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.othersMedia ul li iframe:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+}
+
+.othersMedia ul li h3 {
+  font-size: clamp(1rem, 1vw + 0.5rem, 1.5rem);
+  color: #16a34a;
+  font-weight: 600;
+  text-align: center;
 }
 @media screen and (max-width: 600px) {
-  .othersMedia h1 {
+  .othersMedia h2 {
     font-size: 2.5rem !important;
     /* importante significa que a regra tem mais prioridade que as outras */
+  }
+  .othersMedia ul li h3 {
+    font-size: calc(15px + 1vw) !important;
+    position: relative;
+    bottom: -10px;
   }
 }
 
