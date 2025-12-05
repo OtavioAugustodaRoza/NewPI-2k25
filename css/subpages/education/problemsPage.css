@@ -615,7 +615,7 @@ main section.stats div.result ul li p {
 
     main section.stats div.result {
         padding: 20px;
-        width: 90%;
+        width: 80vw !important;
     }
 
     main section.stats div.result h2 {

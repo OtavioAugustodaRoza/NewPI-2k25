@@ -672,7 +672,7 @@ p {
     /* ---------- COLABORADORES ---------- */
     .colaboradores {
         grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-        width: 100%;
+        width: 91%;
         margin: 0;
         padding: 20px;
     }
@@ -684,7 +684,7 @@ p {
 
     .colaborador h2 {
         font-size: 18px;
-    }nossa-missao
+    }
 
 
 
