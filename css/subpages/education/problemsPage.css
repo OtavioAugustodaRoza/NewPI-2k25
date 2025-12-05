@@ -50,7 +50,7 @@
 
   .navegacao a:hover {
     color: #1e8544;
-    transition: 0.2;
+    transition: 0.2s;
   }
 
   ul.navegacao li:hover ul {
